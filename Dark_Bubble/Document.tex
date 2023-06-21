@@ -1,0 +1,99 @@
+\documentclass[11pt, a4paper]{article} % Font size
+\usepackage{float} % To impose the position of the figure at desired place.
+\usepackage{amsmath, amsfonts, amsthm} % Math packages
+\usepackage{hyperref} % To hiperlink things on the internet.
+\usepackage{cite} % To cite stuff
+\usepackage{listings} % Code listings, with syntax highlighting
+\usepackage[english]{babel} % English language hyphenation
+\usepackage{graphicx} % Required for inserting images
+\usepackage{sectsty} % Allows customising section commands
+\usepackage{booktabs} % Required for better horizontal rules in tables
+\usepackage{enumitem} % Required for list customisation
+\usepackage{geometry} % Required for adjusting page dimensions and margins
+\usepackage{comment} % To remove big parts of text.
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Use 8-bit encoding
+\usepackage{fourier} % Use the Adobe Utopia font for the document
+\usepackage[nottoc]{tocbibind}
+\usepackage{cancel} % To cross and cancel values
+\usepackage{bigints} % In case you need bigger integrants
+\usepackage[skip=10pt plus1pt, indent=0pt]{parskip}
+\newcommand{\ket}[1]{\vert #1 \rangle}
+\newcommand{\bra}[1]{\langle #1 \vert}
+
+
+\geometry{
+	paper=a4paper, % Paper size, change to letterpaper for US letter size
+	top=1.5cm, % Top margin
+	bottom=3cm, % Bottom margin
+	left=3cm, % Left margin
+	right=3cm, % Right margin
+	headheight=0.5cm, % Header height
+	footskip=1.5cm, % Space from the bottom margin to the baseline of the footer
+	headsep=0.75cm, % Space from the top margin to the baseline of the header
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+
+
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+\graphicspath{{Figures/}{./}}% Specifies where to look for included images (trailing slash required)
+%\setlist{noitemsep} % No spacing between list items
+\sectionfont{\vspace{6pt}\centering\normalfont\scshape} % \section{} styling
+\subsectionfont{\normalfont\bfseries} % \subsection{} styling
+\subsubsectionfont{\normalfont\itshape} % \subsubsection{} styling
+\paragraphfont{\normalfont\scshape} % \paragraph{} styling
+
+
+
+
+
+
+
+%--------------------------------------------------------------------------------
+%	TITLE SECTION
+%--------------------------------------------------------------------------------
+
+\title{	
+	\normalfont\normalsize
+	\textsc{Random stuff}\\ % Your university, school and/or department name(s)
+	\vspace{5pt} % Whitespace
+	\rule{\linewidth}{0.2pt}\\ % Thin top horizontal rule
+	\vspace{10pt} % Whitespace
+	{\huge Title}\\ % The assignment title
+	\vspace{5pt} % Whitespace
+	\rule{\linewidth}{-2pt}\\ % Thick bottom horizontal rule
+	\vspace{-25pt} % Whitespace
+	\date{}
+}
+\author{Who made it}
+
+
+
+
+
+\begin{document}
+\maketitle 
+
+
+
+	%\begin{figure}[ht]\label{fig: something}
+     %   \centering
+      %  \includegraphics[scale=0.7]{test}
+       % \caption{caption}
+      %\end{figure}
+
+\subsection*{Random Section}
+
+\cite{Danielsson:2018ztv}
+
+
+
+
+
+\bibliography{biblio}
+\bibliographystyle{ieeetr}
+
+
+\end{document}
