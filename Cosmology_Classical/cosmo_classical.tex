@@ -21,6 +21,7 @@
 \usepackage[skip=10pt plus1pt, indent=0pt]{parskip}
 \newcommand{\ket}[1]{\vert #1 \rangle}
 \newcommand{\bra}[1]{\langle #1 \vert}
+\renewcommand{\it}{\textit}
 
 
 \geometry{
@@ -117,10 +118,28 @@ At really big scales, Copernican principle holds. No point in space occupies a s
 
 
 \begin{equation}\label{eq: line_invariant_FLRW}
-	ds^{2} = - N^{2}(t) dt^{2} + a(t)^2 \left(\frac{dr^{2}}{1- k r^{2}}+ r^{2} \left(d\theta^{2} + \sin[\theta]^{2} d\phi^{2}\right)\right)
+	ds^{2} = - N^{2}(t) dt^{2} + a(t)^2 \left(\frac{dr^{2}}{1- k r^{2}}+ r^{2} \left(d\theta^{2} + \sin[\theta]^{2} d\phi^{2}\right)\right).
 \end{equation}
+Where $N(t)$ is a lapse function and $a(t)$ is the scale factor that describes the expansion (or contraction) of $3D$ spacial slices. Before we start talking about the spatial properties of previous line invariant (\ref{eq: line_invariant_FLRW}), let us first discuss about the lapse function $N(t)$. 
 
-\textcolor{red}{Continue explaninn}
+This function is in charge of time reparametrization invariance. As we do not want to overcomplicate our computation, the most useful and convienent choices for $N(t)$ are:
+
+\begin{itemize}
+	\item $N(t) = 1$: This is the choice of \textit{global time}. \textcolor{red}{Add some explanation}
+	\item $N(t) = a(t)$: This is the so-called \textit{conformal time} gauge choice. This choice allows the observer to co-move with the expansion of the universe, even in the time coordinate, accounting for any funky effect... \textcolor{red}{Add some explanation}
+\end{itemize}
+
+The extra parameter we have not talked about yet is $k$. This has the power to change curvature of space. It comes in three different flavours:
+
+\begin{itemize}
+	\item $k = 0$: A quite boring case. No curvature, where spatial sections of our geometry are \it{flat}, like $\mathbb{R}^{3}$.
+	\item $k = 1$: With this value, spatial sections are \it{closed}, like in $\mathbb{S}^{3}$.
+	\item $k = -1$: Spatial sections are \it{open}, as in the hyperboloid $\mathbb{H}^{3}$.
+\end{itemize}
+
+So the line invariant (\ref{eq: line_invariant_FLRW}) allows us to describe a dynamical universe with different types of spatial curvature. \textcolor{red}{Continue here. This is taking more time than expected.}
+
+
 
 
 \cite{Danielsson:2018ztv}
