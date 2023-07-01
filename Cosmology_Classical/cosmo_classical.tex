@@ -86,18 +86,7 @@
        % \caption{caption}
       %\end{figure}
 
-\subsection*{Keywords}
-\begin{itemize}
-	\item Expansion of the Universe
-	\item Dark Energy
-	\item General Relativity
-	\item Cosmological Constant
-	\item Measure of cancel
-	\item de Sitter Space
-	\item Friedmann equations
-\end{itemize}
-
-\subsection*{What do we know about the Universe?}
+	  \subsection*{What do we know about the Universe?}
 
 Several satellites that we have sent there, outside\footnote{Plus all evidence collected also from earth surface.}, to the empty and cold darkness of space, have provided enough data to prove that any galaxy far away (and not so far away) from us is in a process of getting further away. On top of that, increasing their distance today even faster than yesterday. It could perhaps be due to the fact that the Universe itself sees human beings as a potential plague, and want to avoid us. Or could be because some sort of colossal multidimensional being decided to streach the fabric of spacetime itself, just for fun.
 
@@ -108,18 +97,18 @@ In 1915, good old Einstein published his theory of \textit{General Relativity} (
 
 \begin{enumerate}
 	\item \textit{Copernican}: Our planet occupies not special position in the Universe.
-	\item \textit{GR + Expansion}: Einstein equations describe gravitational dynamics with accuracy at low-energy physics and Hubble's discovery (The expansion of the Universe) in 1929 is correct.
+	\item \textit{GR + Expansion}: Einstein equation describe gravitational dynamics with accuracy at low-energy physics and Hubble's discovery (The expansion of the Universe) in 1929 is correct.
 	\item \textit{Perfect fluidity}: We can assume that all contents in the Universe behave as a perfect fluid.
 \end{enumerate}
 
 Of course this model has its flaws, but we leave these downsides for future lines.
 
-At really big scales, Copernican principle holds. No point in space occupies a spatial position. Wherever you sit at and look at, everything will be more or less the same. In technical words, this implies \textit{homogeneity} and \textit{isotropy}. Good, seems simple. Next step is to find a reliable way to measure distance, hence to be able to describe the geometry of spacetime. This is given by the \textit{line invariant}, which takes the famous \textit{FRLW} form, adequate to describe a Lorentzian signature spacetime with a high degree of symmetry as the one we seem to live in. This can be written as:
-
+At really big scales, Copernican principle holds. No point in space occupies a special position. Wherever you sit at and look at, everything will be more or less the same. In technical words, this implies \textit{homogeneity} and \textit{isotropy}. Good, seems simple. Next step is to find a reliable way to measure distance, hence to be able to describe the geometry of spacetime. This is given by the \textit{line invariant}, which takes the famous \textit{FRLW} form, adequate to describe a Lorentzian signature spacetime with a high degree of symmetry as the one we seem to live in. This can be written as:
 
 \begin{equation}\label{eq: line_invariant_FLRW}
-	ds^{2} = - N^{2}(t) dt^{2} + a(t)^2 \left(\frac{dr^{2}}{1- k r^{2}}+ r^{2} \left(d\theta^{2} + \sin[\theta]^{2} d\phi^{2}\right)\right).
+	ds^{2} = g_{\mu \nu} dx^{\mu} dx^{\nu} = - N^{2}(t) dt^{2} + a(t)^2 \left(\frac{dr^{2}}{1- k r^{2}}+ r^{2} \left(d\theta^{2} + \sin[\theta]^{2} d\phi^{2}\right)\right),
 \end{equation}
+
 Where $N(t)$ is a lapse function and $a(t)$ is the scale factor that describes the expansion (or contraction) of $3D$ spacial slices. Before we start talking about the spatial properties of previous line invariant (\ref{eq: line_invariant_FLRW}), let us first discuss about the lapse function $N(t)$. 
 
 This function is in charge of time reparametrization invariance. As we do not want to overcomplicate our computation, the most useful and convienent choices for $N(t)$ are:
@@ -132,12 +121,59 @@ This function is in charge of time reparametrization invariance. As we do not wa
 The extra parameter we have not talked about yet is $k$. This has the power to change curvature of space. It comes in three different flavours:
 
 \begin{itemize}
-	\item $k = 0$: A quite boring case. No curvature, where spatial sections of our geometry are \it{flat}, like $\mathbb{R}^{3}$.
+	\item $k = 0$: A quite boring case. No curvature, where spatial sections of the geometry are \it{flat}, like $\mathbb{R}^{3}$.
 	\item $k = 1$: With this value, spatial sections are \it{closed}, like in $\mathbb{S}^{3}$.
 	\item $k = -1$: Spatial sections are \it{open}, as in the hyperboloid $\mathbb{H}^{3}$.
 \end{itemize}
 
-So the line invariant (\ref{eq: line_invariant_FLRW}) allows us to describe a dynamical universe with different types of spatial curvature. \textcolor{red}{Continue here. This is taking more time than expected.}
+So the line invariant (\ref{eq: line_invariant_FLRW}) allows us to describe a dynamical universe with different types of spatial curvature. But, what do we do with this tool? How do we get a specific equation(s) that explictly describe the evolution of the universe? It is at this point where Einstein equation have something to say. 
+
+Einstein equation is an \textit{Equation of Motion} (EOM) that captures the universe's dynamics and it is obtained by extremising the Einstein-Hilbert action, which reads:
+
+\begin{equation}\label{eq: EH_action}
+	S[g_{\mu\nu}, \phi_{i}] = \int d^{d}x \sqrt{-g} \left(\frac{R}{2 \kappa^{2}_{d}} + \mathcal{L}_{mat}(\phi_{i}, \partial \phi_{i})\right), 
+\end{equation}
+
+where $\mathcal{L}_{mat}$ is the matter lagrangian of some fields $\phi_{i}$, coupled to gravity and $R$ is the Ricci scalar, which carries geometrical information. $\kappa^{2}_{d}$ encodes information about d dimensional Newton's gravitational constant as:
+
+\begin{equation}
+	\kappa^{2}_{d} = 8 \pi G_{d} = M_{pl}^{2-d},
+\end{equation}
+
+where $M_{pl}$ is the Planck mass for $d$ dimensions. As we are so far working out the classical cosmology scenario, we will stick to $d = 4$. To obtain Einstein equation, we just have to vary the action (\ref{eq: EH_action}) with respect to $g_{\mu \nu}$ to obtain:
+
+\begin{equation}\label{eq: Einstein}
+		R_{\mu\nu} - \tfrac{1}{2} g_{\mu\nu} R = \kappa^{2}_{4} \left(\mathcal{L}_{mat}\: g_{\mu\nu} - 2 \frac{\delta \mathcal{L}_{mat}}{\delta g^{\mu \nu}}\right) = \kappa^{2}_{4} T_{\mu \nu}.
+\end{equation}
+
+The left hand side of (\ref{eq: Einstein}) condense pure geometry information, while the right hand side stands for matter field contribution. This is packaged inside the \textit{energy-momentum tensor} $T_{\mu\nu}$. As we are under the assumption that the universe is homogenous, isotropic and its content can be described as perfect fluid, the energy-momentum (EM) tensor becomes of the simple form:
+
+\begin{equation}\label{eq: EMtensor}
+	T_{\mu \nu} = (\rho + p) \:u_{\mu}u_{\nu} + p\: g_{\mu\nu},
+\end{equation}
+
+where $u_{\mu} = \left(-N, 0, 0, 0\right)$ is the fluid four-velocity, and $(\rho, p)$ its energy density and pressure. These can be used to describe presureless matter (dust) or relativistic one (radiation), among others. As energy is a conserved quantity, so must be the EM tensor, i.e. $\nabla_{\mu}T^{\mu \nu} =0$. 
+
+From the clear relation between geometry and matter content in Einstein equation (\ref{eq: Einstein}), Wheeler once stated: \textit{"Spacetime tells matter how to move; matter tells spacetime how to curve"}. For the specific FRLW metric (\ref{eq: line_invariant_FLRW}) with $N(t) = 1$ (i.e. global time coordinate), the Einstein equation yields two equations as:
+
+\begin{align}
+	\label{eq: Friedmann1} \frac{\dot{a}^{2}}{a^{2}} &= \frac{8 \pi G_{4}}{3}\sum_{i} \rho_{i} - \frac{k}{a^{2}},\\
+	\label{eq: Friedmann2} \frac{\ddot{a}}{a} &= -\frac{4 \pi G_{4}}{3} \left(\sum_{i} \rho_{i} + 3 p_{i}\right),
+\end{align}
+
+where $\frac{\dot{a}^{2}}{a^{2}}$ is the \textit{Hubble rate} $H$, which measures the expansion of the universe (static when $H = 0$). These are the \textit{Friedmann equations}.
+
+The first Friedmann equation (\ref{eq: Friedmann1}) describes how the rate of expansion of the universe is governed by its content and topology, while the second equation (\ref{eq: Friedmann2}) accounts for its accelaration. It is easy to observe that if the universe is expanding and faster everyday, this implies $\left(\sum_{i} \rho_{i} + 3 p_{i}\right) < 0$ in eq (\ref{eq: Friedmann2}). In order to obtain information about who can be responsible for this behaviour, we need to characterise different types of matter. The \textit{equation of state} is in charge of that, as relates pressure to energy density as $\omega = \tfrac{p}{\rho}$. Any type of matter with $\omega > - 1/3$, will be responsible of any decelerated expansion of the universe. All observed matter , i.e, radiation ($\omega = 1/3$) and dust ($\omega = 0$), aim their efforts to slow down the universe expansion. On the other hand, any content with $\omega < - 1/3$ will accelerate the expansion\footnote{Due to the null energy condition\cite{}, $-1\leq\omega\leq 1$. }. But there is nothing that we have detected (yet) that can be identify with that equation of state. As the universe is a dark place, and this unknown energy density seems to be the source of accelerated expansion, it has received the famous name of \textit{dark energy}. It state parameter $\omega$ can be observationally constrained by data extracted from \textit{Barionic Accustic Oscillations} (BAO), perturbations of the hot plasma of the early universe, imprinted in the \textit{Cosmic Microwave Background} (CMB). The latest value (2018) is $\omega_{\Lambda} = -1.028 \pm 0.031$ \cite{2020planck}....
+
+\textcolor{red}{Talk about Friedmann eq and rhos... Potential picture stuff and so on.}
+
+
+
+\textcolor{red}{Join to the CC after discussing who energy densities evolve with scale factor}
+In order to capture dark energy in our description, we can just add an extra 
+
+
+
 
 
 
@@ -149,7 +185,7 @@ So the line invariant (\ref{eq: line_invariant_FLRW}) allows us to describe a dy
 
 
 \bibliography{biblio}
-\bibliographystyle{ieeetr}
+\bibliographystyle{JHEP}
 
 
 \end{document}
