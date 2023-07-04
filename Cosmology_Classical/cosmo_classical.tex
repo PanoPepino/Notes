@@ -128,7 +128,7 @@ The extra parameter we have not talked about yet is $k$. This has the power to c
 
 So the line invariant (\ref{eq: line_invariant_FLRW}) allows us to describe a dynamical universe with different types of spatial curvature. But, what do we do with this tool? How do we get a specific equation(s) that explictly describe the evolution of the universe? It is at this point where Einstein equation have something to say. 
 
-Einstein equation is an \textit{Equation of Motion} (EOM) that captures the universe's dynamics and it is obtained by extremising the Einstein-Hilbert action, which reads:
+Einstein equation is an \textit{Equation of Motion} (EOM) that captures the universe's dynamics and it is obtained by extremising the Einstein-Hilbert action with respect to variations of the metric $\delta g_{\mu\nu}$, which reads:
 
 \begin{equation}\label{eq: EH_action}
 	S[g_{\mu\nu}, \phi_{i}] = \int d^{d}x \sqrt{-g} \left(\frac{R}{2 \kappa^{2}_{d}} + \mathcal{L}_{mat}(\phi_{i}, \partial \phi_{i})\right), 
@@ -163,10 +163,47 @@ From the clear relation between geometry and matter content in Einstein equation
 
 where $\frac{\dot{a}^{2}}{a^{2}}$ is the \textit{Hubble rate} $H$, which measures the expansion of the universe (static when $H = 0$). These are the \textit{Friedmann equations}.
 
-The first Friedmann equation (\ref{eq: Friedmann1}) describes how the rate of expansion of the universe is governed by its content and topology, while the second equation (\ref{eq: Friedmann2}) accounts for its accelaration. It is easy to observe that if the universe is expanding and faster everyday, this implies $\left(\sum_{i} \rho_{i} + 3 p_{i}\right) < 0$ in eq (\ref{eq: Friedmann2}). In order to obtain information about who can be responsible for this behaviour, we need to characterise different types of matter. The \textit{equation of state} is in charge of that, as relates pressure to energy density as $\omega = \tfrac{p}{\rho}$. Any type of matter with $\omega > - 1/3$, will be responsible of any decelerated expansion of the universe. All observed matter , i.e, radiation ($\omega = 1/3$) and dust ($\omega = 0$), aim their efforts to slow down the universe expansion. On the other hand, any content with $\omega < - 1/3$ will accelerate the expansion\footnote{Due to the null energy condition\cite{}, $-1\leq\omega\leq 1$. }. But there is nothing that we have detected (yet) that can be identify with that equation of state. As the universe is a dark place, and this unknown energy density seems to be the source of accelerated expansion, it has received the famous name of \textit{dark energy}. It state parameter $\omega$ can be observationally constrained by data extracted from \textit{Barionic Accustic Oscillations} (BAO), perturbations of the hot plasma of the early universe, imprinted in the \textit{Cosmic Microwave Background} (CMB). The latest value (2018) is $\omega_{\Lambda} = -1.028 \pm 0.031$ \cite{2020planck}....
+The first Friedmann equation (\ref{eq: Friedmann1}) describes how the rate of expansion of the universe is governed by its content and topology, while the second equation (\ref{eq: Friedmann2}) accounts for its accelaration. It is easy to observe that if the universe is expanding and faster everyday, this implies $\left(\sum_{i} \rho_{i} + 3 p_{i}\right) < 0$ in eq (\ref{eq: Friedmann2}). In order to obtain information about who can be responsible for this behaviour, we need to characterise different types of matter. The \textit{equation of state} is in charge of that, as relates pressure to energy density as $\omega = \tfrac{p}{\rho}$. Any type of matter with $\omega > - 1/3$, will be responsible of any decelerated expansion of the universe.  On the other hand, any content with $\omega < - 1/3$ will accelerate the expansion\footnote{Due to the null energy condition\cite{}, $-1\leq\omega\leq 1$. }. But there is nothing that we have detected (yet) that can be identify with that equation of state. As the universe is a dark place, and this unknown energy density seems to be the source of accelerated expansion, it has received the famous name of \textit{dark energy}.
 
-\textcolor{red}{Talk about Friedmann eq and rhos... Potential picture stuff and so on.}
+But, how can be determine the value of the state parameter for each energy density? Let us derive their values from basic principles:
 
+\begin{itemize}
+	\item In the case we consider non-relativistic matter, the energy density $\rho_{m}$ will be dominated by the rest mass energy $E = mc^{2}$, as the momentum, and hence, the exerted pressure are neglegible compare to $\rho_{m}$. Thus, to a good approximation, $\omega \simeq 0$.
+	\item For radiation, we are now dealing with relativistic effects. Following the same reasoning as before, the pressure, which is proportional to the velocity $v \simeq c$ will be relevant. Assuming an isotropic distribution of the pressure accross the three spatial dimensions, this can be described by $\omega = 1/3$.
+	\item Finally, vacuum energy seems to apply a \textit{repulsive} force, making the universe to expand. This is described by a state parameter $\omega = - 1$. This value can be observationally constrained by data extracted from \textit{Barionic Accustic Oscillations} (BAO), perturbations of the hot plasma of the early universe, imprinted in the \textit{Cosmic Microwave Background} (CMB). The latest measured value (2018) is $\omega_{\Lambda} = -1.028 \pm 0.031$ \cite{2020planck}.
+\end{itemize}
+
+Equipped with this information, we are one step closer to understand the true power of Friedmann equations (\ref{eq: Friedmann1}, \ref{eq: Friedmann2}). But one step at a time, cosmic hitchhiker! If the universe is evolving, also the energy density of its content. This is governed by energy conservation. The explicit expression for the covariant derivative of the EM tensor (\ref{eq: EMtensor}) in a FRLW geometry (\ref{eq: line_invariant_FLRW}) yields:
+
+\begin{equation}\label{eq: rho_scaling}
+	\rho \propto a^{-3\left(1+\omega\right)},
+\end{equation}
+
+\textcolor{red}{ADD TABLE!}
+
+One of the most interesting features of relation (\ref{eq: rho_scaling}) is that $\rho_{\Lambda}$ is the same yesterday, today and tomorrow. It is not diluted with the spacetime expansion\footnote{I wish also my economical capital to behave in this way. No matter what my expenses are, it remains the same.}. This can be interpreted as an intrisic property of spacetime itself, which can be captured by an extra EM tensor of the form:
+
+\begin{equation}
+	T_{\Lambda} = - \rho_{\Lambda}g_{\mu\nu} = - \frac{\Lambda}{\kappa^{2}_{4}} g_{\mu\nu},
+\end{equation}
+
+With $\Lambda$ being a constant. This is the famous \textit{cosmological constant} (CC)\footnote{Yeah, the one that \textit{Albertito} introduced in his equation to obtain a static universe. When Hubble discovered the expansion of the universe in 1929, Einstein remarked that introducing that constant was his bigger mistake. Well, it was a good one, Albert. Thank you!}, which encodes the information of a non-varying energy density across the expanding cosmos. As this can be interpreted as an intrisic geometrical property, it is perhaps more appropiated to move it to the LHS of Einstein equation (\ref{eq: Einstein}) as: 
+
+\begin{equation}\label{eq: Einstein with Lambda}
+	R_{\mu\nu} - \tfrac{1}{2} g_{\mu\nu} R + \Lambda g_{\mu\nu}  = \kappa^{2}_{4} T_{\mu \nu}
+\end{equation}
+
+Which is the usual Einstein equation for cosmology. 
+
+Now that we have all characters of this piece completely identified, let us come back to the Friedmann equation (\ref{eq: Friedmann1}). Accounting for all possible types of energy densities $\rho_{i}$, one obtains the following expression:
+
+\begin{equation}
+	\begin{split}
+		\dot{a}^{2} &= \frac{8 \pi G_{4}}{3} \left(\frac{\rho_{mat}}{a} + \frac{\rho_{\gamma}}{a^{2}} + \frac{\rho_{\Lambda}}{a^{2}}- \frac{3 k}{8 \pi G_{4}}\right)
+	\end{split}
+\end{equation}
+
+\textcolor{red}{CONTINUE HERE. CAREFUL WITH PROPER TIME GAUGE STUFF. TALK ABOUT POTENTIAL, DRAW AND EXPLAIN ANALOGY TO CLASSICAL MECHANICS THING.}
 
 
 \textcolor{red}{Join to the CC after discussing who energy densities evolve with scale factor}
