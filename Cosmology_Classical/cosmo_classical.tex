@@ -10,6 +10,9 @@
 \usepackage{booktabs} % Required for better horizontal rules in tables
 \usepackage{enumitem} % Required for list customisation
 \usepackage{geometry} % Required for adjusting page dimensions and margins
+\usepackage{svgcolor}
+\usepackage{svg}
+
 \usepackage{comment} % To remove big parts of text.
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Use 8-bit encoding
@@ -190,26 +193,26 @@ One of the most interesting features of relation (\ref{eq: rho_scaling}) is that
 With $\Lambda$ being a constant. This is the famous \textit{cosmological constant} (CC)\footnote{Yeah, the one that \textit{Albertito} introduced in his equation to obtain a static universe. When Hubble discovered the expansion of the universe in 1929, Einstein remarked that introducing that constant was his bigger mistake. Well, it was a good one, Albert. Thank you!}, which encodes the information of a non-varying energy density across the expanding cosmos. As this can be interpreted as an intrisic geometrical property, it is perhaps more appropiated to move it to the LHS of Einstein equation (\ref{eq: Einstein}) as: 
 
 \begin{equation}\label{eq: Einstein with Lambda}
-	R_{\mu\nu} - \tfrac{1}{2} g_{\mu\nu} R + \Lambda g_{\mu\nu}  = \kappa^{2}_{4} T_{\mu \nu}
+	R_{\mu\nu} - \tfrac{1}{2} g_{\mu\nu} R + \Lambda g_{\mu\nu}  = \kappa^{2}_{4} T_{\mu \nu},
 \end{equation}
 
-Which is the usual Einstein equation for cosmology. 
+which is the usual Einstein equation for cosmology. 
 
-Now that we have all characters of this piece completely identified, let us come back to the Friedmann equation (\ref{eq: Friedmann1}). Accounting for all possible types of energy densities $\rho_{i}$, one obtains the following expression:
+Now that we have all characters of this (cosmic) piece completely identified, let us come back to the Friedmann equation (\ref{eq: Friedmann1}). Accounting for all possible types of energy densities $\rho_{i}$, one obtains the following expression:
 
-\begin{equation}
-	\begin{split}
-		\dot{a}^{2} &= \frac{8 \pi G_{4}}{3} \left(\frac{\rho_{mat}}{a} + \frac{\rho_{\gamma}}{a^{2}} + \frac{\rho_{\Lambda}}{a^{2}}- \frac{3 k}{8 \pi G_{4}}\right)
-	\end{split}
+\begin{equation}\label{eq: thy_pot}
+	\dot{a}^{2} = \frac{8 \pi G_{4}}{3} \left(\frac{\rho_{mat}}{a} + \frac{\rho_{\gamma}}{a^{2}} + \rho_{\Lambda} \:a^{2}\underbrace{- \frac{3 k}{8 \pi G_{4}}}_{\rho_{c}}\right),
 \end{equation}
+
+Where we have rephrased the curvature contribution in a more appropiated notation. A simple look at expression (\ref{eq: thy_pot}) is enough to realise that it can be casted in a quite familiar conservation equation as $T + V = 0$, where the potential $V(a)$ correspond the LHS of (\ref{eq: thy_pot}), with opposite sign.
+
+It is important to notice the divergence of the potential $V(a)$ when $a \rightarrow 0$, causing a singularity at $t=0$ (conventionally chosen). [ref to Hawking and Leimatre]
 
 \textcolor{red}{CONTINUE HERE. CAREFUL WITH PROPER TIME GAUGE STUFF. TALK ABOUT POTENTIAL, DRAW AND EXPLAIN ANALOGY TO CLASSICAL MECHANICS THING.}
 
 
 \textcolor{red}{Join to the CC after discussing who energy densities evolve with scale factor}
 In order to capture dark energy in our description, we can just add an extra 
-
-
 
 
 
