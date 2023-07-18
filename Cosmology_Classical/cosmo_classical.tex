@@ -74,10 +74,6 @@
 }
 \author{}
 
-
-
-
-
 \begin{document}
 \maketitle 
 
@@ -88,18 +84,17 @@
       %  \includegraphics[scale=0.7]{test}
        % \caption{caption}
       %\end{figure}
-
-	  \subsection*{What do we know about the Universe?}
+\section*{What do we know about the Universe?}
 
 Several satellites that we have sent there, outside\footnote{Plus all evidence collected also from earth surface.}, to the empty and cold darkness of space, have provided enough data to prove that any galaxy far away (and not so far away) from us is in a process of getting further away. On top of that, increasing their distance today even faster than yesterday. It could perhaps be due to the fact that the Universe itself sees human beings as a potential plague, and want to avoid us. Or could be because some sort of colossal multidimensional being decided to streach the fabric of spacetime itself, just for fun.
 
 Nonsense apart, nowadays, the most accepted reason why the Universe is pushed apart in an accelerated manner is \textit{Dark Energy}. Ah, wonderful. And what is \textit{Dark Energy}? To explain this is still an open problem\footnote{A really big one. Or a small one?}\footnote{As one could say in Spanish, \textit{"Un problema nimio"}. Nimio is an adjective that can be used for both small and big.}. But let us first step back more than a century ago, to understand the synthesis of our current understanding of Cosmology.
 
 
-In 1915, good old Einstein published his theory of \textit{General Relativity} (GR) \cite{}. The world did not become a better place due to this, but at least we were provided with a ridiculous powerful tool to describe low-energy gravitational events. In the following years after the publication, Friedmann, Hubble, Lema\^itre \cite{} (among many others) used GR technology to describe the Universe as a whole. Their work set the foundations of what we call today \textit{The Standard Model of Cosmology} \cite{}. This model is good enough to describe our current observations of the Universe. And not only that. If we reversed the observed expansion back to very close the beginning of everything, we could still have a really good description of the events happening in the almost newborn Universe. It has 3 really simple foundations:
+In 1915, good old Einstein published his theory of \textit{General Relativity} (GR) \cite{einstein1915feldgleichungen}. The world did not become a better place due to this, but at least we were provided with a ridiculous powerful tool to describe low-energy gravitational events. In the following years after the publication, Friedmann, Hubble, Lema\^itre \cite{} (among many others) used GR technology to describe the Universe as a whole. Their work set the foundations of what we call today \textit{The Standard Model of Cosmology} (a.k.a. $\Lambda$-CDM model) \cite{}. This model is good enough to describe our current observations of the Universe. And not only that. If we reversed the observed expansion back to very close the beginning of everything, we could still have a really good description of the events happening in the almost newborn Universe. It has 3 really simple foundations:
 
 \begin{enumerate}
-	\item \textit{Copernican}: Our planet occupies not special position in the Universe.
+	\item \textit{Copernican}: Our planet occupies no special position in the Universe.
 	\item \textit{GR + Expansion}: Einstein equation describe gravitational dynamics with accuracy at low-energy physics and Hubble's discovery (The expansion of the Universe) in 1929 is correct.
 	\item \textit{Perfect fluidity}: We can assume that all contents in the Universe behave as a perfect fluid.
 \end{enumerate}
@@ -121,7 +116,7 @@ This function is in charge of time reparametrization invariance. As we do not wa
 	\item $N(t) = a(t)$: This is the so-called \textit{conformal time} gauge choice. This choice allows the observer to co-move with the expansion of the universe, even in the time coordinate, accounting for any funky effect... \textcolor{red}{Add some explanation}
 \end{itemize}
 
-The extra parameter we have not talked about yet is $k$. This has the power to change curvature of space. It comes in three different flavours:
+The extra parameter we have not talked about yet is $k$. This has the power to change the topology of the spatial sections. It comes in three different flavours:
 
 \begin{itemize}
 	\item $k = 0$: A quite boring case. No curvature, where spatial sections of the geometry are \it{flat}, like $\mathbb{R}^{3}$.
@@ -129,7 +124,9 @@ The extra parameter we have not talked about yet is $k$. This has the power to c
 	\item $k = -1$: Spatial sections are \it{open}, as in the hyperboloid $\mathbb{H}^{3}$.
 \end{itemize}
 
-So the line invariant (\ref{eq: line_invariant_FLRW}) allows us to describe a dynamical universe with different types of spatial curvature. But, what do we do with this tool? How do we get a specific equation(s) that explictly describe the evolution of the universe? It is at this point where Einstein equation have something to say. 
+So the line invariant (\ref{eq: line_invariant_FLRW}) allows us to describe a dynamical universe with different types of spatial curvature. But, what do we do with this tool? How do we get a specific equation(s) that explictly describe the evolution of the universe? It is at this point where Einstein equation have something to say.
+
+\section*{An equation to rule them all}
 
 Einstein equation is an \textit{Equation of Motion} (EOM) that captures the universe's dynamics and it is obtained by extremising the Einstein-Hilbert action with respect to variations of the metric $\delta g_{\mu\nu}$, which reads:
 
@@ -166,7 +163,7 @@ From the clear relation between geometry and matter content in Einstein equation
 
 where $\frac{\dot{a}^{2}}{a^{2}}$ is the \textit{Hubble rate} $H$, which measures the expansion of the universe (static when $H = 0$). These are the \textit{Friedmann equations}.
 
-The first Friedmann equation (\ref{eq: Friedmann1}) describes how the rate of expansion of the universe is governed by its content and topology, while the second equation (\ref{eq: Friedmann2}) accounts for its accelaration. It is easy to observe that if the universe is expanding and faster everyday, this implies $\left(\sum_{i} \rho_{i} + 3 p_{i}\right) < 0$ in eq (\ref{eq: Friedmann2}). In order to obtain information about who can be responsible for this behaviour, we need to characterise different types of matter. The \textit{equation of state} is in charge of that, as relates pressure to energy density as $\omega = \tfrac{p}{\rho}$. Any type of matter with $\omega > - 1/3$, will be responsible of any decelerated expansion of the universe.  On the other hand, any content with $\omega < - 1/3$ will accelerate the expansion\footnote{Due to the null energy condition\cite{}, $-1\leq\omega\leq 1$. }. But there is nothing that we have detected (yet) that can be identify with that equation of state. As the universe is a dark place, and this unknown energy density seems to be the source of accelerated expansion, it has received the famous name of \textit{dark energy}.
+The first Friedmann equation (\ref{eq: Friedmann1}) describes how the rate of expansion of the universe is governed by its content and topology, while the second equation (\ref{eq: Friedmann2}) accounts for its accelaration. It is easy to observe that if the universe is expanding and faster everyday, this implies $\left(\sum_{i} \rho_{i} + 3 p_{i}\right) < 0$ in eq (\ref{eq: Friedmann2}). In order to obtain information about who can be responsible for this behaviour, we need to characterise different types of matter. The \textit{equation of state} is in charge of that, as relates pressure to energy density as $\omega = \tfrac{p}{\rho}$. Any type of matter with $\omega > - 1/3$, will be responsible of any decelerated expansion of the universe.  On the other hand, any content with $\omega < - 1/3$ will accelerate the expansion\footnote{Due to the null energy condition\cite{}, $-1\leq\omega\leq 1$. }. We clearly observe that the universe expands, but there is nothing that we have (yet) detected that can be identify with that equation of state. As the universe is a dark place, and this unknown energy density seems to be the source of accelerated expansion, it has received the famous name of \textit{dark energy}.
 
 But, how can be determine the value of the state parameter for each energy density? Let us derive their values from basic principles:
 
@@ -201,24 +198,40 @@ which is the usual Einstein equation for cosmology.
 Now that we have all characters of this (cosmic) piece completely identified, let us come back to the Friedmann equation (\ref{eq: Friedmann1}). Accounting for all possible types of energy densities $\rho_{i}$, one obtains the following expression:
 
 \begin{equation}\label{eq: thy_pot}
-	\dot{a}^{2} = \frac{8 \pi G_{4}}{3} \left(\frac{\rho_{mat}}{a} + \frac{\rho_{\gamma}}{a^{2}} + \rho_{\Lambda} \:a^{2}\underbrace{- \frac{3 k}{8 \pi G_{4}}}_{\rho_{c}}\right),
+	\dot{a}^{2} = \frac{8 \pi G_{4}}{3} \left(\frac{\rho_{mat}}{a} + \frac{\rho_{\gamma}}{a^{2}} + \rho_{\Lambda} \:a^{2}\underbrace{- \frac{3 k}{8 \pi G_{4}}}_{+\rho_{c}}\right),
 \end{equation}
 
-Where we have rephrased the curvature contribution in a more appropiated notation. A simple look at expression (\ref{eq: thy_pot}) is enough to realise that it can be casted in a quite familiar conservation equation as $T + V = 0$, where the potential $V(a)$ correspond the LHS of (\ref{eq: thy_pot}), with opposite sign.
+where we have rephrased the curvature contribution in a more appropiated notation. A simple look at expression (\ref{eq: thy_pot}) is enough to realise that it can be casted in a quite familiar conservation equation as $T + V = 0$, where the potential $V(a)$ correspond the RHS of (\ref{eq: thy_pot}), with opposite sign. If we plot the potential controlling the dynamics of the universe, we see the following:
 
-It is important to notice the divergence of the potential $V(a)$ when $a \rightarrow 0$, causing a singularity at $t=0$ (conventionally chosen). [ref to Hawking and Leimatre]
+\textcolor{red}{ADD POTENTIAL HERE}
 
-\textcolor{red}{CONTINUE HERE. CAREFUL WITH PROPER TIME GAUGE STUFF. TALK ABOUT POTENTIAL, DRAW AND EXPLAIN ANALOGY TO CLASSICAL MECHANICS THING.}
+Observe that each of the regions $\{A, B, C\}$ of the potential correspond to radiation, matter and dark energy dominated eras, respectively. Our current observations point to the fact that our universe has entered $C$ region some years ago (around $4\times 10^{9}$ years ago, as we can see in plot XX \textcolor{red}{ADD plot upstairs about density evolution}). We can also see that the gradient of this potential in region $C$ is negative, indicating, an accelerated expansion of the universe, in concordance with observations. It is also important to notice the divergence of the potential $V(a)$ when $a \rightarrow 0$, causing a singularity at $t=0$ (conventionally chosen). [ref to Hawking and Leimatre] What does this mean? From a classical cosmology point of view, this correponds to the \textit{Big bang}\footnote{A given pejorative calificative by those who opposed the proposal that the universe had been in a state with extremely high density, temperature and ridiculous size.}. A singular state that we \textbf{cannot understand} given the tools at hand (i.e general relativity and classical cosmology) where all content of the universe was compacted to a single point at extremely high temperatures. This should already make us bat an eye. We are trying to apply a \textit{classical} framework to a system whose energy regime very well requires a \textit{quantum} description of all the involved forces. It should not then be a surprise that we arrive to singularities in our description if \textit{we are using a sledgehammer to crack a nut}.
 
+But we cannot be so conformist. If we cannot understand through the lenses of a theory as GR, that may be pointing to the fact that our toolbox lacks some important tools. Before we go to our favorite DIY store to buy those tools, we first need to understand \textit{what} and \textit{how} we want to fix our lack of understanding.
 
-\textcolor{red}{Join to the CC after discussing who energy densities evolve with scale factor}
-In order to capture dark energy in our description, we can just add an extra 
+We will describe some of the most fundamental flaws of $\Lambda CDM$ model in the rest of this notes. Solutions can be found in some of the subsequent notes of this collection.
 
+\section*{What is wrong with the $\Lambda$-CDM model?}
 
+\begin{itemize}
+	\item The Hubble tension
+	\item The Cosmological Constant problem
+	\item A lack of casual contact
+\end{itemize}
 
+\subsection*{The Hubble tension}
 
+The Hubble constant $H_{0}$, which is determined as the ratio between the velocity and the distance to an object in space ($H_{0} = v/d$), can be measured in two different fashions:
 
-\cite{Danielsson:2018ztv}
+\begin{itemize}
+	\item One can obtain the velocity of the object (usually a galaxy) by looking at its redshift. For the distance, the most reliable way is to make use of \textit{standard candles}; Type Ia supernovae whose peak luminosity is the same, no matter where they are in the universe. Given the relation between relative and absolute magnitudes $(m, M)$, it is possible to extract the distance to these objects with good accuracy. This method is used to study "close" celestial objects, i.e. not looking back much into the past. The current value for $H_{0}$ using this method is $H_{0} = 72.3 \pm 1.3 \: km \:s^{-1} Mpc^{-1}$ \cite{2020planck}.
+	
+	\item An alternative way to obtain $H_{0}$ from observations with our current technology is by studying the CMB, i.e. looking far away in the past. Theoretical predictions for CMB can be obtained by tuning specific parameters in the $\Lambda- CDM$ model, such as curvature, energy densities, etc. One can then compare these predicitions to the observations, to decide which one fits best. The best fiting so far yields a $H_{0}$ value as $67.4 \pm 0.5 \: km \:s^{-1} Mpc^{-1}$ \cite{Riess_2021}
+\end{itemize}
+
+As we can see, there is an apparent tension between these two results that technological development has increased over the years. What can the reason be to get two different values on the universe expansion rateat two different eras? Several proposals have been debated, without observational confirmation nor agreement in the community yet (see \cite{di2021realm}).
+
+\textcolor{red}{continue here. Quintessence and so on.}
 
 
 

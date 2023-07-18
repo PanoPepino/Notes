@@ -1,15 +1,27 @@
 
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
 
+\bibitem{einstein1915feldgleichungen}
+A.~Einstein, \emph{Die feldgleichungen der gravitation},
+  {\emph{Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der
+  Wissenschaften} (1915) 844}.
+
 \bibitem{2020planck}
 N.~Aghanim, Y.~Akrami, M.~Ashdown, J.~Aumont, C.~Baccigalupi, M.~Ballardini
   et~al., \emph{Planck 2018 results-vi. cosmological parameters},
   {\emph{Astronomy \& Astrophysics} {\bfseries 641} (2020) A6}.
 
-\bibitem{Danielsson:2018ztv}
-U.H.~Danielsson and T.~Van~Riet, \emph{{What if string theory has no de Sitter
-  vacua?}}, \href{https://doi.org/10.1142/S0218271818300070}{\emph{Int. J. Mod.
-  Phys. D} {\bfseries 27} (2018) 1830007}
-  [\href{https://arxiv.org/abs/1804.01120}{{\ttfamily 1804.01120}}].
+\bibitem{Riess_2021}
+A.G.~Riess, S.~Casertano, W.~Yuan, J.B.~Bowers, L.~Macri, J.C.~Zinn et~al.,
+  \emph{Cosmic distances calibrated to 1{\%} precision with gaia {EDR}3
+  parallaxes and hubble space telescope photometry of 75 milky way cepheids
+  confirm tension with ${\Lambda}${CDM}},
+  \href{https://doi.org/10.3847/2041-8213/abdbaf}{\emph{The Astrophysical
+  Journal Letters} {\bfseries 908} (2021) L6}.
+
+\bibitem{di2021realm}
+E.~Di~Valentino, O.~Mena, S.~Pan, L.~Visinelli, W.~Yang, A.~Melchiorri et~al.,
+  \emph{In the realm of the hubble tension—a review of solutions},
+  {\emph{Classical and Quantum Gravity} {\bfseries 38} (2021) 153001}.
 
 \end{thebibliography}\endgroup
