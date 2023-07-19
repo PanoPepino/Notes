@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  18 JUL 2023 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  19 JUL 2023 17:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -728,21 +728,21 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.35999pt on input line 214.
  [5] (./cosmo_classical.bbl) [6] (./cosmo_classical.aux)
 Package rerunfilecheck Info: File `cosmo_classical.out' has not changed.
-(rerunfilecheck)             Checksum: B952D60CE56A508E3CB199D9F6891522;94.
+(rerunfilecheck)             Checksum: 594222C01689A8ECF4E85035F53058CC;94.
  ) 
 Here is how much of TeX's memory you used:
- 16402 strings out of 478268
- 271816 string characters out of 5846347
+ 16407 strings out of 478268
+ 271873 string characters out of 5846347
  613598 words of memory out of 5000000
  34223 multiletter control sequences out of 15000+600000
  598963 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,10n,92p,1612b,431s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on cosmo_classical.pdf (6 pages, 108510 bytes).
+Output written on cosmo_classical.pdf (6 pages, 111938 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
