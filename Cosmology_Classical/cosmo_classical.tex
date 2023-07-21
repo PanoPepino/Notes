@@ -12,7 +12,7 @@
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 \usepackage{svgcolor}
 \usepackage{svg}
-
+\usepackage{multirow}
 \usepackage{comment} % To remove big parts of text.
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Use 8-bit encoding
@@ -25,6 +25,7 @@
 \newcommand{\ket}[1]{\vert #1 \rangle}
 \newcommand{\bra}[1]{\langle #1 \vert}
 \renewcommand{\it}{\textit}
+
 
 
 \geometry{
@@ -91,7 +92,7 @@ Several satellites that we have sent there, outside\footnote{Plus all evidence c
 Nonsense apart, nowadays, the most accepted reason why the Universe is pushed apart in an accelerated manner is \textit{Dark Energy}. Ah, wonderful. And what is \textit{Dark Energy}? To explain this is still an open problem\footnote{A really big one. Or a small one?}\footnote{As one could say in Spanish, \textit{"Un problema nimio"}. Nimio is an adjective that can be used for both small and big.}. But let us first step back more than a century ago, to understand the synthesis of our current understanding of Cosmology.
 
 
-In 1915, good old Einstein published his theory of \textit{General Relativity} (GR) \cite{einstein1915feldgleichungen}. The world did not become a better place due to this, but at least we were provided with a ridiculous powerful tool to describe low-energy gravitational events. In the following years after the publication, Friedmann, Hubble, Lema\^itre \cite{} (among many others) used GR technology to describe the Universe as a whole. Their work set the foundations of what we call today \textit{The Standard Model of Cosmology} (a.k.a. $\Lambda$-CDM model) \cite{}. This model is good enough to describe our current observations of the Universe. And not only that. If we reversed the observed expansion back to very close the beginning of everything, we could still have a really good description of the events happening in the almost newborn Universe. It has 3 really simple foundations:
+In 1915, good old Einstein published his theory of \textit{General Relativity} (GR) \cite{einstein1915feldgleichungen}. The world did not become a better place due to this, but at least we were provided with a ridiculous powerful tool to describe low-energy gravitational events. In the following years after the publication, Friedmann, Hubble, Lema\^itre \cite{} (among many others) used GR technology to describe the Universe as a whole. Their work set the foundations of what we call today \textit{The Standard Model of Cosmology} (a.k.a. $\Lambda$-CDM model) \cite{}. This model is good enough to describe our current observations of the Universe. And not only that. If we reversed the observed expansion back to very close the beginning of everything, we could still have a really good description of the events happening in the almost newborn Universe. This model has 3 really simple foundations:
 
 \begin{enumerate}
 	\item \textit{Copernican}: Our planet occupies no special position in the Universe.
@@ -101,7 +102,7 @@ In 1915, good old Einstein published his theory of \textit{General Relativity} (
 
 Of course this model has its flaws, but we leave these downsides for future lines.
 
-At really big scales, Copernican principle holds. No point in space occupies a special position. Wherever you sit at and look at, everything will be more or less the same. In technical words, this implies \textit{homogeneity} and \textit{isotropy}. Good, seems simple. Next step is to find a reliable way to measure distance, hence to be able to describe the geometry of spacetime. This is given by the \textit{line invariant}, which takes the famous \textit{FRLW} form, adequate to describe a Lorentzian signature spacetime with a high degree of symmetry as the one we seem to live in. This can be written as:
+At really big scales, Copernican principle holds. No point in space occupies a special position. Wherever you sit at and look at, everything will be more or less the same. In technical words, this implies \textit{homogeneity} and \textit{isotropy}. Good, seems simple. Next step is to find a reliable way to measure distance, hence to be able to describe the geometry of spacetime. This is given by the \textit{line invariant}, which takes the famous \textit{FRLW}\footnote{Friedmann - Robertson- Leimatre - Walker.} form, adequate to describe a Lorentzian signature spacetime with a high degree of symmetry as the one we seem to live in. This can be written as:
 
 \begin{equation}\label{eq: line_invariant_FLRW}
 	ds^{2} = g_{\mu \nu} dx^{\mu} dx^{\nu} = - N^{2}(t) dt^{2} + a(t)^2 \left(\frac{dr^{2}}{1- k r^{2}}+ r^{2} \left(d\theta^{2} + \sin[\theta]^{2} d\phi^{2}\right)\right),
@@ -128,7 +129,7 @@ So the line invariant (\ref{eq: line_invariant_FLRW}) allows us to describe a dy
 
 \section*{An equation to rule them all}
 
-Einstein equation is an \textit{Equation of Motion} (EOM) that captures the universe's dynamics and it is obtained by extremising the Einstein-Hilbert action with respect to variations of the metric $\delta g_{\mu\nu}$, which reads:
+Einstein equation is an \textit{Equation of Motion} (EOM) that captures the universe's dynamics and it is obtained by extremising the Einstein-Hilbert action with respect to variation of the metric $\delta g_{\mu\nu}$, which reads:
 
 \begin{equation}\label{eq: EH_action}
 	S[g_{\mu\nu}, \phi_{i}] = \int d^{d}x \sqrt{-g} \left(\frac{R}{2 \kappa^{2}_{d}} + \mathcal{L}_{mat}(\phi_{i}, \partial \phi_{i})\right), 
@@ -163,23 +164,38 @@ From the clear relation between geometry and matter content in Einstein equation
 
 where $\frac{\dot{a}^{2}}{a^{2}}$ is the \textit{Hubble rate} $H$, which measures the expansion of the universe (static when $H = 0$). These are the \textit{Friedmann equations}.
 
-The first Friedmann equation (\ref{eq: Friedmann1}) describes how the rate of expansion of the universe is governed by its content and topology, while the second equation (\ref{eq: Friedmann2}) accounts for its accelaration. It is easy to observe that if the universe is expanding and faster everyday, this implies $\left(\sum_{i} \rho_{i} + 3 p_{i}\right) < 0$ in eq (\ref{eq: Friedmann2}). In order to obtain information about who can be responsible for this behaviour, we need to characterise different types of matter. The \textit{equation of state} is in charge of that, as relates pressure to energy density as $\omega = \tfrac{p}{\rho}$. Any type of matter with $\omega > - 1/3$, will be responsible of any decelerated expansion of the universe.  On the other hand, any content with $\omega < - 1/3$ will accelerate the expansion\footnote{Due to the null energy condition\cite{}, $-1\leq\omega\leq 1$. }. We clearly observe that the universe expands, but there is nothing that we have (yet) detected that can be identify with that equation of state. As the universe is a dark place, and this unknown energy density seems to be the source of accelerated expansion, it has received the famous name of \textit{dark energy}.
+The first Friedmann equation (\ref{eq: Friedmann1}) describes how the rate of expansion of the universe is governed by its content and topology, while the second equation (\ref{eq: Friedmann2}) accounts for its accelaration. It is easy to observe that if the universe is expanding and faster everyday, this implies $\left(\sum_{i} \rho_{i} + 3 p_{i}\right) < 0$ in eq (\ref{eq: Friedmann2}). In order to obtain information about what can be responsible for this behaviour, we need to characterise different types of content. The \textit{equation of state} is in charge of that, as relates pressure to energy density as $\omega = \tfrac{p}{\rho}$. Any type of content with $\omega > - 1/3$, will be responsible of any decelerated expansion of the universe.  On the other hand, any content with $\omega < - 1/3$ will accelerate the expansion\footnote{Due to the null energy condition\cite{}, $-1\leq\omega\leq 1$. }. We clearly observe that the universe expands, but there is nothing that we have (yet) detected that can be identify with that equation of state. As the universe is a dark place, and this unknown energy density seems to be the source of accelerated expansion, it has received the famous name of \textit{dark energy}.
 
-But, how can be determine the value of the state parameter for each energy density? Let us derive their values from basic principles:
+But, how can we determine the value of the state parameter for each energy density? Let us derive their values from basic principles:
 
 \begin{itemize}
 	\item In the case we consider non-relativistic matter, the energy density $\rho_{m}$ will be dominated by the rest mass energy $E = mc^{2}$, as the momentum, and hence, the exerted pressure are neglegible compare to $\rho_{m}$. Thus, to a good approximation, $\omega \simeq 0$.
 	\item For radiation, we are now dealing with relativistic effects. Following the same reasoning as before, the pressure, which is proportional to the velocity $v \simeq c$ will be relevant. Assuming an isotropic distribution of the pressure accross the three spatial dimensions, this can be described by $\omega = 1/3$.
 	\item Finally, vacuum energy seems to apply a \textit{repulsive} force, making the universe to expand. This is described by a state parameter $\omega = - 1$. This value can be observationally constrained by data extracted from \textit{Barionic Accustic Oscillations} (BAO), perturbations of the hot plasma of the early universe, imprinted in the \textit{Cosmic Microwave Background} (CMB). The latest measured value (2018) is $\omega_{\Lambda} = -1.028 \pm 0.031$ \cite{2020planck}.
 \end{itemize}
+\vspace{0.5cm}
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{ccc}
+	\toprule
+	\textbf{Energy Content} & \textbf{Scaling} & \textbf{Present value ($\Omega$)} \\
+	\midrule
+	Matter & $\rho_{m} \sim \rho_{M_{0}} a^{-3}$ & $0.320 \pm 0.013$ \\
+	Radiation & $\rho_{\gamma} \sim \rho_{\gamma_{0}} a^{-4}$ & $\sim 0$  \\
+	Dark energy & $\rho_{\Lambda} \sim \rho_{\Lambda_{0}}$ & $0.680 \pm 0.013$ \\
+	\hline
+	Curvature & - & $-0.058^{+0.046}_{-0.051}$  \\
+	\bottomrule
+	\end{tabular}
+	\caption{Observed Cosmological parameters \cite{2020planck}. $\Omega$ is the normalised fraction between $\rho_{i}$ and $\rho_{\text{crit}} = 3 H_{0}^{2}/8\pi G_{4}$.}
+	\label{Table: energy_density}
+\end{table}
 
 Equipped with this information, we are one step closer to understand the true power of Friedmann equations (\ref{eq: Friedmann1}, \ref{eq: Friedmann2}). But one step at a time, cosmic hitchhiker! If the universe is evolving, also the energy density of its content. This is governed by energy conservation. The explicit expression for the covariant derivative of the EM tensor (\ref{eq: EMtensor}) in a FRLW geometry (\ref{eq: line_invariant_FLRW}) yields:
 
 \begin{equation}\label{eq: rho_scaling}
 	\rho \propto a^{-3\left(1+\omega\right)},
 \end{equation}
-
-\textcolor{red}{ADD TABLE!}
 
 One of the most interesting features of relation (\ref{eq: rho_scaling}) is that $\rho_{\Lambda}$ is the same yesterday, today and tomorrow. It is not diluted with the spacetime expansion\footnote{I wish also my economical capital to behave in this way. No matter what my expenses are, it remains the same.}. This can be interpreted as an intrisic property of spacetime itself, which can be captured by an extra EM tensor of the form:
 
@@ -216,7 +232,7 @@ We will describe some of the most fundamental flaws of $\Lambda CDM$ model in th
 
 \subsection*{The Hubble tension}
 
-The Hubble constant $H_{0}$, which is determined as the ratio between the velocity and the distance to an object in space ($H_{0} = v/d$), can be measured in two different fashions:
+The Hubble constant today $H_{0}$, which is determined as the ratio between the velocity and the distance to an object in space ($H_{0} = v/d$), can be measured in two different fashions:
 
 \begin{itemize}
 	\item One can obtain the velocity of the object (usually a galaxy) by looking at its redshift. For the distance, the most reliable way is to make use of \textit{standard candles}; Type Ia supernovae whose peak luminosity is the same, no matter where they are in the universe. Given the relation between relative and absolute magnitudes $(m, M)$, it is possible to extract the distance to these objects with good accuracy. This method is used to study "close" celestial objects, i.e. not looking back much into the past. The current value for $H_{0}$ using this method is $H_{0} = 72.3 \pm 1.3 \: km \:s^{-1} Mpc^{-1}$ \cite{2020planck}.
@@ -232,9 +248,15 @@ As we can see, there is an apparent tension between these two results that techn
 
 To understand this final fundamental issue that the standard model of cosmology cannot explain, we first need to define what to be in \textit{contact}\footnote{Awesome cinematographic piece. Highly recommended to watch.} is.
 
-There is nothing faster than light in the universe \cite{}. This imposes an upper bound on the size of a region where two points could have been in casual contact, i.e. information between the points could have travelled in a period of time less or equal than light would have taken to travelled the distance that separates them. This region is called the \textit{light cone}. 
-
-\textcolor{red}{ADD light cone figure.}
+There is nothing faster than light in the universe \cite{}. This imposes an upper bound on the size of a region where two points could have been in casual contact, i.e. information between the points could have travelled in a period of time less or equal than light would have taken to travelled the distance that separates them. This region is called the \textit{light cone}.
+\vspace{0.5cm} % So the figure can breath!
+\begin{figure}[h]
+    \centering
+    \includesvg[scale=0.4]{../Figures/Svgs/light_cone.svg}
+	%Observe that I wrote .. to go the upper directory and navigate to the folder where I have the svg's for all my files.
+	\caption{Light cone. Photons travel along world lines of zero proper time, $ds^{2} = 0$, called null geodesics. The set of all null geodesics passing through a given event P in spacetime is called the \textit{light cone}. The interior of the light cone is defined as the region of spacetime causally related to that event P. Casually disconnected events (like Q) are outside the lightcone related to the event P.}
+	\label{Fig: light_cone}
+\end{figure}
 
 For simplicity in further computations, it is better to describe the propagation of light using the \textit{conformal} time, as:
 
@@ -244,11 +266,43 @@ For simplicity in further computations, it is better to describe the propagation
 
 Masless particles, as photons, follow null geodesic trajectories, which imply $ds^{2} = 0$. On top of that, as the universe is isotropic, only the radial coordinate will be relevant for computations. This leaves us with:
 
-\begin{equation}
+\begin{equation}\label{eq: distance}
 	ds^{2} = a^{2}(\tau)\left[-d\tau^{2} + d\chi^{2}\right]=0 \longrightarrow \chi(\tau) = \tau_{f} - \tau_{i} = \int^{t_{f}}_{t_{i}} \frac{dt}{a(t)},
 \end{equation}
 
-where $\chi$ is a generic radial coordinate accounting for all possible topologies \cite{}. 
+where $\chi$ is a generic radial coordinate accounting for all possible topologies \cite{baumann2009tasi}. When $\tau_{i} =0$, $\chi(\tau)$ represents the \textit{comoving particle horizon}, which is the maximum distance light can travel between time 0 and some other time $t$. One can then further rewrite expression (\ref{eq: distance}) in terms of the \textit{comoving Hubble radius} $R_{H} = (a H)^{-1}$, which is the radius of the observable universe at some moment $t$. Then:
+
+\begin{equation}
+	\tau_{f} = \int^{t_{f}}_{0} \frac{dt}{a(t)} = \int^{a}_{0} \frac{da}{H a^{2}} = \int^{a}_{0} d \ln(a) \frac{1}{a H}.
+\end{equation}
+
+As always, we would like to make contact with today's data, so we can rephrase the Hubble radius at any moment to today's by massaging the first Friedmann equation (\ref{eq: Friedmann1}) together with the energy density evolution (\ref{eq: rho_scaling}) to see that:
+
+\begin{equation}\label{eq: hubble_rad}
+	R_{H} = R_{H_{0}} \: a ^{1/2(1+ 3 \omega)}.
+\end{equation}
+
+It is important to notice here the dependence of the exponent, which depends on the state parameter $\omega$. This leaves us with a dependence of $\tau$ as :
+
+\begin{equation}
+	\tau \propto a^{1/2\left(1+3\omega\right)},
+\end{equation}
+
+which means that the comoving horizon grows monotonically with time. This implies that some scales that are entering our horizon today were \textbf{outside} the casual contact horizon in the past. This can be observed in the CMB. Its homogeneity points to the fact that the universe was highly homogenous by that time, but we have just seen that these homogenous regions could not have been in casual contact in the past. How is this possible? What key concept are we missing in our interpretations?
+
+\textcolor{red}{THINK AGAIN ABOUT SOME EXPLANATIONS. I CAN DO BETTER.}
+
+\subsection*{Wrinkles after ironing}
+
+Imagine that you are doing laundry. Normally, when you take your clothes out of the washing machine, they are full of wrinkles. Sometimes get even worse after the clothes dry. Then, you patiently iron them down to flat the surface. Now, try to imagine the opposite case; That your clothes were extremely smooth and flat at the beginning and after you iron, they are still smooth, but not as nicely wrinkleless as they were just when you opened the washing machine door. Makes no sense, Does it? A similar feature is what our universe shows now and then.
+
+Let us rewrite the first Friedmann equation (\ref{eq: Friedmann1}) as:
+
+\begin{equation}\label{eq: divergence_Friedmann}
+	\left(\Omega(a)^{-1} - 1\right) \sum \rho_{i} \: a^{2} = -\frac{3k}{8 \pi G_{4}},
+\end{equation}
+
+where $\Omega(a) = \sum \rho_{0_{i}} a^{-3(1+\omega)}/\rho_{\text{crit}}$, with $\rho_{\text{crit}} = 3 H^{2}/(8 \pi G_{4})$. Observe that the RHS of previous expression is a constant quantity\footnote{In fact, 0, if we account that $\Omega_{k} \simeq 0$ as we saw in table(\ref{Table: energy_density}).}, while the LHS evolves with time. Density $\rho$ will decrease with time, counterbalanced by the increase of the scale factor $a$. As the universe has been dominated by radiation and matter in the past, this implies that the combination $\rho a^{2}$ has decreased with time. In order to keep the constant behaviour, this requires $\Omega(a)^{-1} -1$ to have increased in the same manner. Which constrains further and further the value of $\Omega(a) \simeq 1$ if go back in time. This points to an extreme \textit{fine-tuning} of $\Omega(a)$ at early times, to deviations from one no greater than $\mathcal{O}(10^{-16})$ during the nucleosinthesis period, for example. Any deviation greater than such ridiculously small values would have not granted the flat universe that we observe today. 
 
 
 
