@@ -1,15 +1,38 @@
 
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
 \bibitem{einstein1915feldgleichungen}
 A.~Einstein, \emph{Die feldgleichungen der gravitation},
   {\emph{Sitzungsberichte der K{\"o}niglich Preu{\ss}ischen Akademie der
   Wissenschaften} (1915) 844}.
 
+\bibitem{friedmann1922krummung}
+A.~Friedmann, \emph{{\"U}ber die kr{\"u}mmung des raumes}, {\emph{Z. Phys.}
+  {\bfseries 10} (1922) 377}.
+
+\bibitem{hubble1929relation}
+E.~Hubble, \emph{A relation between distance and radial velocity among
+  extra-galactic nebulae}, {\emph{Proceedings of the national academy of
+  sciences} {\bfseries 15} (1929) 168}.
+
+\bibitem{lemaitre1927univers}
+G.~Lema{\^\i}tre, \emph{Un univers homog{\`e}ne de masse constante et de rayon
+  croissant rendant compte de la vitesse radiale des n{\'e}buleuses
+  extra-galactiques}, {\emph{Annales de la Soci{\'e}t{\'e} Scientifique de
+  Bruxelles, A47, p. 49-59} {\bfseries 47} (1927) 49}.
+
 \bibitem{2020planck}
 N.~Aghanim, Y.~Akrami, M.~Ashdown, J.~Aumont, C.~Baccigalupi, M.~Ballardini
   et~al., \emph{Planck 2018 results-vi. cosmological parameters},
   {\emph{Astronomy \& Astrophysics} {\bfseries 641} (2020) A6}.
+
+\bibitem{hawking1970singularities}
+S.W.~Hawking and R.~Penrose, \emph{The singularities of gravitational collapse
+  and cosmology}, {\emph{Proceedings of the Royal Society of London. A.
+  Mathematical and Physical Sciences} {\bfseries 314} (1970) 529}.
+
+\bibitem{lemaitre1950primeval}
+G.~Lema{\^\i}tre, \emph{The primeval atom an essay on cosmogony}, .
 
 \bibitem{Riess_2021}
 A.G.~Riess, S.~Casertano, W.~Yuan, J.B.~Bowers, L.~Macri, J.C.~Zinn et~al.,
@@ -23,6 +46,22 @@ A.G.~Riess, S.~Casertano, W.~Yuan, J.B.~Bowers, L.~Macri, J.C.~Zinn et~al.,
 E.~Di~Valentino, O.~Mena, S.~Pan, L.~Visinelli, W.~Yang, A.~Melchiorri et~al.,
   \emph{In the realm of the hubble tension—a review of solutions},
   {\emph{Classical and Quantum Gravity} {\bfseries 38} (2021) 153001}.
+
+\bibitem{weinberg1989cosmological}
+S.~Weinberg, \emph{The cosmological constant problem}, {\emph{Reviews of modern
+  physics} {\bfseries 61} (1989) 1}.
+
+\bibitem{Martin_2012}
+J.~Martin, \emph{Everything you always wanted to know about the cosmological
+  constant problem (but were afraid to ask)},
+  \href{https://doi.org/10.1016/j.crhy.2012.04.008}{\emph{Comptes Rendus
+  Physique} {\bfseries 13} (2012) 566}.
+
+\bibitem{padilla2015lectures}
+A.~Padilla, \emph{Lectures on the cosmological constant problem},  2015.
+
+\bibitem{carroll2019spacetime}
+S.M.~Carroll, \emph{Spacetime and geometry}, Cambridge University Press (2019).
 
 \bibitem{baumann2009tasi}
 D.~Baumann, \emph{Tasi lectures on inflation}, {\emph{arXiv preprint

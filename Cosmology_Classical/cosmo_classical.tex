@@ -92,11 +92,11 @@ Several satellites that we have sent there, outside\footnote{Plus all evidence c
 Nonsense apart, nowadays, the most accepted reason why the Universe is pushed apart in an accelerated manner is \textit{Dark Energy}. Ah, wonderful. And what is \textit{Dark Energy}? To explain this is still an open problem\footnote{A really big one. Or a small one?}\footnote{As one could say in Spanish, \textit{"Un problema nimio"}. Nimio is an adjective that can be used for both small and big.}. But let us first step back more than a century ago, to understand the synthesis of our current understanding of Cosmology.
 
 
-In 1915, good old Einstein published his theory of \textit{General Relativity} (GR) \cite{einstein1915feldgleichungen}. The world did not become a better place due to this, but at least we were provided with a ridiculous powerful tool to describe low-energy gravitational events. In the following years after the publication, Friedmann, Hubble, Lema\^itre \cite{} (among many others) used GR technology to describe the Universe as a whole. Their work set the foundations of what we call today \textit{The Standard Model of Cosmology} (a.k.a. $\Lambda$-CDM model) \cite{}. This model is good enough to describe our current observations of the Universe. And not only that. If we reversed the observed expansion back to very close the beginning of everything, we could still have a really good description of the events happening in the almost newborn Universe. This model has 3 really simple foundations:
+In 1915, good old Einstein published his theory of \textit{General Relativity} (GR) \cite{einstein1915feldgleichungen}. The world did not become a better place due to this, but at least we were provided with a ridiculous powerful tool to describe low-energy gravitational events. In the following years after the publication, Friedmann, Hubble, Lema\^itre \cite{friedmann1922krummung,hubble1929relation,lemaitre1927univers} (among many others) used GR technology to describe the Universe as a whole. Their work set the foundations of what we call today \textit{The Standard Model of Cosmology} (a.k.a. $\Lambda$-CDM model). This model is good enough to describe our current observations of the Universe. And not only that. If we reversed the observed expansion back to very close the beginning of everything, we could still have a really good description of the events happening in the almost newborn Universe. This model has 3 really simple foundations:
 
 \begin{enumerate}
 	\item \textit{Copernican}: Our planet occupies no special position in the Universe.
-	\item \textit{GR + Expansion}: Einstein equation describe gravitational dynamics with accuracy at low-energy physics and Hubble's discovery (The expansion of the Universe) in 1929 is correct.
+	\item \textit{GR + Expansion}: Einstein equation describe gravitational dynamics with accuracy at low-energy physics and Hubble's discovery (The expansion of the Universe \cite{hubble1929relation}) in 1929 is correct.
 	\item \textit{Perfect fluidity}: We can assume that all contents in the Universe behave as a perfect fluid.
 \end{enumerate}
 
@@ -113,8 +113,8 @@ Where $N(t)$ is a lapse function and $a(t)$ is the scale factor that describes t
 This function is in charge of time reparametrization invariance. As we do not want to overcomplicate our computation, the most useful and convienent choices for $N(t)$ are:
 
 \begin{itemize}
-	\item $N(t) = 1$: This is the choice of \textit{global time}. \textcolor{red}{Add some explanation}
-	\item $N(t) = a(t)$: This is the so-called \textit{conformal time} gauge choice. This choice allows the observer to co-move with the expansion of the universe, even in the time coordinate, accounting for any funky effect... \textcolor{red}{Add some explanation}
+	\item $N(t) = 1$: This is the choice of \textit{global time, $t$}. Any clock measuring this choice of time is moving along the Hubble flow, which is just the motion of astronomical object \textbf{just} due to the expansion of the universe.
+	\item $N(t) = a(t)$: This is the so-called \textit{conformal time, $\eta$} gauge choice. The conformal time is the amount of time it would take a photon to travel from where we are located to the furthest observable distance.
 \end{itemize}
 
 The extra parameter we have not talked about yet is $k$. This has the power to change the topology of the spatial sections. It comes in three different flavours:
@@ -171,7 +171,7 @@ But, how can we determine the value of the state parameter for each energy densi
 \begin{itemize}
 	\item In the case we consider non-relativistic matter, the energy density $\rho_{m}$ will be dominated by the rest mass energy $E = mc^{2}$, as the momentum, and hence, the exerted pressure are neglegible compare to $\rho_{m}$. Thus, to a good approximation, $\omega \simeq 0$.
 	\item For radiation, we are now dealing with relativistic effects. Following the same reasoning as before, the pressure, which is proportional to the velocity $v \simeq c$ will be relevant. Assuming an isotropic distribution of the pressure accross the three spatial dimensions, this can be described by $\omega = 1/3$.
-	\item Finally, vacuum energy seems to apply a \textit{repulsive} force, making the universe to expand. This is described by a state parameter $\omega = - 1$. This value can be observationally constrained by data extracted from \textit{Barionic Accustic Oscillations} (BAO), perturbations of the hot plasma of the early universe, imprinted in the \textit{Cosmic Microwave Background} (CMB). The latest measured value (2018) is $\omega_{\Lambda} = -1.028 \pm 0.031$ \cite{2020planck}.
+	\item Finally, dark energy seems to apply a \textit{repulsive} force, making the universe to expand. This is described by a state parameter $\omega = - 1$. This value can be observationally constrained by data extracted from \textit{Barionic Accustic Oscillations} (BAO), perturbations of the hot plasma of the early universe, imprinted in the \textit{Cosmic Microwave Background} (CMB). The latest measured value (2018) is $\omega_{\Lambda} = -1.028 \pm 0.031$ \cite{2020planck}.
 \end{itemize}
 \vspace{0.5cm}
 \begin{table}[h!]
@@ -180,11 +180,11 @@ But, how can we determine the value of the state parameter for each energy densi
 	\toprule
 	\textbf{Energy Content} & \textbf{Scaling} & \textbf{Present value ($\Omega$)} \\
 	\midrule
-	Matter & $\rho_{m} \sim \rho_{M_{0}} a^{-3}$ & $0.320 \pm 0.013$ \\
+	Matter & $\rho_{m} \sim \rho_{M_{0}} a^{-3}$ & $0.3103 \pm 0.0057$ \\
 	Radiation & $\rho_{\gamma} \sim \rho_{\gamma_{0}} a^{-4}$ & $\sim 0$  \\
-	Dark energy & $\rho_{\Lambda} \sim \rho_{\Lambda_{0}}$ & $0.680 \pm 0.013$ \\
+	Dark energy & $\rho_{\Lambda} \sim \rho_{\Lambda_{0}}$ & $0.6897 \pm 0.0057$ \\
 	\hline
-	Curvature & - & $-0.058^{+0.046}_{-0.051}$  \\
+	Curvature & - & $0.0005\pm0.0039$  \\
 	\bottomrule
 	\end{tabular}
 	\caption{Observed Cosmological parameters \cite{2020planck}. $\Omega$ is the normalised fraction between $\rho_{i}$ and $\rho_{\text{crit}} = 3 H_{0}^{2}/8\pi G_{4}$.}
@@ -203,7 +203,7 @@ One of the most interesting features of relation (\ref{eq: rho_scaling}) is that
 	T_{\Lambda} = - \rho_{\Lambda}g_{\mu\nu} = - \frac{\Lambda}{\kappa^{2}_{4}} g_{\mu\nu},
 \end{equation}
 
-With $\Lambda$ being a constant. This is the famous \textit{cosmological constant} (CC)\footnote{Yeah, the one that \textit{Albertito} introduced in his equation to obtain a static universe. When Hubble discovered the expansion of the universe in 1929, Einstein remarked that introducing that constant was his bigger mistake. Well, it was a good one, Albert. Thank you!}, which encodes the information of a non-varying energy density across the expanding cosmos. As this can be interpreted as an intrisic geometrical property, it is perhaps more appropiated to move it to the LHS of Einstein equation (\ref{eq: Einstein}) as: 
+With $\Lambda$ being a constant. This is the famous \textit{cosmological constant} (CC)\footnote{Yeah, the one that \textit{Albertito} introduced in his equation to obtain a static universe. When Hubble discovered the expansion of the universe in 1929 \cite{hubble1929relation}, Einstein remarked that introducing that constant was his bigger mistake. Well, it was a good one, Albert. Thank you!}, which encodes the information of a non-varying energy density across the expanding cosmos. As this can be interpreted as an intrisic geometrical property, it is perhaps more appropiated to move it to the LHS of Einstein equation (\ref{eq: Einstein}) as: 
 
 \begin{equation}\label{eq: Einstein with Lambda}
 	R_{\mu\nu} - \tfrac{1}{2} g_{\mu\nu} R + \Lambda g_{\mu\nu}  = \kappa^{2}_{4} T_{\mu \nu},
@@ -219,13 +219,20 @@ Now that we have all characters of this (cosmic) piece completely identified, le
 
 where we have rephrased the curvature contribution in a more appropiated notation. A simple look at expression (\ref{eq: thy_pot}) is enough to realise that it can be casted in a quite familiar conservation equation as $T + V = 0$, where the potential $V(a)$ correspond the RHS of (\ref{eq: thy_pot}), with opposite sign. If we plot the potential controlling the dynamics of the universe, we see the following:
 
-\textcolor{red}{ADD POTENTIAL HERE}
+\vspace{0.5cm} % So the figure can breath!
+\begin{figure}[h]
+    \centering
+    \includesvg[scale=0.25]{../Figures/Svgs/classical_cosmo_pot.svg}
+	%Observe that I wrote .. to go the upper directory and navigate to the folder where I have the svg's for all my files.
+	\caption{Qualitative behaviour of the effective potential. Each part the potential \{\textcolor{red}{A}, \textcolor{green}{B}, C\} correponds to different eras dominated by radiation, matter and dark energy respectively.}
+	\label{Fig: classical_cosmo_pot}
+\end{figure}
 
-Observe that each of the regions $\{A, B, C\}$ of the potential correspond to radiation, matter and dark energy dominated eras, respectively. Our current observations point to the fact that our universe has entered $C$ region some years ago (around $4\times 10^{9}$ years ago, as we can see in plot XX \textcolor{red}{ADD plot upstairs about density evolution}). We can also see that the gradient of this potential in region $C$ is negative, indicating, an accelerated expansion of the universe, in concordance with observations. It is also important to notice the divergence of the potential $V(a)$ when $a \rightarrow 0$, causing a singularity at $t=0$ (conventionally chosen). [ref to Hawking and Leimatre] What does this mean? From a classical cosmology point of view, this correponds to the \textit{Big bang}\footnote{A given pejorative calificative by those who opposed the proposal that the universe had been in a state with extremely high density, temperature and ridiculous size.}. A singular state that we \textbf{cannot understand} given the tools at hand (i.e general relativity and classical cosmology) where all content of the universe was compacted to a single point at extremely high temperatures. This should already make us bat an eye. We are trying to apply a \textit{classical} framework to a system whose energy regime very well requires a \textit{quantum} description of all the involved forces. It should not then be a surprise that we arrive to singularities in our description if \textit{we are using a sledgehammer to crack a nut}.
+Our current observations point to the fact that our universe has entered $C$ region some years ago (around $4\times 10^{9}$ years ago, as we can see in plot XX \textcolor{red}{ADD plot upstairs about density evolution}). We can also see that the gradient of this potential in region $C$ is negative, indicating, an accelerated expansion of the universe, in concordance with observations. It is also important to notice the divergence of the potential $V(a)$ when $a \rightarrow 0$, causing a singularity at $t=0$ (conventionally chosen \cite{hawking1970singularities}). What does this mean? From a classical cosmology point of view, this correponds to the \textit{Big bang}\footnote{A given pejorative calificative by those who opposed the proposal that the universe had been in a state with extremely high density, temperature and ridiculous size.}. A singular state that we \textbf{cannot understand} given the tools at hand (i.e general relativity and classical cosmology) where all content of the universe was compacted to a single point at extremely high temperatures \cite{lemaitre1950primeval}. This should already make us bat an eye. We are trying to apply a \textit{classical} framework to a system whose energy regime very well requires a \textit{quantum} description of all the involved forces. It should not then be a surprise that we arrive to singularities in our description if \textit{we are using a sledgehammer to crack a nut}.
 
 But we cannot be so conformist. If we cannot understand through the lenses of a theory as GR, that may be pointing to the fact that our toolbox lacks some important tools. Before we go to our favorite DIY store to buy those tools, we first need to understand \textit{what} and \textit{how} we want to fix our lack of understanding.
 
-We will describe some of the most fundamental flaws of $\Lambda CDM$ model in the rest of this notes. Solutions can be found in some of the subsequent notes of this collection.
+We will describe some of the most fundamental flaws of $\Lambda-CDM$ model in the rest of this notes. Solutions can be found in some of the subsequent notes of this collection.
 
 \section*{What is wrong with the $\Lambda$-CDM model?}
 
@@ -244,11 +251,35 @@ As we can see, there is an apparent tension between these two results that techn
 
 \subsection*{The cosmological constant problem}
 
+We have talked about different observed values for the same quantity using two different measurement methods. And this is not the only dichotomy with presence in $\Lambda-CDM$.
+
+Let us quantise matter fields appearing in the Einstein-Hilbert action (\ref{eq: EH_action}) as proposed by Weinberg \cite{weinberg1989cosmological}. At the end of the day, the remaining physical interactions (electromagnetism, weak and strong nuclear forces) are quantised in the standard model of particle physics. Each of these interactions, have a \textit{vacuum energy}, which corresponds to the minimum background energy that space itself has. In the absence of curved spacetime, this vacuum energy can be somehow ignored. But, it is not the case when want to study any of these fields in the presence of gravity. By the equivalence principle, we know that gravity couples to all possible forms of energy, and also that of the vacuum.
+
+The quantisation of matter fields will result in an extra constant energy density contribution\footnote{ This extra contribution comes from the closed-loop Feynmann diagrams (i.e. quantum fluctuations around the vacuum state) of each of the matter fields involved. We will not include a discussion of this computation in these notes, but we refer the reader to \cite{Martin_2012, padilla2015lectures} for further reading and details.} to the energy momentum tensor $T_{\mu\nu}$. As this term is constant and with same dimensionality as the cosmological constant (i.e. $[L]^{-2}$), we can add it to $\Lambda$ to obtain an \textit{effective cosmological constant} as:
+
+\begin{equation}
+	\Lambda_{\text{eff}} = \Lambda + \underbrace{\kappa^{2}_{4} \rho_{\text{vac}}}_{\Lambda_{\text{vac}}},
+\end{equation}
+
+which is in fact the cosmological constant that we are able to measure from observations. Let us know numerically identify each of its contributions. According to \cite{2020planck}, the effective value of the cosmological constant is:
+
+\begin{equation}\label{eq: lambda_eff}
+	\Lambda_{\text{eff}} \sim 3 \times 10^{-122} m^{2}_{Pl},
+\end{equation}
+
+while any first order correction due to quantum fluctuations of the matter fields is:
+
+\begin{equation}\label{eq: lambda_vac}
+	\Lambda_{\text{vac}} \sim \frac{m^{2}_{Pl}}{16 \pi^{2}} \sim 6.3 \times 10^{-3} m^{2}_{Pl}.
+\end{equation}
+
+This is about $10^{120}$ order of magnitude of difference, as often stated in the literature. However, previous computations of the vacuum energy are slightly hand-wavy, as the renormalisation scheme does not respect Lorentz invariant. As stated in \cite{Martin_2012}, an accurate renormalisation will return a mismatch of 54 orders of magnitude instead of 120. In both cases, it means that the bare cosmological constant $\Lambda$ has to be extremely fine tuned to cancel in such an almost perfect way to leave the small effective one we can observe. This ultimate required coincidence is what gives title to this section. 
+
 \subsection*{A lack of casual contact}
 
 To understand this final fundamental issue that the standard model of cosmology cannot explain, we first need to define what to be in \textit{contact}\footnote{Awesome cinematographic piece. Highly recommended to watch.} is.
 
-There is nothing faster than light in the universe \cite{}. This imposes an upper bound on the size of a region where two points could have been in casual contact, i.e. information between the points could have travelled in a period of time less or equal than light would have taken to travelled the distance that separates them. This region is called the \textit{light cone}.
+There is nothing faster than light in the universe \cite{carroll2019spacetime}. This imposes an upper bound on the size of a region where two points could have been in casual contact, i.e. information between the points could have travelled in a period of time less or equal than light would have taken to travelled the distance that separates them. This region is called the \textit{light cone}.
 \vspace{0.5cm} % So the figure can breath!
 \begin{figure}[h]
     \centering
@@ -261,19 +292,19 @@ There is nothing faster than light in the universe \cite{}. This imposes an uppe
 For simplicity in further computations, it is better to describe the propagation of light using the \textit{conformal} time, as:
 
 \begin{equation}
-	\tau = \int \frac{dt}{a(t)}.
+	\eta = \int \frac{dt}{a(t)}.
 \end{equation}
 
 Masless particles, as photons, follow null geodesic trajectories, which imply $ds^{2} = 0$. On top of that, as the universe is isotropic, only the radial coordinate will be relevant for computations. This leaves us with:
 
 \begin{equation}\label{eq: distance}
-	ds^{2} = a^{2}(\tau)\left[-d\tau^{2} + d\chi^{2}\right]=0 \longrightarrow \chi(\tau) = \tau_{f} - \tau_{i} = \int^{t_{f}}_{t_{i}} \frac{dt}{a(t)},
+	ds^{2} = a^{2}(\eta)\left[-d\eta^{2} + d\chi^{2}\right]=0 \longrightarrow \chi(\eta) = \eta_{f} - \eta_{i} = \int^{t_{f}}_{t_{i}} \frac{dt}{a(t)},
 \end{equation}
 
-where $\chi$ is a generic radial coordinate accounting for all possible topologies \cite{baumann2009tasi}. When $\tau_{i} =0$, $\chi(\tau)$ represents the \textit{comoving particle horizon}, which is the maximum distance light can travel between time 0 and some other time $t$. One can then further rewrite expression (\ref{eq: distance}) in terms of the \textit{comoving Hubble radius} $R_{H} = (a H)^{-1}$, which is the radius of the observable universe at some moment $t$. Then:
+where $\chi$ is a generic radial coordinate accounting for all possible topologies \cite{baumann2009tasi}. When $\eta_{i} =0$, $\chi(\eta)$ represents the \textit{comoving particle horizon}, which is the maximum distance light can travel between time 0 and some other time $t$. One can then further rewrite expression (\ref{eq: distance}) in terms of the \textit{comoving Hubble radius} $R_{H} = (a H)^{-1}$, which is the radius of the observable universe at some moment $t$. Then:
 
 \begin{equation}
-	\tau_{f} = \int^{t_{f}}_{0} \frac{dt}{a(t)} = \int^{a}_{0} \frac{da}{H a^{2}} = \int^{a}_{0} d \ln(a) \frac{1}{a H}.
+	\eta_{f} = \int^{t_{f}}_{0} \frac{dt}{a(t)} = \int^{a}_{0} \frac{da}{H a^{2}} = \int^{a}_{0} d \ln(a) \frac{1}{a H}.
 \end{equation}
 
 As always, we would like to make contact with today's data, so we can rephrase the Hubble radius at any moment to today's by massaging the first Friedmann equation (\ref{eq: Friedmann1}) together with the energy density evolution (\ref{eq: rho_scaling}) to see that:
@@ -282,10 +313,10 @@ As always, we would like to make contact with today's data, so we can rephrase t
 	R_{H} = R_{H_{0}} \: a ^{1/2(1+ 3 \omega)}.
 \end{equation}
 
-It is important to notice here the dependence of the exponent, which depends on the state parameter $\omega$. This leaves us with a dependence of $\tau$ as :
+It is important to notice here the dependence of the exponent, which depends on the state parameter $\omega$. This leaves us with a dependence of $\eta$ as :
 
 \begin{equation}
-	\tau \propto a^{1/2\left(1+3\omega\right)},
+	\eta \propto a^{1/2\left(1+3\omega\right)},
 \end{equation}
 
 which means that the comoving horizon grows monotonically with time. This implies that some scales that are entering our horizon today were \textbf{outside} the casual contact horizon in the past. This can be observed in the CMB. Its homogeneity points to the fact that the universe was highly homogenous by that time, but we have just seen that these homogenous regions could not have been in casual contact in the past. How is this possible? What key concept are we missing in our interpretations?
@@ -294,7 +325,7 @@ which means that the comoving horizon grows monotonically with time. This implie
 
 \subsection*{Wrinkles after ironing}
 
-Imagine that you are doing laundry. Normally, when you take your clothes out of the washing machine, they are full of wrinkles. Sometimes get even worse after the clothes dry. Then, you patiently iron them down to flat the surface. Now, try to imagine the opposite case; That your clothes were extremely smooth and flat at the beginning and after you iron, they are still smooth, but not as nicely wrinkleless as they were just when you opened the washing machine door. Makes no sense, Does it? A similar feature is what our universe shows now and then.
+Imagine that you are doing laundry. Normally, when you take your clothes out of the washing machine, they are full of wrinkles. Sometimes get even worse after the clothes dry. Then, you patiently iron them down to flat the surface. Now, try to imagine the opposite case; That your clothes were extremely smooth and flat when you take them out from the washing machine and after you iron, they are still smooth, but not as nicely wrinkleless as they were just when you opened the washing machine door. Makes no sense, Does it? A similar feature is what our universe shows now and then.
 
 Let us rewrite the first Friedmann equation (\ref{eq: Friedmann1}) as:
 
@@ -302,7 +333,10 @@ Let us rewrite the first Friedmann equation (\ref{eq: Friedmann1}) as:
 	\left(\Omega(a)^{-1} - 1\right) \sum \rho_{i} \: a^{2} = -\frac{3k}{8 \pi G_{4}},
 \end{equation}
 
-where $\Omega(a) = \sum \rho_{0_{i}} a^{-3(1+\omega)}/\rho_{\text{crit}}$, with $\rho_{\text{crit}} = 3 H^{2}/(8 \pi G_{4})$. Observe that the RHS of previous expression is a constant quantity\footnote{In fact, 0, if we account that $\Omega_{k} \simeq 0$ as we saw in table(\ref{Table: energy_density}).}, while the LHS evolves with time. Density $\rho$ will decrease with time, counterbalanced by the increase of the scale factor $a$. As the universe has been dominated by radiation and matter in the past, this implies that the combination $\rho a^{2}$ has decreased with time. In order to keep the constant behaviour, this requires $\Omega(a)^{-1} -1$ to have increased in the same manner. Which constrains further and further the value of $\Omega(a) \simeq 1$ if go back in time. This points to an extreme \textit{fine-tuning} of $\Omega(a)$ at early times, to deviations from one no greater than $\mathcal{O}(10^{-16})$ during the nucleosinthesis period, for example. Any deviation greater than such ridiculously small values would have not granted the flat universe that we observe today. 
+where $\Omega(a) = \sum \rho_{0_{i}} a^{-3(1+\omega)}/\rho_{\text{crit}}$, with $\rho_{\text{crit}} = 3 H^{2}/(8 \pi G_{4})$. Observe that the RHS of previous expression is a constant quantity\footnote{In fact, 0, if we account that $\Omega_{k} \simeq 0$ as we saw in table(\ref{Table: energy_density}).}, while the LHS evolves with time. Density $\rho$ will decrease with time, counterbalanced by the increase of the scale factor $a$. As the universe has been dominated by radiation and matter in the past, this implies that the combination $\rho a^{2}$ has decreased with time. In order to keep the constant behaviour, this requires $\Omega(a)^{-1} -1$ to have increased in the same manner. Which constrains further and further the value of $\Omega(a) \simeq 1$ if go back in time. This points to an extreme \textit{fine-tuning} of $\Omega(a)$ at early times, to deviations from one no greater than $\mathcal{O}(10^{-16})$ during the nucleosinthesis period, for example. Any deviation greater than such ridiculously small values would have not granted the flat universe that we observe today.
+\vspace{1cm}
+
+With these issues, we finish this \textit{classical cosmology} notes. Although the $\Lambda- CDM$ model has proved its potential to give accurated predictions, confirmed by observations, we have just also seen that it has its flaws and limitations. Solutions to these will be offered in subsequent notes of this series.
 
 
 
