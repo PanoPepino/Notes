@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  22 JUL 2023 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  24 JUL 2023 14:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -564,55 +564,79 @@ Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/bigints/bigints.sty
 Package: bigints 2010/02/15 Writing big integrals
 Package bigints Info: This is Bigints by Merciadri Luca. on input line 5.
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen194
+\captionmargin=\dimen195
+\caption@leftmargin=\dimen196
+\caption@rightmargin=\dimen197
+\caption@width=\dimen198
+\caption@indent=\dimen199
+\caption@parindent=\dimen256
+\caption@hangindent=\dimen257
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count311
+\c@continuedfloat=\count312
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count313
+\c@subtable=\count314
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
  (/usr/local/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count311
+\etb@tempcnta=\count315
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count312
+\l__color_backend_stack_int=\count316
 \l__pdf_internal_box=\box59
 ) (./cosmo_classical.aux)
 \openout1 = `cosmo_classical.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 78.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 79.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 79.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 78.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 78.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 79.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 79.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 78.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 78.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 79.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 79.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 78.
-Package hyperref Info: Link coloring OFF on input line 78.
+LaTeX Font Info:    ... okay on input line 79.
+Package hyperref Info: Link coloring OFF on input line 79.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -620,28 +644,28 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count313
+\c@section@level=\count317
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
  (./cosmo_classical.out) (./cosmo_classical.out)
 \@outlinefile=\write5
 \openout5 = `cosmo_classical.out'.
 
-\c@lstlisting=\count314
+\c@lstlisting=\count318
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
-\scratchdimen=\dimen194
+\scratchcounter=\count319
+\scratchdimen=\dimen258
 \scratchbox=\box60
-\nofMPsegments=\count316
-\nofMParguments=\count317
+\nofMPsegments=\count320
+\nofMParguments=\count321
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count318
-\MPscratchDim=\dimen195
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
+\MPscratchCnt=\count322
+\MPscratchDim=\dimen259
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
 \everyMPtoPDFconversion=\toks43
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -683,103 +707,115 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 78.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 78.
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 80.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 79.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 79.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 81.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 80.
+(Font)              scaled to size 11.03998pt on input line 81.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 80.
+(Font)              scaled to size 8.27998pt on input line 81.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 80.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
+(Font)              scaled to size 6.43999pt on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 80.
+(Font)              scaled to size 11.03998pt on input line 81.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 80.
+(Font)              scaled to size 8.27998pt on input line 81.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 80.
+(Font)              scaled to size 6.43999pt on input line 81.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 90.
+(Font)              scaled to size 10.07397pt on input line 91.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 90.
+(Font)              scaled to size 7.63599pt on input line 91.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 90.
+(Font)              scaled to size 5.51999pt on input line 91.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 90.
+(Font)              scaled to size 10.07397pt on input line 91.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 90.
+(Font)              scaled to size 7.63599pt on input line 91.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 90.
+(Font)              scaled to size 5.51999pt on input line 91.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 90.
+(Font)              scaled to size 6.99199pt on input line 91.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 90.
+(Font)              scaled to size 6.99199pt on input line 91.
  [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 116.
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 117.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
 Overfull \vbox (0.13887pt too high) has occurred while \output is active []
 
  [2] [3] [4]
-Package svg Info: Last page of `./svg-inkscape/classical_cosmo_pot_svg-tex.pdf' is 1 on input line 225.
+Package svg Info: Last page of `./svg-inkscape/classical_cosmo_pot_svg-tex.pdf' is 1 on input line 227.
  (./svg-inkscape/classical_cosmo_pot_svg-tex.pdf_tex
-<./svg-inkscape/classical_cosmo_pot_svg-tex.pdf, id=99, page=1, 706.9364pt x 583.9551pt>
+<./svg-inkscape/classical_cosmo_pot_svg-tex.pdf, id=101, page=1, 706.9364pt x 583.9551pt>
 File: ./svg-inkscape/classical_cosmo_pot_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/classical_cosmo_pot_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/classical_cosmo_pot_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 176.73409pt x 145.98842pt.
 )
+<../Figures/Svgs/den.png, id=102, 364.2408pt x 272.4579pt>
+File: ../Figures/Svgs/den.png Graphic file (type png)
+<use ../Figures/Svgs/den.png>
+Package pdftex.def Info: ../Figures/Svgs/den.png  used on input line 233.
+(pdftex.def)             Requested size: 189.40631pt x 141.67891pt.
+ [5 <./svg-inkscape/classical_cosmo_pot_svg-tex.pdf> <../Figures/Svgs/den.png>]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 237.
+(Font)              scaled to size 13.24796pt on input line 246.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 237.
+(Font)              scaled to size 9.19998pt on input line 246.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 237.
+(Font)              scaled to size 7.35999pt on input line 246.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 237.
+(Font)              scaled to size 13.24796pt on input line 246.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 237.
+(Font)              scaled to size 9.19998pt on input line 246.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 237.
- [5 <./svg-inkscape/classical_cosmo_pot_svg-tex.pdf>] [6]
-Package svg Info: Last page of `./svg-inkscape/light_cone_svg-tex.pdf' is 1 on input line 286.
+(Font)              scaled to size 7.35999pt on input line 246.
+ [6]
+Package svg Info: Last page of `./svg-inkscape/light_cone_svg-tex.pdf' is 1 on input line 295.
  (./svg-inkscape/light_cone_svg-tex.pdf_tex
-<./svg-inkscape/light_cone_svg-tex.pdf, id=141, page=1, 383.74687pt x 383.74687pt>
+<./svg-inkscape/light_cone_svg-tex.pdf, id=150, page=1, 383.74687pt x 383.74687pt>
 File: ./svg-inkscape/light_cone_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/light_cone_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/light_cone_svg-tex.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 153.4964pt x 153.49603pt.
-) [7 <./svg-inkscape/light_cone_svg-tex.pdf>] [8] (./cosmo_classical.bbl [9]) [10] (./cosmo_classical.aux)
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8 <./svg-inkscape/light_cone_svg-tex.pdf>] (./cosmo_classical.bbl [9]) [10] (./cosmo_classical.aux)
 Package rerunfilecheck Info: File `cosmo_classical.out' has not changed.
-(rerunfilecheck)             Checksum: 598A430CFF03D2C00FFCC2E472479742;94.
+(rerunfilecheck)             Checksum: F55CD7AEECCE5B4C916B88BB5EE6B632;95.
  ) 
 Here is how much of TeX's memory you used:
- 16680 strings out of 478268
- 278170 string characters out of 5846347
- 616590 words of memory out of 5000000
- 34435 multiletter control sequences out of 15000+600000
- 599922 words of font info for 166 fonts, out of 8000000 for 9000
+ 18069 strings out of 478268
+ 305586 string characters out of 5846347
+ 640708 words of memory out of 5000000
+ 35810 multiletter control sequences out of 15000+600000
+ 600349 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,11n,92p,1491b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,11n,92p,1406b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on cosmo_classical.pdf (10 pages, 149531 bytes).
+Output written on cosmo_classical.pdf (10 pages, 159731 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

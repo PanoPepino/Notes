@@ -1,12 +1,10 @@
 from manim import *
 from manim_mobject_svg import *
 from manim_theoretical import *
-from matplotlib.pyplot import disconnect
-from numpy import size
-from pyrsistent import discard
 
 
-class Pictures_Notes(Scene):
+
+class Class_Cosmo_Notes(Scene):
     def construct(self):
         Tex.set_default(font_size=20)
         Dot.set_default(radius=0.04)
@@ -66,6 +64,25 @@ class Pictures_Notes(Scene):
         
         pot= VGroup(ax_cosmo, pot_q_cosmo, lab_ax_q_cosmo, sr,sr_2, regions)
         pot.to_svg("Svgs/classical_cosmo_pot.svg", crop = False)
+        
+        # Density distribution
+        
+def f(x):
+    return x ** 2
+
+x = np.linspace(-5, 5, 1000)
+y = f(x)
+
+
+
+plt.figure()
+plt.plot(x, y, 'r.', label = 'something')
+
+plt.xlabel('Time')
+plt.ylabel('C02 concentration')
+plt.savefig('Svgs/Densities.png')
+        
+        
         
         
         
