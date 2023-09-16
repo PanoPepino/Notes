@@ -4,6 +4,7 @@ from manim_theoretical import *
 
 
 
+
 class Class_Cosmo_Notes(Scene):
     def construct(self):
         Tex.set_default(font_size=20)
@@ -67,21 +68,7 @@ class Class_Cosmo_Notes(Scene):
         
         # Density distribution
         
-def f(x):
-    return x ** 2
 
-x = np.linspace(-5, 5, 1000)
-y = f(x)
-
-
-
-plt.figure()
-plt.plot(x, y, 'r.', label = 'something')
-
-plt.xlabel('Time')
-plt.ylabel('C02 concentration')
-plt.savefig('Svgs/Densities.png')
-        
         
         
         
