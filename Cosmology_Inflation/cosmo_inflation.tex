@@ -10,6 +10,9 @@
 \usepackage{booktabs} % Required for better horizontal rules in tables
 \usepackage{enumitem} % Required for list customisation
 \usepackage{geometry} % Required for adjusting page dimensions and margins
+\usepackage{svgcolor}
+\usepackage{svg}
+\usepackage{multirow}
 \usepackage{comment} % To remove big parts of text.
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Use 8-bit encoding
@@ -17,9 +20,21 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage{cancel} % To cross and cancel values
 \usepackage{bigints} % In case you need bigger integrants
+\usepackage{xcolor} %To use colors
+\usepackage{subcaption}
 \usepackage[skip=10pt plus1pt, indent=0pt]{parskip}
 \newcommand{\ket}[1]{\vert #1 \rangle}
 \newcommand{\bra}[1]{\langle #1 \vert}
+\renewcommand{\it}{\textit}
+\definecolor{Burgundy}{RGB}{155,5,8}
+\hypersetup{
+    colorlinks=true,
+    linkcolor= Burgundy,
+	citecolor = teal,
+    filecolor=magenta,      
+    urlcolor=Burgundy,
+    }
+
 
 
 \geometry{
@@ -49,8 +64,6 @@
 
 
 
-
-
 %--------------------------------------------------------------------------------
 %	TITLE SECTION
 %--------------------------------------------------------------------------------
@@ -67,7 +80,7 @@
 	\vspace{-25pt} % Whitespace
 	\date{}
 }
-\author{DP}
+\author{}
 
 
 
@@ -84,7 +97,25 @@
        % \caption{caption}
       %\end{figure}
 
-\subsection*{Random Section}
+\section*{Flashback of better times}
+
+In the previous \href{https://panopepino.github.io/web_page/downloads/notes/cosmo_classical.pdf}{classical cosmology notes}, we have extensively discussed the set of classical equations that provide an accurated description of the dynamics of the Universe.
+
+\textcolor{red}{TO DO:}
+
+Mention somehow that this is a classical approach and one has to go to Q regimes to fully appreciate the power of perturbations that generate late time structures.
+
+\begin{enumerate}
+	\item Describe that the model works fine for late time cosmo and the hot big bang works fine until some regime.
+	\item Elaborate on energy scales, down to inflation regime.
+	\item Elaborate on regular cosmo problems, with equations and plots.
+	\item Introduce inflation, how it solves problems described before.
+	\item Present EOM for inflation, parameters and values.
+	\item talk a little about different potentials.
+	\item Mention some quintessence. Connection to UV complete theories?
+	\item Contact with observations. Prove?
+\end{enumerate}
+
 
 \cite{Danielsson:2018ztv}
 
