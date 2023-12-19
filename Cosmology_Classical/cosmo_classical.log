@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  18 SEP 2023 18:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.18)  18 DEC 2023 18:39
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **cosmo_classical
@@ -338,19 +338,7 @@ Already applied: [0000/00/00] Usage of raw or classic option list on input line 
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/ifplatform/ifplatform.sty
-Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
- (/usr/local/texlive/2022/texmf-dist/tex/generic/catchfile/catchfile.sty
-Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
-) (/usr/local/texlive/2022/texmf-dist/tex/generic/iftex/ifluatex.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-)
-runsystem(uname -s > "cosmo_classical.w18")...executed.
-
- (./cosmo_classical.w18)
-runsystem(rm -- "cosmo_classical.w18")...executed.
-
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 \c@svg@param@lastpage=\count301
 \svg@box=\box57
@@ -806,10 +794,10 @@ Package rerunfilecheck Info: File `cosmo_classical.out' has not changed.
 (rerunfilecheck)             Checksum: F55CD7AEECCE5B4C916B88BB5EE6B632;95.
  ) 
 Here is how much of TeX's memory you used:
- 18072 strings out of 478268
- 305634 string characters out of 5846347
- 640816 words of memory out of 5000000
- 35813 multiletter control sequences out of 15000+600000
+ 17962 strings out of 478268
+ 303045 string characters out of 5846347
+ 639861 words of memory out of 5000000
+ 35717 multiletter control sequences out of 15000+600000
  600349 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,11n,92p,1406b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s

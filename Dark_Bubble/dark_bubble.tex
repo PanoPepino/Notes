@@ -10,6 +10,9 @@
 \usepackage{booktabs} % Required for better horizontal rules in tables
 \usepackage{enumitem} % Required for list customisation
 \usepackage{geometry} % Required for adjusting page dimensions and margins
+\usepackage{svgcolor}
+\usepackage{svg}
+\usepackage{multirow}
 \usepackage{comment} % To remove big parts of text.
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Use 8-bit encoding
@@ -17,17 +20,29 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage{cancel} % To cross and cancel values
 \usepackage{bigints} % In case you need bigger integrants
+\usepackage{xcolor} %To use colors
+\usepackage{subcaption}
 \usepackage[skip=10pt plus1pt, indent=0pt]{parskip}
 \newcommand{\ket}[1]{\vert #1 \rangle}
 \newcommand{\bra}[1]{\langle #1 \vert}
+\renewcommand{\it}{\textit}
+\definecolor{Burgundy}{RGB}{155,5,8}
+\hypersetup{
+    colorlinks=true,
+    linkcolor= black,
+	citecolor = Burgundy,
+    filecolor=magenta,      
+    urlcolor=Burgundy,
+    }
+
 
 
 \geometry{
 	paper=a4paper, % Paper size, change to letterpaper for US letter size
-	top=1.5cm, % Top margin
-	bottom=3cm, % Bottom margin
-	left=3cm, % Left margin
-	right=3cm, % Right margin
+	top=2.5cm, % Top margin
+	bottom=2.5cm, % Bottom margin
+	left=2.5cm, % Left margin
+	right=2.5cm, % Right margin
 	headheight=0.5cm, % Header height
 	footskip=1.5cm, % Space from the bottom margin to the baseline of the footer
 	headsep=0.75cm, % Space from the top margin to the baseline of the header
@@ -51,6 +66,9 @@
 
 
 
+
+
+
 %--------------------------------------------------------------------------------
 %	TITLE SECTION
 %--------------------------------------------------------------------------------
@@ -61,13 +79,13 @@
 	\vspace{5pt} % Whitespace
 	\rule{\linewidth}{0.2pt}\\ % Thin top horizontal rule
 	\vspace{10pt} % Whitespace
-	{\huge Dark Bubbles}\\ % The assignment title
+	{\huge About Dark Bubbles}\\ % The assignment title
 	\vspace{5pt} % Whitespace
 	\rule{\linewidth}{-2pt}\\ % Thick bottom horizontal rule
 	\vspace{-25pt} % Whitespace
 	\date{}
 }
-\author{DP}
+\author{}
 
 
 
@@ -75,6 +93,7 @@
 
 \begin{document}
 \maketitle 
+\tableofcontents
 
 
 
@@ -84,16 +103,64 @@
        % \caption{caption}
       %\end{figure}
 
-\subsection*{Random Section}
+\newpage
+\section{How to induce dark energy on a bubble: A simple example}
+\begin{itemize}
+	\item Construct the 5D bubble from basic principles. Refer to appendix/chapters where I talk about RS, non-susy, advanced differential geometry and instantons.
+	\item Classic construction. define things static first and then move to radial expansion. Induce positive cosmological constant.
+	\item This can perhaps be a good section to talk about Unruh stuff?
+\end{itemize}
+
+Let us just start with the most basic set-up: A non-supersymmetric Anti-de Sitter vacuum, with cosmological constant $\Lambda_{D} = - \tfrac{1}{2}(D-1)(D-2)L^{3-D}$. The parameter $L$ represents the curvature radius of the $\text{AdS}_{D}$ vacuum. For computational convenience, it will be easier to refer to this parameter with its inverse, the vacuum scale $k = \tfrac{1}{L}$.
+
+As we discussed in section [NON-SUSY], the aforementioned $\text{AdS}_{D}$ vacuum is unstable and will eventually decay to a more metastable solution, via $D_{p}$-brane nucleation. This $D_{p}$-brane, which is a Coleman-de Luccia/ BT instanton [add ref to CdL and or section], will mediate such decay, separating two different $\text{AdS}_{D}$ vacua. From now on, we will refer to the vacua living inside the hyper-volume encoded by the $D_{p}$-brane as the \textit{inside} vacuum, denoted by a minus (-) subscript sign. The tandem brane-inside will be colloquially called \textit{Bubble}. On the other hand, the region \textit{outside} the bubble has not yet decayed, and will be denoted by a positive (+) subscript sign.
+
+Finally, as the aim of this thesis is to discuss phenomenological aspects in four dimensions\footnote{Other bubble dimensionalities have been explored in [IVANO STUFF]}, and given the discussion in [ref to GAUSS-CODAZZI] about co-dimension one hyper-surfaces, we will fix $D=5$. This implies that the boundary $\partial B$ of the nucleated five-dimensional bubble will have $d = D-1 = 4$ dimensions.
+
+In this specific scenario, the geometry inside and outside the bubble can be described by the following line invariant:
+\begin{equation}
+	ds_{\pm}^{2} = g^{\pm}_{\mu\nu} dx^{\mu} dx^{\nu} =  -f_{\pm}(r) dt_{\pm}^{2} + f^{-1}_{\pm}(r) dr^{2} + r^{2} d\Omega_{3}^{2},
+\end{equation}
+where
+\begin{equation}\label{eq: vacuum_func}
+	f_{\pm}(r) = 1 + k_{\pm}^{2} r^{2} + \chi(r, k_{\pm}, q_{1},..., q_{m}).
+\end{equation}
+Here, $r$ will denote the radial coordinate of the $\text{AdS}_{5}$ vacuum, i.e. the throat direction. The line-invariant $d\Omega_{3}^{2} = \gamma_{ij}dx^{i}dx^{j}$ is the metric on $S^{3}$, which corresponds to the three-dimensional solid angle for the usual spatial sections. The function $f_{\pm}(r)$ represents the usual $\text{AdS}_{5}$ geometry plus some posible extra features encoded in $\chi(r, k_{\pm}, q_{1},..., q_{m})$. These will be relevant in the following sections, but for now on, let us fix $\chi(r, k_{\pm}, q_{1},..., q_{m}) =0$.
+
+CONTINUE EXPLANAINING PARAMETRISATION OF FOUR D AND STUFF.
+
+
+
+
+
+\section{Dark bubbles from string theory: An explicit construction}
+Here some general shity introduction about the general features of the model in 10D.
+\subsection{A rotating ten-dimensional black hole}
+Talk about whole construction that Oscar used and present all ingredients in the game. Two option: Describe the basics of the dual field theory here or create appendix about AdS/Cft?
+\subsection{Comparing junctions to EOM}
+Basically, compare as we did in the paper. Just to prove, that at some specific limit EOM = JC. 
+\subsection{Higher curvature corrections to the rescue}
+Point to the fact that previous EOM has no CC. Discuss about how to obtain it and elaborate on all pieces in the game. End with the famous $1/N$ corrections that transform in CC. (First part of 5th paper)
+\subsection{Energy scales from Dark Bubble embedding: A new hope}
+Compare to observed CC and obtain $N$ to fix all scales. Discuss and defend the size of extra dimensions and the stringy scales.
+\section{Decorating the cosmos: Gauss-Codazzi equation at work}
+Argue somehow that we are going to look at things from a 5D perspective and will start to induce stuff in the 4D cosmos.
+\subsection{Matter}
+\subsection{Radiation}
+\subsection{Gravitational waves}
+\subsection{The standard model of particle physics}
+\subsubsection{Electromagnetism}
+\subsubsection{Weak force: Neutrinos}
+\section{Holographic bubbles and hanging strings}
+\section{Quantum bubbles: Higher dimensions to solve boundary choices}
 
 \cite{Danielsson:2018ztv}
 
 
 
 
-
 \bibliography{biblio}
-\bibliographystyle{ieeetr}
+\bibliographystyle{JHEP}
 
 
 \end{document}
