@@ -1,4 +1,4 @@
-\documentclass[11pt, a4paper]{article} % Font size
+\documentclass[12pt, a4paper]{article} % Font size
 \usepackage{float} % To impose the position of the figure at desired place.
 \usepackage{amsmath, amsfonts, amsthm} % Math packages
 \usepackage{hyperref} % To hiperlink things on the internet.
@@ -29,7 +29,7 @@
 \definecolor{Burgundy}{RGB}{155,5,8}
 \hypersetup{
     colorlinks=true,
-    linkcolor= black,
+    linkcolor= Burgundy,
 	citecolor = Burgundy,
     filecolor=magenta,      
     urlcolor=Burgundy,
@@ -105,30 +105,58 @@
 
 \newpage
 \section{How to induce dark energy on a bubble: A simple example}
-\begin{itemize}
-	\item Construct the 5D bubble from basic principles. Refer to appendix/chapters where I talk about RS, non-susy, advanced differential geometry and instantons.
-	\item Classic construction. define things static first and then move to radial expansion. Induce positive cosmological constant.
-	\item This can perhaps be a good section to talk about Unruh stuff?
-\end{itemize}
 
 Let us just start with the most basic set-up: A non-supersymmetric Anti-de Sitter vacuum, with cosmological constant $\Lambda_{D} = - \tfrac{1}{2}(D-1)(D-2)L^{3-D}$. The parameter $L$ represents the curvature radius of the $\text{AdS}_{D}$ vacuum. For computational convenience, it will be easier to refer to this parameter with its inverse, the vacuum scale $k = \tfrac{1}{L}$.
 
-As we discussed in section [NON-SUSY], the aforementioned $\text{AdS}_{D}$ vacuum is unstable and will eventually decay to a more metastable solution, via $D_{p}$-brane nucleation. This $D_{p}$-brane, which is a Coleman-de Luccia/ BT instanton [add ref to CdL and or section], will mediate such decay, separating two different $\text{AdS}_{D}$ vacua. From now on, we will refer to the vacua living inside the hyper-volume encoded by the $D_{p}$-brane as the \textit{inside} vacuum, denoted by a minus (-) subscript sign. The tandem brane-inside will be colloquially called \textit{Bubble}. On the other hand, the region \textit{outside} the bubble has not yet decayed, and will be denoted by a positive (+) subscript sign.
+As we discussed in section [NON-SUSY], the aforementioned $\text{AdS}_{D}$ vacuum is unstable and will eventually decay to a more metastable solution, via $D_{p}$-brane nucleation. This $D_{p}$-brane, which is a Coleman-de Luccia/ BT instanton [add ref to CdL and or section], will mediate such decay, separating two different $\text{AdS}_{D}$ vacua. From now on, we will refer to the vacua living inside the hyper-volume encoded by the $D_{p}$-brane as the \textit{inside} vacuum, denoted by a minus (-) subscript sign. The whole higher-dimensional space receives the name of \textit{Bulk} and the tandem brane-inside will be colloquially called \textit{Bubble}. On the other hand, the region \textit{outside} the bubble has not yet decayed, and will be denoted by a positive (+) subscript sign.
+
+\textcolor{red}{I THINK THAT A SKETCH WITH NAMES AND K VALUES HERE COULD BE NICE.}
 
 Finally, as the aim of this thesis is to discuss phenomenological aspects in four dimensions\footnote{Other bubble dimensionalities have been explored in [IVANO STUFF]}, and given the discussion in [ref to GAUSS-CODAZZI] about co-dimension one hyper-surfaces, we will fix $D=5$. This implies that the boundary $\partial B$ of the nucleated five-dimensional bubble will have $d = D-1 = 4$ dimensions.
 
-In this specific scenario, the geometry inside and outside the bubble can be described by the following line invariant:
-\begin{equation}
+In this dimensionality, the simplest geometry inside and outside the bubble can be described by the following line invariant:
+\begin{equation}\label{eq: basic_global_bubble}
 	ds_{\pm}^{2} = g^{\pm}_{\mu\nu} dx^{\mu} dx^{\nu} =  -f_{\pm}(r) dt_{\pm}^{2} + f^{-1}_{\pm}(r) dr^{2} + r^{2} d\Omega_{3}^{2},
 \end{equation}
 where
 \begin{equation}\label{eq: vacuum_func}
-	f_{\pm}(r) = 1 + k_{\pm}^{2} r^{2} + \chi(r, k_{\pm}, q_{1},..., q_{m}).
+	f_{\pm}(r) = 1 + k_{\pm}^{2} r^{2} + \chi(r, t, k_{\pm}, q_{1},..., q_{m}).
 \end{equation}
-Here, $r$ will denote the radial coordinate of the $\text{AdS}_{5}$ vacuum, i.e. the throat direction. The line-invariant $d\Omega_{3}^{2} = \gamma_{ij}dx^{i}dx^{j}$ is the metric on $S^{3}$, which corresponds to the three-dimensional solid angle for the usual spatial sections. The function $f_{\pm}(r)$ represents the usual $\text{AdS}_{5}$ geometry plus some posible extra features encoded in $\chi(r, k_{\pm}, q_{1},..., q_{m})$. These will be relevant in the following sections, but for now on, let us fix $\chi(r, k_{\pm}, q_{1},..., q_{m}) =0$.
+Here, $r$ will denote the radial coordinate of the $\text{AdS}_{5}$ vacuum, i.e. the throat direction and the line-invariant $d\Omega_{3}^{2} = \gamma_{ij}dx^{i}dx^{j}$ is the metric on $S^{3}$, which corresponds to the three-dimensional solid angle for the usual spatial sections. The function $f_{\pm}(r)$ represents the $\text{AdS}_{5}$ geometry plus some posible extra features encoded in $\chi(r, t, k_{\pm}, q_{1},..., q_{m})$. These will be relevant in the following sections, but for now on, let us fix $\chi(r, t, k_{\pm}, q_{1},..., q_{m}) =0$.
 
-CONTINUE EXPLANAINING PARAMETRISATION OF FOUR D AND STUFF.
+Before we start computing the Israel's junction conditions described in [ref to APPENDIX], it is important to realise the parametrical dependence of the expanding bubble. As described in [ref to INSTANTONS], the nucleated bubble can be identified with a Coleman-de Luccia instanton, which is equipped with an $O(4)$-symmetry.\footnote{Both in Euclidean and Lorentzian time by analytic continuation.} The two relevant coordinates for this derivation are the global time $t$ and the radial coordinate $r$, which also depends on $t$, as it is expanding, hence evolving in time. Both will be related to the proper time $\tau$ an observer living on the boundary $\partial B$ experiments. The coordinate choices to describe the bulk geometry and the induced one are:
+\begin{equation}\label{eq: coordinates}
+	x^{\mu} = \{t(\tau), r(\tau), \theta, \phi, \psi \}, \qquad \qquad  y^{a} = \{\tau, \theta, \phi, \psi\}.
+\end{equation}
+Let us now compute the first Israel junction condition described in [ref to APPENDIX]. This is no more than:
+\begin{equation}\label{eq: induced_FRW}
+	ds^{2}_{\text{ind}} = h_{ab} dy^{a} dy^{b} =  -N(\tau)^{2}d\tau^{2} + a^{2}(\tau) d\Omega_{3}^{2},
+\end{equation}
+where
+\begin{equation}\label{eq: lapse_func}
+	N^{2} = f(a(\tau)) \dot{t}^{2} - \frac{\dot{a}(\tau)^{2}}{f(a(\tau))}.
+\end{equation}
+The metric $h_{ab}$ represents the four-dimensional induced geometry on the hyper-surface, i.e. the $D_{3}$-brane, given by the parametrisation of $\{y^{a}\}$-coordinates. The lapse function $N(\tau)$ has been introduced to make time reparametrisation invariance manifest. Observe that a dot represents a proper-time derivative. One can always choose the right parametrical relation between $f(a(\tau)), \dot{t}(\tau)$ and $a(\tau)$ such that $N=1$. In that case, it is always easy to see that (\ref{eq: induced_FRW}) represents an expanding four-dimensional cosmology, described by a Friedmann-Robertson-Lemaître-Walker metric with closed spatial sections. 
 
+What about the second Israel junction condition? As discussed in [APPENDIX], this condition relates how the brane is embedded in the bulk geometry to the energy-momentum tensor induced on the brane, such that the whole bulk-brane geometry remains a solution to the Einstein equation. For simplicity in this example, let us assume we have an empty brane. This implies that its energy-momenum tensor only contains information about its tension $\sigma$, which can be denoted by:
+\begin{equation}
+	S_{ab} = - \sigma h_{ab}.
+\end{equation}
+\textcolor{red}{COMMENT ON THE MINUS SIGN? ChECK CRITICAL SIGMA VALUE FOR POINCARE}
+
+As discussed in [APPENDIX], the second Israel's condition relates the \textit{jump} in the extrinsic curvature between the inside and the outside geometries that the brane separates. To be as pedagogical as possible in this introductory section, we will compute the most important steps to obtain the induced energy-momentum tensor.\footnote{The whole derivation is left as an exercise to the reader.}
+
+First, we need to identify the normal and tangent vectors $\{n^{\mu}, e^{\mu}_{a}\}$ with respect to the embedding. Using eqs (APPENDIX) and (APPENDIX),  these result to be:
+\begin{small}
+\begin{equation}
+	e^{\mu}_{a} = \begin{pmatrix} \dot{t}(\tau) &0&0&0&0\\\dot{f}(a)&0&0&0&0\\0&0&1&0&0\\0&0&0&1&0\\0&0&0&0&1 \end{pmatrix}, \qquad n^{\mu} = \left(\frac{-\dot{a}/\dot{t}}{f(a)\sqrt{f(a) - \tfrac{1}{f(a)} \left(\tfrac{\dot{a}}{\dot{t}}\right)^{2}}}, \frac{f(a)}{\sqrt{f(a) - \tfrac{1}{f(a)} \left(\tfrac{\dot{a}}{\dot{t}}\right)^{2}}}, 0,0,0 \right).
+\end{equation}
+\end{small}
+This implies an extrensic curvature $K_{ab}$ of the form:
+\begin{equation}
+	K_{ab} = \nabla_{\beta} n_{\alpha} e^{\alpha}_{a} e^{\beta}_{b} = 
+\end{equation}
+\textcolor{red}{CONTINUE HERE.}
 
 
 
