@@ -1,2 +1,2 @@
 # Summaries
-Collection of notes about selected topics in (string) cosmology
+Collection of notes about selected topics in (string) cosmology.

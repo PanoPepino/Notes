@@ -104,7 +104,7 @@
       %\end{figure}
 
 \newpage
-\section{How to induce dark energy on a bubble: A simple example}
+\section{How to induce dark energy on a bubble surface: A simple example}
 
 Let us just start with the most basic set-up: A non-supersymmetric Anti-de Sitter vacuum, with cosmological constant $\Lambda_{D} = - \tfrac{1}{2}(D-1)(D-2)L^{3-D}$. The parameter $L$ represents the curvature radius of the $\text{AdS}_{D}$ vacuum. For computational convenience, it will be easier to refer to this parameter with its inverse, the vacuum scale $k = \tfrac{1}{L}$.
 
@@ -136,10 +136,10 @@ where
 \begin{equation}\label{eq: lapse_func}
 	N^{2} = f(a(\tau)) \dot{t}^{2} - \frac{\dot{a}(\tau)^{2}}{f(a(\tau))}.
 \end{equation}
-The metric $h_{ab}$ represents the four-dimensional induced geometry on the hyper-surface, i.e. the $D_{3}$-brane, given by the parametrisation of $\{y^{a}\}$-coordinates. The lapse function $N(\tau)$ has been introduced to make time reparametrisation invariance manifest. Observe that a dot represents a proper-time derivative. One can always choose the right parametrical relation between $f(a(\tau)), \dot{t}(\tau)$ and $a(\tau)$ such that $N=1$. In that case, it is always easy to see that (\ref{eq: induced_FRW}) represents an expanding four-dimensional cosmology, described by a Friedmann-Robertson-Lemaître-Walker metric with closed spatial sections. 
+The metric $h_{ab}$ represents the four-dimensional induced geometry on the hyper-surface, i.e. the $D_{3}$-brane, given by the parametrisation of $\{y^{a}\}$-coordinates. The lapse function $N(\tau)$ has been introduced to make time reparametrisation invariance manifest. Observe that a dot represents a proper-time derivative. One can always choose the right parametrical relation between $f(a(\tau)), \dot{t}(\tau)$ and $a(\tau)$ such that $N=1$. In that case, it is always easy to see that Eq. (\ref{eq: induced_FRW}) represents an expanding four-dimensional cosmology, described by a Friedmann-Robertson-Lemaître-Walker metric with closed spatial sections. 
 
 What about the second Israel junction condition? As discussed in [APPENDIX], this condition relates how the brane is embedded in the bulk geometry to the energy-momentum tensor induced on the brane, such that the whole bulk-brane geometry remains a solution to the Einstein equation. For simplicity in this example, let us assume we have an empty brane. This implies that its energy-momenum tensor only contains information about its tension $\sigma$, which can be denoted by:
-\begin{equation}
+\begin{equation}\label{eq: simple_second_junc}
 	S_{ab} = - \sigma h_{ab}.
 \end{equation}
 \textcolor{red}{COMMENT ON THE MINUS SIGN? ChECK CRITICAL SIGMA VALUE FOR POINCARE}
@@ -156,7 +156,36 @@ This implies an extrensic curvature $K_{ab}$ of the form:
 \begin{equation}
 	K_{ab} = \nabla_{\beta} n_{\alpha} e^{\alpha}_{a} e^{\beta}_{b} = 
 \end{equation}
-\textcolor{red}{CONTINUE HERE.}
+\textcolor{red}{ADD THE RIGHT BRIDGE WHEN MATHEMATICA WANTS TO WORK.}
+
+Given the previous results, if one computes the second junction condition Eq. [APPENDIX] assuming a pure constant tension brane, described by Eq. (\ref{eq: simple_second_junc}), it yields:
+\begin{equation}\label{eq: squared_tension}
+	\sigma=\frac{3}{\kappa_5}\left(\sqrt{\frac{f_{-}(a)}{a^2}+\frac{\dot{a}^2}{N^2 a^2}}-\sqrt{\frac{f_{+}(a)}{a^2}+\frac{\dot{a}^2}{N^2 a^2}}\,\right),
+\end{equation}
+where $\kappa_{5} = 8 \pi G_{5}$ and $\sigma$ corresponds to the tension of the bubble wall. Observe how the tension of the shell is governed by the four-dimensional Hubble parameter $H = \dot{a}/a$ and the $\text{AdS}_{5}$ scales of the five-dimensional bulk. This already points to a limit situation; when the five dimensional scales $k_{\pm}$ are large compared to the four-dimensional $H$ parameter, the tension of the shell approaches the \textit{extremal} tension
+\begin{equation}\label{eq: critical_tension}
+	\sigma_{\text{cr}} = \frac{3}{\kappa_{5}} \left(k_{-} - k_{+} \right).
+\end{equation}
+This critical value of the tension $\sigma_{\text{cr}}$ corresponds to the extremal value of the radius that maximises the bounce action of the instanton described in [APPENDIX]. This also implies that all the energy obtained in the decay process has been invested in generating a shell that will remain static, as $H\ll k_{\pm}$ in that limit situation.\footnote{We will soon see that this is always the case, as the energy hierarchy of the embedding of this construction into string theory provides $k_{\pm} \gg H$. These corrections are also independent of $a(\tau)$.} 
+
+What now if the tension results to be sub-critical, i.e. a small portion of energy of the decay is invested in accelerating the bubble growth, as described in [APPENDIX]?\footnote{This implies that the bounce [APPENDIX] is not extremised.} In this case, we can assume:
+\begin{equation}
+	\sigma = (1- \epsilon) \, \sigma_{\text{\text{cr}}},
+\end{equation}
+with $\epsilon > 0$. Expanding this sub-critical value $\sigma$ in Eq. (\ref{eq: squared_tension}), results into:
+\begin{equation}\label{eq: friedmann_from_junc}
+	H = \left(\frac{\dot{a}}{a}\right)^2=-\frac{1}{a^2}+\frac{8 \pi}{3} \, \frac{ 2 \, k_{-}k_{+}}{k_{+} - k_{-}} G_5\,\left(\sigma_{\text{cr}}-\sigma\right)+\mathcal{O}\left(\epsilon^2\right).
+\end{equation}
+This previous equation should result familiar to the reader that does not get distracted by the supressed corrections $\mathcal{O}\left(\epsilon^2\right)$. A little bit of dimensional analysis may help those absent-minded readers. 
+
+As observed in Eq. (\ref{eq: critical_tension}), $[k_{\pm}] = [\text{Length}]^{-1}$, while $\kappa_{5} = 8 \pi G_{5} = \ell_{5}^{3}$, where $\ell_{5}$ is the five dimensional Planck length. So $[\kappa_{5}] = [\text{Length}]^{3}$. Hence, $[\sigma_{\text{cr}}] = [\sigma] = [\text{Length}]^{-4}$. This has the same dimensionality as the dark energy density $\rho_{\Lambda}$ in four dimensions as discussed in [SECTION COSMO]. Similarly, we can perform the same dimensional analysis to conclude that $\left[G_{5} \tfrac{k_{-}k_{+}}{k_{+} - k_{-}}\right] = [\text{Length}]^{2}$. This is the dimensionality of the Newton's constant $G_{4}$.\footnote{Recall, as one can see in [SECTION], that $\kappa_{D} = \ell^{D-2}_{D}$.} These do not seem like coincidence, pointing to the following identifications:
+\begin{equation}\label{eq: identifications_dark_energy}
+	\kappa_{4} = 2 \frac{k_{-}k_{+}}{k_{+} - k_{-}} \kappa_{5}, \qquad \qquad \qquad \rho_{\Lambda} = \sigma_{\text{cr}} - \sigma.
+\end{equation}
+These allow us to "unmask" Eq. (\ref{eq: friedmann_from_junc}). It is no more than a regular Friedmann equation in disguise!
+
+\textcolor{red}{CONTINUE HERE. I SHOULD TALK ABOUT HOW DARK ENERGY IS NO MORE THAN DYNAMICS IN 5D. ALSO ABOUT SUPER CRITICAL TENSION AS IMPOSSIBLE. ALSO ABOUT DECORATION, BUT THAT LATER, WHEN GC INTRODUCED. FIRST 10D EMBEDDING. WHAT ABOUT RS COMPARISON? WHEN?}
+
 
 
 
