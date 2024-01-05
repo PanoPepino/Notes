@@ -68,7 +68,32 @@ class Class_Cosmo_Notes(Scene):
         
         # Density distribution
         
+class Dark_Bubbles(Scene):
+    def construct(self):
+        Tex.set_default(font_size=20)
+        Text.set_default(color=BLACK)
+        Tex.set_default(color=BLACK)
+        MathTex.set_default(color = BLACK)
+        Dot.set_default(radius=0.04)
+        Line.set_default(stroke_width = 0.5)
+        Line.set_default(color = BLACK)
+        #Arrow.set_default(color = BLACK)
+        #Arrow.set_default(stroke_width = 0.5)
+        #Arrow.set_default(max_tip_length_to_length_ratio=0.1)
+        self.camera.background_color = "#FFFFFF"  
 
+        bub_1 = Bubble(color = "#9b0508")[2:]
+        bub_2 = Bubble(color = "#9b0508")
+        bub_2[0].scale(2)
+        bub_2[1].scale(1.5)
+        bub_1[-1].scale(1.5)
+        bub_2[-1].scale(1.5)
+    
+
+        ar = Arrow(max_tip_length_to_length_ratio=1, color= BLACK, start = LEFT, end= [0.3,0,0], stroke_color = "#9b0508")
+        all = VGroup(bub_1, ar, bub_2).arrange(RIGHT, buff = 0.5).scale(0.8)
+        self.add(all)
+        all.to_svg("Svgs/bubble_nuc.svg", crop = True)
         
         
         

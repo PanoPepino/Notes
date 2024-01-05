@@ -104,13 +104,25 @@
       %\end{figure}
 
 \newpage
+
+Seems that I need a general introduction here. I do not know what to say, to be honest.
 \section{How to induce dark energy on a bubble surface: A simple example}
 
-Let us just start with the most basic set-up: A non-supersymmetric Anti-de Sitter vacuum, with cosmological constant $\Lambda_{D} = - \tfrac{1}{2}(D-1)(D-2)L^{3-D}$. The parameter $L$ represents the curvature radius of the $\text{AdS}_{D}$ vacuum. For computational convenience, it will be easier to refer to this parameter with its inverse, the vacuum scale $k = \tfrac{1}{L}$.
+\textcolor{red}{ADD REFERENCES!}
+
+Let us just start with the most basic set-up: A non-supersymmetric Anti-de Sitter vacuum, with cosmological constant given by:
+\begin{equation}
+	\Lambda_{D} = - \tfrac{1}{2}(D-1)(D-2)L^{3-D}.
+\end{equation}
+The parameter $L$ represents the curvature radius of the $\text{AdS}_{D}$ vacuum. For computational convenience, it will be easier to refer to this parameter with its inverse, the vacuum scale $k = \tfrac{1}{L}$.
 
 As we discussed in section [NON-SUSY], the aforementioned $\text{AdS}_{D}$ vacuum is unstable and will eventually decay to a more metastable solution, via $D_{p}$-brane nucleation. This $D_{p}$-brane, which is a Coleman-de Luccia/ BT instanton [add ref to CdL and or section], will mediate such decay, separating two different $\text{AdS}_{D}$ vacua. From now on, we will refer to the vacua living inside the hyper-volume encoded by the $D_{p}$-brane as the \textit{inside} vacuum, denoted by a minus (-) subscript sign. The whole higher-dimensional space receives the name of \textit{Bulk} and the tandem brane-inside will be colloquially called \textit{Bubble}. On the other hand, the region \textit{outside} the bubble has not yet decayed, and will be denoted by a positive (+) subscript sign.
 
-\textcolor{red}{I THINK THAT A SKETCH WITH NAMES AND K VALUES HERE COULD BE NICE.}
+\begin{figure}[h!]
+	  \centering
+	  \includesvg[scale=0.4]{../Figures/Svgs/bubble_nuc.svg}
+	  \caption{}
+\end{figure}
 
 Finally, as the aim of this thesis is to discuss phenomenological aspects in four dimensions\footnote{Other bubble dimensionalities have been explored in [IVANO STUFF]}, and given the discussion in [ref to GAUSS-CODAZZI] about co-dimension one hyper-surfaces, we will fix $D=5$. This implies that the boundary $\partial B$ of the nucleated five-dimensional bubble will have $d = D-1 = 4$ dimensions.
 
@@ -122,7 +134,7 @@ where
 \begin{equation}\label{eq: vacuum_func}
 	f_{\pm}(r) = 1 + k_{\pm}^{2} r^{2} + \chi(r, t, k_{\pm}, q_{1},..., q_{m}).
 \end{equation}
-Here, $r$ will denote the radial coordinate of the $\text{AdS}_{5}$ vacuum, i.e. the throat direction and the line-invariant $d\Omega_{3}^{2} = \gamma_{ij}dx^{i}dx^{j}$ is the metric on $S^{3}$, which corresponds to the three-dimensional solid angle for the usual spatial sections. The function $f_{\pm}(r)$ represents the $\text{AdS}_{5}$ geometry plus some posible extra features encoded in $\chi(r, t, k_{\pm}, q_{1},..., q_{m})$. These will be relevant in the following sections, but for now on, let us fix $\chi(r, t, k_{\pm}, q_{1},..., q_{m}) =0$.
+Here, $r$ will denote the radial coordinate of the $\text{AdS}_{5}$ vacuum, i.e. the throat direction and the line-invariant $d\Omega_{3}^{2} = \gamma_{ij}dx^{i}dx^{j}$ is the metric on $S^{3}$, which corresponds to the three-dimensional solid angle for the usual spatial sections. From now on, Greek indices will represent bulk coordinates, while Latin ones will be used to describe quantities associated with the \textit{induced} geometry on the boundary. Finally, it is important to mention that the function $f_{\pm}(r)$ represents the $\text{AdS}_{5}$ geometry plus some posible extra features encoded in $\chi(r, t, k_{\pm}, q_{1},..., q_{m})$. These will be relevant in the following sections, but for now on, let us fix $\chi(r, t, k_{\pm}, q_{1},..., q_{m}) =0$.
 
 Before we start computing the Israel's junction conditions described in [ref to APPENDIX], it is important to realise the parametrical dependence of the expanding bubble. As described in [ref to INSTANTONS], the nucleated bubble can be identified with a Coleman-de Luccia instanton, which is equipped with an $O(4)$-symmetry.\footnote{Both in Euclidean and Lorentzian time by analytic continuation.} The two relevant coordinates for this derivation are the global time $t$ and the radial coordinate $r$, which also depends on $t$, as it is expanding, hence evolving in time. Both will be related to the proper time $\tau$ an observer living on the boundary $\partial B$ experiments. The coordinate choices to describe the bulk geometry and the induced one are:
 \begin{equation}\label{eq: coordinates}
@@ -136,9 +148,9 @@ where
 \begin{equation}\label{eq: lapse_func}
 	N^{2} = f(a(\tau)) \dot{t}^{2} - \frac{\dot{a}(\tau)^{2}}{f(a(\tau))}.
 \end{equation}
-The metric $h_{ab}$ represents the four-dimensional induced geometry on the hyper-surface, i.e. the $D_{3}$-brane, given by the parametrisation of $\{y^{a}\}$-coordinates. The lapse function $N(\tau)$ has been introduced to make time reparametrisation invariance manifest. Observe that a dot represents a proper-time derivative. One can always choose the right parametrical relation between $f(a(\tau)), \dot{t}(\tau)$ and $a(\tau)$ such that $N=1$. In that case, it is always easy to see that Eq. (\ref{eq: induced_FRW}) represents an expanding four-dimensional cosmology, described by a Friedmann-Robertson-Lemaître-Walker metric with closed spatial sections. 
+The metric $h_{ab}$ represents the four-dimensional induced geometry on the hyper-surface, i.e. the $D_{3}$-brane, given by the parametrisation of $\{y^{a}\}$-coordinates. The lapse function $N(\tau)$ has been introduced to make time reparametrisation invariance manifest. Observe that a dot represents a proper-time derivative (i.e. the time an observer living on the hypersurface will experiment). One can always choose the right parametrical relation between $f(a(\tau)), \dot{t}(\tau)$ and $a(\tau)$ such that $N=1$. In that case, it is always easy to see that Eq. (\ref{eq: induced_FRW}) represents an expanding four-dimensional cosmology, described by a Friedmann-Robertson-Lemaître-Walker metric with closed spatial sections. 
 
-What about the second Israel junction condition? As discussed in [APPENDIX], this condition relates how the brane is embedded in the bulk geometry to the energy-momentum tensor induced on the brane, such that the whole bulk-brane geometry remains a solution to the Einstein equation. For simplicity in this example, let us assume we have an empty brane. This implies that its energy-momenum tensor only contains information about its tension $\sigma$, which can be denoted by:
+What about the second Israel junction condition? It is important to notice that the presence of the expanding $D_{3}$-brane, which divides the bulk space in two: \textit{inside} and \textit{outside}, will generate a discontinuity of the bulk metric across itself. This forces the presence of a non-zero induced energy-stress tensor on the brane, such that the whole configuration remains a solution to the bulk Einstein equation. This is what the second Israel junction condition accounts for. For simplicity in this example, let us assume we have an empty brane. This implies that its energy-momenum tensor only contains information about its tension $\sigma$, which can be denoted by:
 \begin{equation}\label{eq: simple_second_junc}
 	S_{ab} = - \sigma h_{ab}.
 \end{equation}
@@ -162,7 +174,7 @@ Given the previous results, if one computes the second junction condition Eq. [A
 \begin{equation}\label{eq: squared_tension}
 	\sigma=\frac{3}{\kappa_5}\left(\sqrt{\frac{f_{-}(a)}{a^2}+\frac{\dot{a}^2}{N^2 a^2}}-\sqrt{\frac{f_{+}(a)}{a^2}+\frac{\dot{a}^2}{N^2 a^2}}\,\right),
 \end{equation}
-where $\kappa_{5} = 8 \pi G_{5}$ and $\sigma$ corresponds to the tension of the bubble wall. Observe how the tension of the shell is governed by the four-dimensional Hubble parameter $H = \dot{a}/a$ and the $\text{AdS}_{5}$ scales of the five-dimensional bulk. This already points to a limit situation; when the five dimensional scales $k_{\pm}$ are large compared to the four-dimensional $H$ parameter, the tension of the shell approaches the \textit{extremal} tension
+where $\kappa_{5} = 8 \pi G_{5}$ and $\sigma$ corresponds to the tension of the bubble wall. Observe how the tension of the shell is governed by the four-dimensional Hubble parameter $H = \dot{a}/a$ and the difference in the $\text{AdS}_{5}$ scales of the five-dimensional bulk. This already points to a limit situation; when the five dimensional scales $k_{\pm}$ are large compared to the four-dimensional $H$ parameter, the tension of the shell approaches the \textit{extremal} tension\footnote{This can be seen as a \textit{flat} shell, as the curvature parameter $a$ is neglegible compared to the $\text{AdS}_{5}$ scale $k_{\pm}$.}
 \begin{equation}\label{eq: critical_tension}
 	\sigma_{\text{cr}} = \frac{3}{\kappa_{5}} \left(k_{-} - k_{+} \right).
 \end{equation}
@@ -176,22 +188,34 @@ with $\epsilon > 0$. Expanding this sub-critical value $\sigma$ in Eq. (\ref{eq:
 \begin{equation}\label{eq: friedmann_from_junc}
 	H = \left(\frac{\dot{a}}{a}\right)^2=-\frac{1}{a^2}+\frac{8 \pi}{3} \, \frac{ 2 \, k_{-}k_{+}}{k_{+} - k_{-}} G_5\,\left(\sigma_{\text{cr}}-\sigma\right)+\mathcal{O}\left(\epsilon^2\right).
 \end{equation}
-This previous equation should result familiar to the reader that does not get distracted by the supressed corrections $\mathcal{O}\left(\epsilon^2\right)$. A little bit of dimensional analysis may help those absent-minded readers. 
+This previous equation should be familiar to the reader that does not get distracted by the supressed corrections $\mathcal{O}\left(\epsilon^2\right)$. A little bit of dimensional analysis may help those absent-minded readers. 
 
 As observed in Eq. (\ref{eq: critical_tension}), $[k_{\pm}] = [\text{Length}]^{-1}$, while $\kappa_{5} = 8 \pi G_{5} = \ell_{5}^{3}$, where $\ell_{5}$ is the five dimensional Planck length. So $[\kappa_{5}] = [\text{Length}]^{3}$. Hence, $[\sigma_{\text{cr}}] = [\sigma] = [\text{Length}]^{-4}$. This has the same dimensionality as the dark energy density $\rho_{\Lambda}$ in four dimensions as discussed in [SECTION COSMO]. Similarly, we can perform the same dimensional analysis to conclude that $\left[G_{5} \tfrac{k_{-}k_{+}}{k_{+} - k_{-}}\right] = [\text{Length}]^{2}$. This is the dimensionality of the Newton's constant $G_{4}$.\footnote{Recall, as one can see in [SECTION], that $\kappa_{D} = \ell^{D-2}_{D}$.} These do not seem like coincidence, pointing to the following identifications:
 \begin{equation}\label{eq: identifications_dark_energy}
 	\kappa_{4} = 2 \frac{k_{-}k_{+}}{k_{+} - k_{-}} \kappa_{5}, \qquad \qquad \qquad \rho_{\Lambda} = \sigma_{\text{cr}} - \sigma.
 \end{equation}
-These allow us to "unmask" Eq. (\ref{eq: friedmann_from_junc}). It is no more than a regular Friedmann equation in disguise!
+These allow us to "unmask" Eq. (\ref{eq: friedmann_from_junc}). It is no more than a regular Friedmann equation in disguise! From Eq. (\ref{eq: identifications_dark_energy}), we see that dark energy $\rho_{\Lambda}$ is no more than a dynamical property of the expanding $D_{3}$-brane in the bulk. The expansion rate, and hence the induced dark energy density, are controlled by the sub-criticallity parameter $\epsilon$. 
 
-\textcolor{red}{CONTINUE HERE. I SHOULD TALK ABOUT HOW DARK ENERGY IS NO MORE THAN DYNAMICS IN 5D. ALSO ABOUT SUPER CRITICAL TENSION AS IMPOSSIBLE. ALSO ABOUT DECORATION, BUT THAT LATER, WHEN GC INTRODUCED. FIRST 10D EMBEDDING. WHAT ABOUT RS COMPARISON? WHEN?}
+Let us close this section of the chapter making comments on points that will be relevant and discussed in the following sections.
 
+\begin{itemize}
+	\item de Sitter induced cosmologies can only occur when the tension of the brane is \textit{sub-critical} as seen in Eq. (\ref{eq: identifications_dark_energy}). The tension of the brane $\sigma$ will dictate its evolution. As discussed in [APPENDIX to CdL], the brane will always nucleate at rest, i.e. $\dot{a} = 0$. If the tension is critical $\sigma = \sigma_{\text{cr}}$, the repulsion generated by charge of the brane $Q$, related to the flux difference across the wall (see [SWAMPLAND SECTION] for further details), will be exactly compensated by its tension, preventing its expansion. This results in an induced flat cosmology.
+	
+	On the other hand, the brane can nucleate with a sub-critical tension $\sigma < \sigma_{\text{cr}}$, and the whole previous discussion holds, inducing an accelerated expanding cosmology. This is in line with the weak gravity conjecture described in [SWAMPLAND SECTION]. \textcolor{red}{What about supercritical stuff?}
 
+	\item As the simplest example that can be provided, we have omitted the presence of extra dimensions (up to ten or eleven) required from supergravity models. These will be the main discussion in section (\ref{sec: db_from_st}), where we will embed the dark bubble model into supegravity theories. Its connections to the swampland will be also commented in this section.
 
+	\item So far, we have just discussed how to induced dark energy on the brane, but the observable universe contains more than that. This will be the topic of section (\ref{sec: decoration}), where the induced cosmology will be decorated with matter, radiation and waves (plenty of waves)... coming from the extra dimensions. There will be understand the true power of the second Israel condition, its relation to the Gauss-Codazzi equation describe in [APPENDIX] and how to interpret them in the right way to obtain a meaningful induced energy-momentum tensor.
+	
+	\item Where is gravity? Is it localised on the induced geometry or does it propagates across extra dimensions? This will be examined in section (\ref{sec: holography_gravity}), where will be study how strings associated to the expanding brane are required to have a good understanding of gravity in this model.
+	
+	\item We have talked about expanding branes in the bulk, but, How did those branes appear there? This will be reviewed, from a quantum cosmology perspective, in section (\ref{sec: quantum_bubbles})
+	
+	\item Finally, the dark bubble model will be compared against the Randall-Sundrum model. Although both proposals share features, there are key differences at both conceptual and computational levels thay may not be perceived at first glance. Section (\ref{sec: RS_model}) will be devoted to unravel on these issues.
+\end{itemize}
 
-
-\section{Dark bubbles from string theory: An explicit construction}
-Here some general shity introduction about the general features of the model in 10D.
+\section{Dark bubbles from string theory: An explicit construction}\label{sec: db_from_st}
+\textcolor{red}{I GUESS THAT HERE I NEED TO WRITE A GOOD SUMMARY OF THE MODEL I WILL USE (OSCAR'S). SPECIALLY WHAT IT WAS USED FOR IN THE PAST AND HOW GOOD IT MAY CONNECT TO THE KIND OF SCENARIO WE HAD IN MIND FOR BUBBLES.}
 \subsection{A rotating ten-dimensional black hole}
 Talk about whole construction that Oscar used and present all ingredients in the game. Two option: Describe the basics of the dual field theory here or create appendix about AdS/Cft?
 \subsection{Comparing junctions to EOM}
@@ -200,7 +224,7 @@ Basically, compare as we did in the paper. Just to prove, that at some specific 
 Point to the fact that previous EOM has no CC. Discuss about how to obtain it and elaborate on all pieces in the game. End with the famous $1/N$ corrections that transform in CC. (First part of 5th paper)
 \subsection{Energy scales from Dark Bubble embedding: A new hope}
 Compare to observed CC and obtain $N$ to fix all scales. Discuss and defend the size of extra dimensions and the stringy scales.
-\section{Decorating the cosmos: Gauss-Codazzi equation at work}
+\section{Decorating the cosmos: Gauss-Codazzi equation at work}\label{sec: decoration}
 Argue somehow that we are going to look at things from a 5D perspective and will start to induce stuff in the 4D cosmos.
 \subsection{Matter}
 \subsection{Radiation}
@@ -208,8 +232,9 @@ Argue somehow that we are going to look at things from a 5D perspective and will
 \subsection{The standard model of particle physics}
 \subsubsection{Electromagnetism}
 \subsubsection{Weak force: Neutrinos}
-\section{Holographic bubbles and hanging strings}
-\section{Quantum bubbles: Higher dimensions to solve boundary choices}
+\section{Holographic bubbles and hanging strings}\label{sec: holography_gravity}
+\section{Quantum bubbles: Higher dimensions to solve boundary choices}\label{sec: quantum_bubbles}
+\section{No, this is not a Randall-Sundrum model on steroids}\label{sec: RS_model}
 
 \cite{Danielsson:2018ztv}
 
