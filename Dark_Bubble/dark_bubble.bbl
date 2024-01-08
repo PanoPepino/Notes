@@ -1,10 +1,4 @@
 
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
-
-\bibitem{Danielsson:2018ztv}
-U.H.~Danielsson and T.~Van~Riet, \emph{{What if string theory has no de Sitter
-  vacua?}}, \href{https://doi.org/10.1142/S0218271818300070}{\emph{Int. J. Mod.
-  Phys. D} {\bfseries 27} (2018) 1830007}
-  [\href{https://arxiv.org/abs/1804.01120}{{\ttfamily 1804.01120}}].
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{}
 
 \end{thebibliography}\endgroup
