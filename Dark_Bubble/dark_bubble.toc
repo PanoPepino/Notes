@@ -1,10 +1,12 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}How to induce dark energy on a bubble surface: A simple example}{2}{section.1}%
 \contentsline {section}{\numberline {2}Dark bubbles from string theory: An explicit construction}{6}{section.2}%
-\contentsline {subsection}{\numberline {2.1}A rotating ten-dimensional black hole}{6}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Comparing junctions to EOM}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Higher curvature corrections to the rescue}{8}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Energy scales from Dark Bubble embedding: A new hope}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.1}A black hole in the bulk: Ten-dimensional Kerr or five-dimensional Reissner-Nordström one?}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}The action of the $D_{3}$-brane}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Comparing junctions to EOM}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Collapsing Cosmology: Evacuation required}{9}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Higher curvature corrections to the rescue}{9}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Energy scales from Dark Bubble embedding: A new hope}{9}{subsection.2.6}%
 \contentsline {section}{\numberline {3}Decorating the cosmos: Gauss-Codazzi equation at work}{9}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Matter}{9}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Radiation}{9}{subsection.3.2}%
