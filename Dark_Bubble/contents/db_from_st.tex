@@ -16,7 +16,7 @@ where $A(z)$ is a 10 dimensional one-form that will be later discussed and the $
 \begin{equation}
  \sigma_1 = \sin\theta \ , \qquad \sigma_2 = \cos\theta \sin\psi \ , \qquad \sigma_3 = \cos\theta \cos\psi \ .
 \end{equation}
-As introduced in section (\ref{sec: simple_example}), $L$ is the $\text{AdS}_{5}$ radius in Eq. (\ref{eq: 10Dmetric}). It is important to notice that this radius also sets the scale of the extra compact dimensions of $S^{5}$. This can already raise some eyebrows, as it points to lack of scale separation, as discussed in [SEC Landscape]. However, this will be a key signature of the dark bubble embedding into supegravity, as this model acquires the aforementioned scale separation via tension-to-charge ratio instead. We will later explore this method in section (\ref{subsec: energy_scale}). 
+As introduced in section \ref{sec: simple_example}, $L$ is the $\text{AdS}_{5}$ radius in Eq. (\ref{eq: 10Dmetric}). It is important to notice that this radius also sets the scale of the extra compact dimensions of $S^{5}$. This can already raise some eyebrows, as it points to lack of scale separation, as discussed in [SEC Landscape]. However, this will be a key signature of the dark bubble embedding into supegravity, as this model acquires the aforementioned scale separation via tension-to-charge ratio instead. We will later explore this method in section \ref{subsec: energy_scale}. 
 
 Conducting our attention back to the line invariant (\ref{eq: 10Dmetric}), we can define the five dimensional asymptotically-AdS metric $\text{ds}_{5}$ as:
 \begin{equation}\label{eq: 5DmetricQ}
@@ -27,7 +27,7 @@ where $d\Omega_{3}^2$ is the usual unit metric of the 3-sphere [ref to COSMO SEC
 \begin{equation}\label{eq: h_and_f_bh}
     \begin{split}
         h(z)&=1+\frac{q^{2}}{z^{2}} \ , \\
- f(r) &= 1 - \frac{m}{z^{2}} + \frac{z^{2}}{L^{2}} h(z)^{3}
+ f(r) &= 1 - \frac{m}{z^{2}} + \frac{z^{2}}{L^{2}} h(z)^{3},
     \end{split}
 \end{equation}
 where $m$ and $q$ are respectively the mass and charge of the five dimensional black. Wait? What five-dimensional black hole? Let us then perform a "massage" to Eqs. (\ref{eq: 5DmetricQ}, \ref{eq: h_and_f_bh}) to provide a more familiar black hole-ish line invariant. One can start this task by performing a simple change of coordinates, defining a new radial coordinate $r$ as:
@@ -44,7 +44,7 @@ with
 \end{align}
 with $\kappa_5 = 8\pi G_5$. It is now easy to see that the change of variables described in Eq. (\ref{eq: change_coordinates}) casts the line invariant (\ref{eq: 5DmetricQ}) in the familiar form\footnote{The patch we are describing with the metric (\ref{eq: 5DmetricQ}) corresponds to the requirement $r\geqslant q$. This is actually not an issue since the  horizon $r_{H}$ will be covered by the patch.} of a five dimensional Reissner-Nordström black hole living in an $\text{AdS}$ vacuum [REF]. Observe that, for a small black hole, with $r_{H} \ll L$, we recover a flat space description and it is required $Q<M$ to get a horizon and no naked singularity. On the other hand, if we want to study a horizon larger that the $\text{AdS}_{5}$ radius, this immediately implies $Q\ll M$.
 
-Let us recap now the interpretation of both ten and five dimensional geometries. In the ten dimensional approach, we will observe a Kerr black hole which rotates in three of the compact directions of $S^{5}$ (i.e. $\{\phi_{i}\}$). When we zoom out and not have resolution of the five dimensional sphere, the black hole no longer rotates. It becames "static" from the point of view of a five dimensional observer, but it acquires a charge $q$ due to its motion in the compact directions. This charge becomes effective (i.e. charge $Q$) when the change of coordinates (\ref{eq: change_coordinates}) is performed to recover the more familiar description of a Reissner-Nordström black hole living in $\text{AdS}$.
+Let us recap now the interpretation of both ten and five dimensional geometries. In the ten dimensional approach, we will observe a Kerr black hole which rotates in three of the compact directions of $S^{5}$ (i.e. $\{\phi_{i}\}$). When we zoom out and not have resolution of the five dimensional sphere, the black hole no longer rotates. It becames "static" from the point of view of a five dimensional observer, but it acquires a charge $q$ due to its motion in the compact directions (This will be further explained later). This charge becomes effective (i.e. charge $Q$) when the change of coordinates (\ref{eq: change_coordinates}) is performed to recover the more familiar description of a Reissner-Nordström black hole living in $\text{AdS}$.
 
 As it is well known, this type of black holes enjoy two different horizons [REFS to book]: The \textit{outer} horizon (i.e. event horizon) and the \textit{inner} one (i.e. the Cauchy horizon). When these two horizon become degenerate (i.e. $r_{H} = r_{h}$), this corresponds to an extremal black hole description. We will not further discuss charged black holes and their connection to the weak gravity conjecture here (see [SWAMP] for more details), but, for computational purposes in the incoming sections, we find more convenient to express (\ref{eq: metricargument}) in terms of the two aforementioned horizons: $\left\{r_{h}, r_{H}\right\}$ as the inner and outer horizons. In this way, we can express $g(r)$ in Eq. (\ref{eq: metricargument}) with the following Ansatz:
 \begin{equation}\label{eq: horizon_ansatz}
@@ -73,18 +73,117 @@ Observe that gauge freedom has been summoned to add a constant that sets $A(z_H)
         A(r) = \kappa_{5} Q \left(\frac{1}{r_{H}^{2}} - \frac{1}{r^{2}}\right).
     \end{equation}
 \end{enumerate}
+The stack of rotating $D_{3}$-branes in the ten dimensional background will source the self dual $F_{5}$ Ramond-Ramond (RR) field strength, which can be written in terms of the radial function $h(z)$ and the one-form $A(z)$. However, what we will need for future computations is the corresponding four-form potential $C_{4}$, with $\dpar C_{4}=F_{5}$. This is:
+\begin{equation}\label{eq: C4_pot_old}
+C_4 (z, z_{H}, q) = \frac{1}{L}\left[(z^2+q^2)^2 - (z_H^2+q^2)^2\right] \dpar t \wedge \epsilon_3 + L^2 q \: \sqrt{ z_H^2 + q^2 + \frac{z_H^4}{L^2} h(z_H)^3}\ \sum_i \sigma_i^2\, \dpar \phi_i \wedge \epsilon_3 \ ,
+\end{equation}
+where $\epsilon_{3}$ corresponds to the volume-form associated with $\dpar \Omega_{3}$ in Eq. (\ref{eq: 5DmetricQ}). Following the same recipe describe above, one cast the four-form $C_{4}$ in terms of the new variables as:
+\begin{equation}\label{eq: C4_pot_new}
+    C_4 (r, r_{H}, Q) = \underbrace{\frac{1}{L}\left[r^4 - r_{H}^{4}\right]}_{(C_{4})_{t}} \dpar t \wedge \epsilon_3 + \underbrace{L^2 \: \frac{Q}{\kappa_{5}} \sum_i \sigma_i^2\, \dpar \phi_i}_{(C_4)_{\phi}=\sum_i(C_4)_{\phi_i}} \wedge \epsilon_3.
+\end{equation}
+Observe that we have split the four-form $C_{4}$ into its time-dependent and $\phi_{i}$-dependent pieces. This notation will further simplify computations to come. 
+
 With this we finish the black hole description, both from ten and five dimensional perspectives. Let us now explore the explicit embedding of the $D_{3}$-brane in the ten dimensional ambient space.
 
-\subsection{The action of the $D_{3}$-brane}
-The rotating D3-branes will source the self dual $F_{5}$ Ramond-Ramond (RR) field strength, which can be written in terms of the radial function $h(r)$ and the one-form $A$ %\cite{Henriksson:2019zph}. What we will need is the corresponding 4-form potential $C_{4}$, with $d\:C_{4}=F_{5}$, given by
-\begin{equation}
-C_4 = \frac{1}{L}\left[(r^2+q^2)^2 - (r_H^2+q^2)^2\right] dt \wedge \epsilon_3 + L^2 q \sqrt{ r_H^2 + q^2 + \frac{r_H^4}{L^2} h(r_H)^3}\ \sum_i \sigma_i^2\, d\phi_i \wedge \epsilon_3 \ , \label{eq:C4}
+\subsection{The $D_{3}$-brane dynamics}
+Let us now move on and study the motion of a nucleated $D_{3}$-brane. The starting point of such enterprise is the action governing its dynamics:
+\begin{equation}\label{eq: D3_action}
+  S_{D_{3}} = S_{\text{DBI}} +S_{\text{WZ}} =  -T_3\int \dpar^4\xi \sqrt{-\det P[G]}+T_3\int P[C_4].
 \end{equation}
+The Dirac-Born-Infeld (DBI) term will be in charge of describing the geometrical features of the embedding, while the Wess-Zumino (WZ) term with $C_4$ captures the non-gravitational forces on the brane due to fields external to it. $P[\dots]$ denotes the pullback of spacetime fields to the world volume of the brane. This is no more than the projection of ten-dimensional coordinates onto the three-dimensional geometry of the $D_{3}$-brane, with tension $T_{3}$. These, the brane's embedding functions will be denoted by capital versions of the spacetime coordinates: $\mathcal{X}^\mu(\xi)$. In this set up, we will set the dilaton $\phi$ constant \textcolor{red}{WHY?}.
+
+The dynamical description of the branes is as follows: The stack of $D_{3}$-branes, and hence the nucleated one, wrap the three-sphere $\dpar {\Omega_{3}}$ inside the $\text{AdS}_5$ piece of the metric, with the radial $r$-coordinate (hence $\mathcal{R}$) depending only on the time component. The ten dimensional black hole in the background rotates in the azimuthal $\phi_i$-directions on $S_{5}$. This implies that a $D_{3}$-brane escaping from the stack will preserve a portion of the angular momentum of this. Therefore, it will also move in those directions. Let us, for the sake of simplicity in the construction of this model, set the three angular momenta associated to each $\phi_i$-directions equal in the background. This implies that the brane will rotate with the same angular velocity in all $\phi_i$ directions. Finally, we will assume a constant position in the remaining coordinates of the compact $S_{5}$, i.e. $\{\Psi = \psi_{0}, \, \Theta = \theta_{0}\}$. The brane's embedding functions are then given by:
+\begin{equation}
+  \mathcal{T}=\mathcal{T}(\tau) \, , \qquad \mathcal{R}=\mathcal{R}(\tau) \, , \qquad \Theta = \theta_0 \, , \qquad \Psi = \psi_0 \, , \qquad \Phi_1 = \Phi_2 = \Phi_3 = \Phi(\tau) \ .
+\end{equation}
+Here, although we write $\tau$ as a time parameter on the induced geometry, we do not yet specify if it denotes its proper time. We will later see that this is case. From the point of view of an observer living in $\text{AdS}_5$, the rotation translates into an effective charge $Q$ under the gauge field $A$. When a brane nucleates, carrying a portion of the charge, it will also effectively lower the charge of the remaining black hole.
+
+Before we start to analyse the action (\ref{eq: D3_action}), we need some more practical notation. Derivatives with respect to $\tau$ will be denoted by a dot. The components of the ten dimensional metric (\ref{eq: 10D_coordinates}) will be denoted by $G_{\mu\nu}$. It will also be useful to define the mixing of the azimuthal-time and azimuthal-azimuthal components in the compact piece of Eq. (\ref{eq: 10D_coordinates}) as $G_{t\phi}=\sum_i G_{t\phi_i}$ and $G_{\phi\phi}=\sum_i G_{\phi_i\phi_i}$ respectively.
+
+Let us start the analysis of Eq. (\ref{eq: D3_action}). The pullback $P[G]$ is no more than the induced $g_{\tau\tau}$-metric entry of the expanding $D_{3}$-brane. This is:
+\begin{equation}\label{eq: pullback_G}
+    P[G] = g_{\tau\tau} = G_{tt} \dot \T^2 + G_{rr} \dot \R^2 + 2G_{t\phi} \dot \Phi \dot \T + G_{\phi\phi} \dot\Phi^2.
+\end{equation}
+This is also the square of the velocity that a comoving observer living on the brane will experiment,
+\begin{equation}\label{eq: 10velocity}
+ \dot X^2 = \dot X_\mu \dot X^\mu = G_{tt} \dot \T^2 + G_{rr} \dot \R^2 + 2G_{t\phi} \dot \Phi \dot \T + G_{\phi\phi} \dot\Phi^2 \ ,
+\end{equation}
+with
+\begin{equation}
+    \dot X \equiv \frac{\partial X^\mu}{\partial\tau}\partial_\mu = \dot \T \partial_t + \dot \R\, \partial_r + \dot \Phi\sum_{i=1}^{3} \,\partial_{\phi_i} \ .
+    \end{equation}
+The induced line element on the brane worldvolume is:
+\begin{equation}
+ \dpar s^2_4 = \dot X^2 \dpar \tau^2 + \R(\tau)^2 \dpar \Omega_{3}^2 \ .
+\end{equation}
+Now one can see that picking $\tau$ to be the proper time of an observer living on the brane would set $\dot{X}^2=-1$, and the induced metric takes the usual FLRW-form, with $\R(\tau)$ acting as the scale factor.
+
+Similarly, the pullback of the four-form $C_{4}$ is:
+\begin{equation}\label{eq: pullback_C4}
+    P[C_{4}] = \left((C_{4})_{t} \frac{\partial \T}{\partial\tau} + \sum_{i} (C_{4})_{\phi} \frac{\partial \Phi_{i}}{\partial\tau}\right)\dpar \tau \wedge \epsilon_{3}.
+\end{equation}
+
+Finally, the action (\ref{eq: D3_action}) can be rewritten as:
+\begin{equation}\label{eq: Lag_density_action}
+    S_{D_{3}} \equiv \int d\tau \mathcal{L}_{D_{3}}  = -2\pi^2 T_3 \int d\tau \left\{ \R^3 \sqrt{ -\dot X^2 } - (C_4)_t \dot\T - (C_4)_{\phi} \dot\Phi \right\},
+\end{equation}
+where $\mathcal{L}_{D_{3}}$ represents the Lagrangian density of the $D_{3}$-brane. Observe that integration over the $S^3$ has been already taken into account. As one can notice, the Lagrangian density does not depend on the time component $\T$ or the angular coordinates $\Phi_{i}$, just their derivatives. This points to conserved quantities in the system. For our obscure purposes,\footnote{i.e. to make our computations as simple as possible.} let us define the conserved angular momentum
+\begin{equation}
+ J \equiv \frac{1}{2\pi^2 T_3}\frac{\dpar\mathcal{L}_{D_{3}}}{\dpar \dot\Phi} = \frac{\R^3 }{\sqrt{ -\dot X^2 }} \left(G_{t\phi} \dot\T + G_{\phi\phi} \dot\Phi \right) + (C_4)_\phi.
+\end{equation}
+With this, let us Legendre transform to substitute $\dot\Phi$ for $J$, automatically satisfying $\Phi$'s EoM. Additionaly, let's define $J_C = J-(C_4)_\phi$, which we will give a physical interpretation later. We then obtain \textcolor{red}{why do we choose positive root?}:
+\begin{equation}
+ \dot\Phi = -\frac{G_{t\phi}}{G_{\phi\phi}}\dot\T \pm J_C \sqrt{\frac{\left(\frac{G_{t\phi}^2}{G_{\phi\phi}^2}-\frac{G_{tt}}{G_{\phi\phi}} \right) \dot\T^2 - \frac{G_{rr}}{G_{\phi\phi}} \dot\R^2 }{\left(\R^6\, G_{\phi\phi} + J_C^2\right)}}.
+\end{equation}
+and the Legendre transformation becomes:
+\begin{equation}\label{eq: Lag_Legendre}
+\begin{split}
+ \mathcal{L}_{D_{3}}^J &= \mathcal{L}_{D3} - \dot\Phi J \\
+ &= -2\pi^2 T_3 \dot\T \left\{-(C_4)_t  - \frac{G_{t\phi}}{G_{\phi\phi}}J_C  + \sqrt{-\left(\R^6 + \frac{J_C^2}{G_{\phi\phi}}\right) \left( \underbrace{G_{tt}-\frac{G_{t\phi}^2}{G_{\phi\phi}}}_{B} + G_{rr} \R'^2 \right) } \right\},
+ \end{split}
+\end{equation}
+Notice that we do not longer have a dot, but a prime as a derivative. For computational convenience, one can opt to write $\tfrac{\partial R}{\partial \tau} = \dot{\T} \tfrac{\partial R}{\partial \T}$, which implies that prime is a derivative with respect to the spacetime time-coordinate. Introducing the components of the ten-dimensional line invariant (\ref{eq: 10Dmetric}), we can write (\ref{eq: Lag_Legendre}) as
+\begin{equation}\label{eq: Lag_J}
+    \mathcal{L}_{D_{3}}^J = -2\pi^2 T_3 \dot\T \left\{-(C_4)_t  - \frac{J_C}{L}A_t  + \sqrt{-\left(\R^6 + \frac{J_C^2}{L^2}\right) \left(\underbrace{g_{tt}}_{B}+g_{rr} \R'^2 \right) } \right\},
+\end{equation}
+where $B = g_{tt}$ results after simplification of the metric entries. The linear term $J_C$ in (\ref{eq: Lag_J}) shows that the brane carries charge and couples to the bulk gauge field. Note that it is $J_C$ rather than $J$ that measures the charge. This relative shift can be understood by frame dragging due to the rotation in the extra dimensions.\footnote{The right angular momentum of the expading bubble it is obtained when its rotation in the compact direction is measured with respect a "static" reference system of the background. Hence the relative shift.}
+
+Let us elaborate on the conceptual picture that the square root term in Eq. (\ref{eq: Lag_J}) represents: In the absence of $J_C$, it is no more than an effective five-dimensional DBI-term. The presence of $J_C$ can be understood as an extra flux representing an uniform density of charged particles over the D3-brane. This dissolved particle density spread over the brane can be interpreted as the charge $Q$ from a five-dimensional point of view.\footnote{One can formally collapse the brane to a point (i.e. set $\mathcal{R} = 0$), to see Eq. (\ref{eq: Lag_J}) become:
+\begin{equation}
+    -\frac{2\pi^2 T_3 J_C}{ L}\dot\T  \sqrt{- \left(g_{tt}+g_{rr} \R'^2 \right)}.
+\end{equation}
+In the absence of the dissolved particles, the total mass of the $D_{3}$ approaches zero in this limit. In this case the mass converges to $\frac{2\pi^2 T_3 J_C}{L}$. This can be interpreted as the total mass of the dissolved particles.} 
+
+Lastly, the $(C_4)_t$-term can be studied as a five-dimensional WZ-term; One can always define an effective five-dimensional flux $F_5^{\text{eff}}=d\big[(C_4)_t \dpar t\wedge\epsilon_3\big]$ with $F_5^{\text{eff}}$ proportional to the volume form of the line invariant $\text{ds}_5^2$.
+
+Our $D_{3}$-dynamics equation (\ref{eq: Lag_J}) can be further massage to a more simple expression in terms of the Hamiltonian
+\begin{equation}\label{eq: Hamiltonian}
+    H=2\pi^2 T_3 \dot\T \left( \frac{-g_{tt} \sqrt{\R^6 + \frac{J_C^2}{L^2}}}{\sqrt{ -\left(g_{tt}+g_{rr} \R'^2 \right)}} -(C_4)_t  - \frac{J_C}{L}A_t \right),
+\end{equation}
+given in terms of the proper time of the brane. Careful here! It is of extreme importance to realize that this is \textbf{not} the time variable relevant for a four-dimensional observer like our dear reader. Such a witness comoves with the nucleated brane in AdS$_5$, but does not move together with the brane in its compact dimensions dance. This is a similar argument to that Kaluza Klein (KK) compactifications to four dimensions. Any observer, made out of KK particles, is governed by a time component which does \textbf{not} involve the internal momenta or velocities of their particles. We will refer to the relevant four dimensional proper time as $\tilde{\tau}$, which is computed as
+\begin{equation}\label{eq: true_proper_time}
+    \dpar \tilde{\tau} = \dpar t \sqrt{ -\left(g_{tt}+g_{rr} \R'^2 \right) }.
+\end{equation}
+%Using
+%\begin{equation}
+%g_{tt}+g_{zz} \Z'^2=  \frac{g_{tt}}{1+g_{zz} \left(\frac{d\Z}{d\tilde{\tau}}\right)^2},
+%\end{equation}
+This allows us to rewrite the Hamiltonian (\ref{eq: Hamiltonian}) in terms of the proper time of the four-dimensional observer as:
+\begin{equation} \label{eq: rewritten_hamiltonian}
+    H= 2\pi^2 T_3 \frac{d\T}{d \tilde{\tau}} \left( \sqrt{\left(\R^6 + \frac{J_C^2}{L^2}\right) }\sqrt{ g(\R )+\dot\R^2  }-\frac{1}{L} \left(\R^4-r_H^4\right) - \frac{\kappa_{5}\:J_C \:Q}{L}\left(\frac{1}{r_H^2}-\frac{1}{\R^2} \right)\right),
+\end{equation}
+where Eq. (\ref{eq: true_proper_time}) has been used to rewrite the first term in the Hamiltonian (\ref{eq: Hamiltonian}), while its second and third pieces correspond to expressions (\ref{eq: C4_pot_new}) and (\ref{eq: gaugepot_A_new_coordinates}) respectively. Recall that $g(\R)$ is the function to describe the $\text{AdS}_{5}$-Reissner-Nordström geometry (\ref{eq: metricargument}).
+
+This Hamiltonian should be put equal to a conserved energy $E$,\footnote{Although we did not derive this conserved quantity, we saw that the Lagrangian density (\ref{eq: Lag_density_action}) does not depend on the coordinate $\T$. This implies $E$ to be conserved.} while the constant in $(C_4)_t$ can be thought of a gauge choice that also shifts $E$. In order to fix such conserved energy, one can recall that the bubble, as a Coleman-de Lucia instanton, will nucleate at \textit{rest}. This translates to zero total energy in the approximately extremal background.\footnote{As described in the introduction of this chapter, the ten-dimensional ambient space has broken supersymmetry, due to the presence of close-to-zero temperature $T$.} Imposing $E=0$, one can then solve Eq. (\ref{eq: rewritten_hamiltonian}) to find the equation of motion controlling the dynamics of the brane as:
+\begin{equation}\label{eq: potentialfromH}
+    \dot{\R}^{2} = -f(\R) -k^2 \R^2 +  \frac{k^{2}\:\left(\R^{4}-r^{4}_{H}+\frac{Q \: \kappa_{5}\:J_{c}}{r_{H}^{2}}\left(1-\frac{r_{H}^2}{\R^2}\right)\right)^2}{k^{2}\:J_{c}^{2}+\R^{6}},
+ \end{equation}
+ where $f(\R) = g(\R) - k^{2} \R^{2}$. Eq. (\ref{eq: potentialfromH}) still carries both geometrical, through its first DBI term (i.e. $g(\R)$) and WZ information (i.e the last term). This equation of motion is the furthest we can go simplifying the action of the $D_{3}$-brane (\ref{eq: D3_action}) into the ten-dimensional background. In order to understand why the embedding of the dark bubble into string \textbf{works}, we will explicitely compare Eq. (\ref{eq: potentialfromH}) to the equation governing a four dimensional expanding cosmology derived from the junction conditions, as was already done in Eq. (\ref{eq: friedmann_from_junc}).  This will be the aim of the next section.
+
 \subsection{Comparing junctions to EOM}
 Basically, compare as we did in the paper. Just to prove, that at some specific limit EOM = JC.
-\subsection{Collapsing Cosmology: Evacuation required} 
+\subsection{Collapsing cosmology: Evacuation required} 
 \subsection{Higher curvature corrections to the rescue}
 Point to the fact that previous EOM has no CC. Discuss about how to obtain it and elaborate on all pieces in the game. End with the famous $1/N$ corrections that transform in CC. (First part of 5th paper)
 \subsection{Energy scales from Dark Bubble embedding: A new hope}\label{subsec: energy_scale}
 Compare to observed CC and obtain $N$ to fix all scales. Discuss and defend the size of extra dimensions and the stringy scales.
-

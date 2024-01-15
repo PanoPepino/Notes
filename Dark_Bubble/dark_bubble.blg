@@ -3,47 +3,45 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: dark_bubble.aux
 The style file: JHEP.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: thesis_ref.bib
-Warning--I didn't find a database entry for "Henriksson:2019zph"
-You've used 0 entries,
+Database file #1: ../../thesis_ref.bib
+You've used 1 entry,
             2316 wiz_defined-function locations,
-            547 strings with 3730 characters,
-and the built_in function-call counts, 22 in all, are:
-= -- 0
-> -- 0
+            557 strings with 3938 characters,
+and the built_in function-call counts, 419 in all, are:
+= -- 45
+> -- 10
 < -- 0
-+ -- 0
-- -- 0
-* -- 3
-:= -- 9
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 3
+- -- 2
+* -- 32
+:= -- 60
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 1
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 1
+duplicate$ -- 30
+empty$ -- 34
+format.name$ -- 6
+if$ -- 105
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 4
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 7
+num.names$ -- 1
+pop$ -- 2
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 21
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 20
+swap$ -- 13
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 warning)
+while$ -- 4
+width$ -- 2
+write$ -- 12
