@@ -4,17 +4,17 @@
 \contentsline {subsection}{\numberline {2.1}A black hole in the bulk: Ten-dimensional Kerr or five-dimensional Reissner-Nordström one?}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}The $D_{3}$-brane dynamics}{9}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Comparing junctions to EOM}{12}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Collapsing cosmology: Evacuation required}{12}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Higher curvature corrections to the rescue}{12}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Energy scales from Dark Bubble embedding: A new hope}{12}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Quantum bubbles: Higher dimensions to solve boundary choices}{13}{section.3}%
-\contentsline {section}{\numberline {4}Decorating the cosmos: Gauss-Codazzi equation at work}{13}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Matter}{13}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Radiation}{13}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Gravitational waves}{13}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}The standard model of particle physics}{13}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Electromagnetism}{13}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Weak force: Neutrinos}{13}{subsubsection.4.4.2}%
-\contentsline {section}{\numberline {5}Holographic bubbles and hanging strings}{13}{section.5}%
-\contentsline {section}{\numberline {6}No, this is not a Randall-Sundrum model on steroids}{13}{section.6}%
-\contentsline {section}{References}{13}{section*.2}%
+\contentsline {subsection}{\numberline {2.4}Collapsing cosmology: Evacuation required}{14}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Higher curvature corrections to the rescue}{16}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Energy scales from Dark Bubble embedding: A new hope}{17}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Quantum bubbles: Higher dimensions to solve boundary choices}{17}{section.3}%
+\contentsline {section}{\numberline {4}Decorating the cosmos: Gauss-Codazzi equation at work}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Matter}{17}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Radiation}{17}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Gravitational waves}{17}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}The standard model of particle physics}{17}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Electromagnetism}{17}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Weak force: Neutrinos}{17}{subsubsection.4.4.2}%
+\contentsline {section}{\numberline {5}Holographic bubbles and hanging strings}{17}{section.5}%
+\contentsline {section}{\numberline {6}No, this is not a Randall-Sundrum model on steroids}{17}{section.6}%
+\contentsline {section}{References}{17}{section*.3}%

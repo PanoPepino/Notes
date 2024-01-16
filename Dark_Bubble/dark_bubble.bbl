@@ -1,9 +1,9 @@
 
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
 
-\bibitem{Danielsson:2024aa}
-U.~Danielsson and D.~Panizo, \emph{Experimental tests of dark bubble
-  cosmology}, \href{https://doi.org/10.1103/PhysRevD.109.026003}{\emph{Phys.
-  Rev. D} {\bfseries 109} (2024) 026003}.
+\bibitem{Israel:1966rt}
+W.~Israel, \emph{{Singular hypersurfaces and thin shells in general
+  relativity}}, \href{https://doi.org/10.1007/BF02710419}{\emph{Nuovo Cim. B}
+  {\bfseries 44S10} (1966) 1}.
 
 \end{thebibliography}\endgroup

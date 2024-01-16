@@ -156,7 +156,7 @@ In the absence of the dissolved particles, the total mass of the $D_{3}$ approac
 
 Lastly, the $(C_4)_t$-term can be studied as a five-dimensional WZ-term; One can always define an effective five-dimensional flux $F_5^{\text{eff}}=d\big[(C_4)_t \dpar t\wedge\epsilon_3\big]$ with $F_5^{\text{eff}}$ proportional to the volume form of the line invariant $\text{ds}_5^2$.
 
-Our $D_{3}$-dynamics equation (\ref{eq: Lag_J}) can be further massage to a more simple expression in terms of the Hamiltonian
+Our $D_{3}$-dynamics equation (\ref{eq: Lag_J}) can be further massaged to a more simple expression in terms of the Hamiltonian
 \begin{equation}\label{eq: Hamiltonian}
     H=2\pi^2 T_3 \dot\T \left( \frac{-g_{tt} \sqrt{\R^6 + \frac{J_C^2}{L^2}}}{\sqrt{ -\left(g_{tt}+g_{rr} \R'^2 \right)}} -(C_4)_t  - \frac{J_C}{L}A_t \right),
 \end{equation}
@@ -176,13 +176,108 @@ where Eq. (\ref{eq: true_proper_time}) has been used to rewrite the first term i
 
 This Hamiltonian should be put equal to a conserved energy $E$,\footnote{Although we did not derive this conserved quantity, we saw that the Lagrangian density (\ref{eq: Lag_density_action}) does not depend on the coordinate $\T$. This implies $E$ to be conserved.} while the constant in $(C_4)_t$ can be thought of a gauge choice that also shifts $E$. In order to fix such conserved energy, one can recall that the bubble, as a Coleman-de Lucia instanton, will nucleate at \textit{rest}. This translates to zero total energy in the approximately extremal background.\footnote{As described in the introduction of this chapter, the ten-dimensional ambient space has broken supersymmetry, due to the presence of close-to-zero temperature $T$.} Imposing $E=0$, one can then solve Eq. (\ref{eq: rewritten_hamiltonian}) to find the equation of motion controlling the dynamics of the brane as:
 \begin{equation}\label{eq: potentialfromH}
-    \dot{\R}^{2} = -f(\R) -k^2 \R^2 +  \frac{k^{2}\:\left(\R^{4}-r^{4}_{H}+\frac{Q \: \kappa_{5}\:J_{c}}{r_{H}^{2}}\left(1-\frac{r_{H}^2}{\R^2}\right)\right)^2}{k^{2}\:J_{c}^{2}+\R^{6}},
+    \dot{\R}^{2} = -f(\R) -k^2 \R^2 +  \frac{k^{2}\:\left(\R^{4}-r^{4}_{H}+\textcolor{violet}{\frac{Q \: \kappa_{5}\:J_{c}}{r_{H}^{2}}}\left(1-\frac{r_{H}^2}{\R^2}\right)\right)^2}{\textcolor{teal}{k^{2}\:J_{c}^{2}+\R^{6}}},
  \end{equation}
- where $f(\R) = g(\R) - k^{2} \R^{2}$. Eq. (\ref{eq: potentialfromH}) still carries both geometrical, through its first DBI term (i.e. $g(\R)$) and WZ information (i.e the last term). This equation of motion is the furthest we can go simplifying the action of the $D_{3}$-brane (\ref{eq: D3_action}) into the ten-dimensional background. In order to understand why the embedding of the dark bubble into string \textbf{works}, we will explicitely compare Eq. (\ref{eq: potentialfromH}) to the equation governing a four dimensional expanding cosmology derived from the junction conditions, as was already done in Eq. (\ref{eq: friedmann_from_junc}).  This will be the aim of the next section.
+ where $f(\R) = g(\R) - k^{2} \R^{2}$ and terms in \textcolor{violet}{violet} and \textcolor{teal}{teal} will be discussed in the next section. Eq. (\ref{eq: potentialfromH}) still carries both geometrical, through its first DBI term (i.e. $g(\R)$) and WZ information (i.e the last term). This equation of motion is the furthest we can go simplifying the action of the $D_{3}$-brane (\ref{eq: D3_action}) into the ten-dimensional background. In order to understand why the embedding of the dark bubble into string \textbf{works}, we will explicitely compare Eq. (\ref{eq: potentialfromH}) to the equation governing a four dimensional expanding cosmology derived from the junction conditions, as was already done in Eq. (\ref{eq: friedmann_from_junc}).  This will be the aim of the next section.
 
 \subsection{Comparing junctions to EOM}
-Basically, compare as we did in the paper. Just to prove, that at some specific limit EOM = JC.
+
+As stated above, the five dimensional picture involves a $\text{AdS}_{5}$-Reissner-Nordström geometry. The black hole (i.e. the stack of $D_{3}$-branes), is unstable due to the presence of the large chemical potential $\mu_{c}$ and one or several can escape (i.e. nucleate) from the outer horizon $r_{H}$. Let's beginning our comparison by considering one single nucleated brane. It has tunneled from the outer horizon $r_{H}$ at radius $r > r_{H}$ and starts to expand. Similarly to the simplest example described in section \ref{sec: simple_example}, this shell will mediate the decay between two different vacua: The \textit{outside}, which has no idea yet that neither vacuum scale $k$, nor the black hole charge $Q$ and $M$ have changed and the \textit{inside}, where this information has already accounted by the geometry and spacetime has changed accordingly. Hence, the inner and outer metric argument $g(r)$ can be written as:
+\begin{equation}
+     g_{\pm}(r)=k_{\pm}^2 r^2 + \underbrace{1-\frac{2\kappa_5 M_{\pm}}{r^2}+\frac{\kappa_5^2 Q_{\pm}^2}{r^4}}_{f_{\pm}(r)},
+\end{equation}
+In the same spirit as in section \ref{sec: simple_example}, the junction condition (\ref{eq: squared_tension}) becomes:
+\begin{equation} \label{eq: junction_embedding}
+    T_3 = \frac{3}{\kappa_{5}}\left(\sqrt{\frac{g_-(a)}{a^2}+\frac{\dot{a}^2}{a^2}}-\sqrt{\frac{g_+(a)}{a^2}+\frac{\dot{a}^2}{a^2}}\right).
+\end{equation}
+Here $T_{3}$ represents the tension of the brane (we will later see why $T_{3}$ and not $\sigma$). The brane's location along the $\text{AdS}_{5}$-throat is $r=a(\tau)$.\footnote{This $\tau$ is the \textbf{real} proper time discussed in Eq. (\ref{eq: true_proper_time}). We dropped the tilde to obtain a cleaner notation.}
+
+In order to obtain a similar equation to (\ref{eq: potentialfromH}) to compare to, one can solve exactly for $\dot{a}^{2}$ to obtain a Friedmann-like equation:
+\begin{equation}\label{eq: FriedmannfromJC}
+   \dot{a}^2= \frac{1}{4 \sigma^{2} a^{2}} \left[\left(k_{-}^{2}-k_{+}^{2}\right)a^{2} +\left(f_{-}(a) - f_{+}(a)\right)\right]^{2} + \frac{\sigma^{2}}{4}a^{2} -\frac{1}{2}\left[\left(f_{-}(a) + f_{+}(a)\right) + \left(k_{-}^{2}+k_{+}^{2}\right)a^{2} \right],
+\end{equation}
+As a handy notation, let us refer to the \textit{critical} tension of this brane (\ref{eq: critical_tension}) as $\sigma =T_3 \frac{\kappa_5}{3} = (k_- -k_+) = \Delta k$. In order to compare with  (\ref{eq: potentialfromH}), we must make sure to be in the right regime, i.e. that of the probe approximation. This implies that we must work at linear order in the perturbations when making expansions of the form \textcolor{red}{this has to be changed/improved}:
+\begin{equation}\label{eq: approximations_bh}
+    k_{\pm}=k\mp \tfrac{1}{2} \Delta k, \quad\quad\quad\quad Q_{\pm}=Q\mp \tfrac{1}{2} \Delta Q, \quad\quad\quad\quad M_{\pm}=M\mp \tfrac{1}{2} \Delta M.
+\end{equation}
+Observe that  $\Delta Q= Q _- - Q_+<0$. Similarly to the mass $M$, the a brane leaves the stack, it carries mass (i.e. tension) and a little bit of charge (the angular momentum $J_{c}$ from the ten-dimensional perspective) with it. In this way, one ensures that the physical picture is respected by the approximation.
+
+With approximations (\ref{eq: approximations_bh}) at hand, let us substitute them in Eq. (\ref{eq: FriedmannfromJC}) to read:
+\begin{equation}\label{eq: FriedmannlinearJC}
+    \dot{a}^2 = -f(a)-k^2 a^2+\frac{k^2}{a^6}\left( a^4 +\frac{a^2}{2k\Delta k}\left( f_{-}(a)-f_{+}(a)\right)\right)^2,
+\end{equation}
+where only linear order terms have been considered. Here $f(a)$ condenses zeroth order information about the mass $M$ and charge $Q$, while $f_{-}(a)-f_{+}(a)$ encodes linear terms in $\Delta Q$ and $\Delta M$. The structure of Eq. (\ref{eq: FriedmannlinearJC}) starts to resemble that of the embedding potential (\ref{eq: potentialfromH})... But this is not enough. We aim for a closer match. Notice that this expression can be simplified even further. If one evaluates the junction condition [REF appendix] and $g(r)$ at the horizon $r_{H}$, accounting that $g_{\pm}(r)$ musth vanish at the horizon $r_{H}$, it results in the following constraints at the zeroth and first order:
+\begin{equation}\label{eq: JCuptolinear}
+\begin{split}
+    \textbf{$0^{\text{th}}$}&: \quad k^2 a^2 +g(a)=0, \\
+    \textbf{$1^{\text{st}}$}&: \quad k \, \Delta k \, a_H^2-\frac{\kappa_5 \Delta M}{a_H^2}+\frac{\kappa_5 Q \Delta Q}{ a_H^4}=0.
+\end{split}
+\end{equation}
+Substitute (\ref{eq: JCuptolinear}) in Eq. (\ref{eq: FriedmannlinearJC}) results in:
+\begin{equation}\label{eq: FinalfriedmannfromJC}
+    \dot{a}^2= -f(a)-k^2 a^2+\frac{k^2}{\textcolor{teal}{a^6}}\left( a^4-a_H^4 - \textcolor{violet}{\frac{\kappa_{5}^{2}Q \Delta Q}{a_{H}^{2}\:k \Delta k }} \left(1-\frac{a_H^2}{a^2} \right) \right) ^2.
+\end{equation}
+Overall, the whole structure of Eq. (\ref{eq: FinalfriedmannfromJC}) is identical to that of expression (\ref{eq: potentialfromH}). Recall that, while we had chosen capital letters $\mathcal{X}$ to denote the embedding functions of the brane, the five dimensional picture uses lowercase letters. In any case, both represents the same coordinates. Let us discuss the coloured terms:
+
+\begin{itemize}
+    \item \textcolor{violet}{fraction}: The comparison of both terms easily yields:
+    \begin{equation}
+        J_{C} = -\frac{\kappa_{5} \Delta Q}{ k \, \Delta k}. 
+    \end{equation}
+    This has been already discussed; It is the realisation that the brane's effective angular momentum in the compact directions translates to an effective charge $\Delta Q$ carried by the brane when observing the system from a five-dimensional perspective.
+    \item \textcolor{teal}{denominator}: At first glance, one can observe the absence of a $J_{C}^{2}$ term in Eq. (\ref{eq: FinalfriedmannfromJC}). This is because we forgot to account for one important character that is present in the string theory brane action, but not in the junction conditions; The flux related to the dissolved charge density discussed above. Opposite to the DBI $+$ WZ action, the junction condition (\ref{eq: junction_embedding}) did not account for the presence of this dissolved flux. In fact, this can be used to enhance the junction conditions. Replacing $T_{3}$ in expression (\ref{eq: junction_embedding}) by $T_{3}\sqrt{1 + k^{2}\, J_{C}^{2} a^{-6}}$ yields exactly the same result as in Eq. (\ref{eq: potentialfromH}).
+\end{itemize}
+After having related the two problematic terms, the match is complete. One can easily see that, the equation of motion for the $D_{3}$-brane given by Eq. (\ref{eq: D3_action}) and the junction condtions accross the brane (\ref{eq: junction_embedding}) are the \textbf{same} expression. This just tells us that the construction from the DBI$+$WZ action (\ref{eq: D3_action}) from the ten dimensional stringy ambient space description yields the same dynamics as the junction condition for the co-dimension 1 shell in the five dimensional $\text{AdS}_{5}$ bulk. This can just point to one simple fact: The dark bubble model has been embedded into string theory. But there is one problem. We have not induced a small and positive dark energy density yet...
+
 \subsection{Collapsing cosmology: Evacuation required} 
+There is one little detail we have not commented on yet: This embedding of the dark bubble model within string theory is not able to reproduce a late time cosmology dominated by a cosmological constant. This implies that the curvature of the universe will eventually dominate, reaching a maximum value for the scale factor $a(\tau)$ and collapsing back, in the form of a bouncing cosmology. To realise this, one just need to check the behaviour of the Friedmann-like expression (\ref{eq: potentialfromH}) for late-time cosmologies (i.e. $\mathcal{R} \rightarrow \infty$). In this regime, the $k^{2} \mathcal{R}(\tau)^{2}$ cancels, pointing to a brane's tension that equals the critical one, as discussed in section \ref{sec: simple_example}. But let us explore this issue from the brane tension $T_{3}$ perspective.
+
+Junction conditions are formulated from a general relativity perspective; If both vacua (inside and outside) are standing alone solutions to Einstein equation, What induced energy momentum tensor (\ref{eq: simple_second_junc}) should the brane be equipped with such that the whole spacetime is a solution to the Einstein equation? This implies that Newton's constant $G_{5}$ is \textbf{constant} from this perspective. This does not imply that any other combination of variables to describe this constant cannot change, as long as the resulting Newton's variable $G_{5}$ remains constant.
+
+\textcolor{red}{Work out a better introduction to the dictionary and relevant relations.} Given the AdS/CFT dictionary, one finds that:
+\begin{equation}\label{eq: G5_to_L_N}
+    G_{5} = \frac{\pi L^{3}}{2 N^{2}}
+\end{equation}
+where again $L$ is the curvature radius of the compact direction and the AdS-throat, while $N$ is number of branes sitting in the stack of $D_{3}$-branes sourcing the geometry of the ambient space. Imposing the Newton's constant to be constant accross the brane (i.e. $\Delta G_5=0$), it follows that:
+\begin{equation}\label{eq: relation_L_to_N}
+    \frac{\Delta L}{L} = \frac{2}{3} \frac{\Delta N}{N} ,
+\end{equation}
+where $\Delta L$ represent the difference in the curvature radius accross the brane and $\Delta N$ encodes how many $D_{3}$-branes have nucleated together, mediating the decay. This relation (\ref{eq: relation_L_to_N}) can be used to rewrite the critical tension of the brane as:
+\begin{equation}\label{eq: initial_tension_transform}
+    \begin{split}
+        T_3 &=\frac{3\Delta k}{8 \pi G_5} \rightarrow -\frac{3}{8 \pi G_5} \frac{\Delta L}{L^2} = -\frac{1}{4 \pi G_5 L}\frac{\Delta N}{N} =  -\frac{1}{2 \pi^{2} L^{4}} N \, \Delta N\\
+        & = - \frac{\Delta N}{(2\pi)^{3} g_{s} \ell_{s}^{4}} = -\Delta N \, T_{D_{3}}.
+    \end{split}
+\end{equation}
+Observe that relation (\ref{eq: relation_L_to_N}) has been used to reach the third step. The fourth equality is obtained using Eq. (\ref{eq: G5_to_L_N}), and the final expression just requires us to use another AdS/CFT dictionary key: $L^{4} = 4 \pi g_{s} N \ell_{s}^{4}$. When $\Delta N = -1$ (i.e. just one nucleated brane), Eq. (\ref{eq: initial_tension_transform}) states that the critical tension is exactly that of a $D_{3}$-brane, and hence the cosmological constant will be zero. Before we decide to delve down in the intricacies of inducing an effective positive, yet small four-dimensional dark energy density in the model, let us first analyse how the induced four dimensional cosmology, driven to the failure due to the absence of a late-time cosmological constant domination, behaves under the parameters controlling its dynamics.
+
+For starters, let us express Eq. (\ref{eq: FinalfriedmannfromJC}) in terms of the horizons $\{a_{h}, a_{H}\}$ (recall that from a four dimensional perspective $\R(\tau) = r(\tau) = a(\tau)$) by substitution of Eq. (\ref{eq: MQhorizons}). This yields:
+\begin{equation}\label{eq: potential_extremal_subs}
+\begin{split}
+    \dot{a}^{2} = -\frac{k^{2} (a_H^2 - a^2) (a_h^2 - a^2) \left(a_h^2 + a_H^2 + \tfrac{1}{k^2} + a^2\right)}{a^4} +\frac{k^{2}\:\left(a^4-a_{H}^{4}+ \frac{a_{h}\: J_{c}\sqrt{1+ \left(k^2 a_{H}^2 + a_{h}^{2}\right)}}{a_{H}} \left(1-\frac{a_{H}^2}{a^2}\right)\right)^2}{k^{2} J_{c}^2+a^6}.
+\end{split}
+\end{equation}
+The first characteristic one should notice is that $\dot{a} = 0$ when $a = a_{H}$. As stated above, the brane nucleates at rest, which not only the junction condition, but the DBI action from string theory remarks in this construction. When both horizons coincide (i.e. $r_{h}= r_{H}$), one recovers the extremal description of the Reissner-Nordström black hole living in the $\text{AdS}_{5}$ bulk. Figure (\ref{fig: full_potential}) will allow us to further explore other critical points of this construction.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=12cm]{Figures/db_pot.png}
+    \caption{The potential controlling the dynamics of the embedded four dimensional universe.}
+    \label{fig: full_potential}
+\end{figure}
+\textcolor{red}{TRANSFORM TO SVG !!}\\
+There are three (four) special points to consider in figure (\ref{fig: full_potential}):
+\begin{itemize}
+    \item Both horizons $\{a_{h}, a_{H}\}$ (first two roots in the non-extremal case): They respectively correspond to the inner and outer horizons of the Reisser-Nordström black hole. In the extremal case, both horizons coincide, which corresponds to the first root of the blue plot. 
+    \item The nucleation point $\{a_{\text{nuc}}\}$ ($2^{\text{nd}}$ or $3^{\text{rd}}$ roots, respectively): This is the value of $a$ at which the $D_{3}$ brane (i.e. the four-dimensional universe) will nucleate. The region between $a_{H}$ and $a_{\text{nuc}}$ is the classical forbidden region that the brane will have to tunnel through. More to be discussed in section (\ref{sec: quantum_bubbles}).
+    \item The maximal size $\{a_{b}\}$ of the collapsing universe:  This is given by the last root of the potential $V(a)$. At this point, the size of the bubble is maximal, and the four dimensional universe, without positive dark energy density, but equipped with positive curvature, will reach its maximum size and start contracting, in the form of a bouncing cosmology.
+\end{itemize}
+But, What different features are controlled by which parameters? By construction, the potential (\ref{eq: potential_extremal_subs}) goes to 1 when the scale factor $a\rightarrow \infty$. The AdS scale $k^{-1}$ is in charge of controlling the overall value of the potential (i.e. basically scaling the $y$-axis). The angular momentum of the brane $J_{C}$ will regulate the barrier of the potential.
+
+The potential described in Eq. (\ref{eq: potential_extremal_subs}) lacks a sustained cosmological constant and experiences only a fraction of an e-folding just after creation. The expansion rate vanishes at nucleation, the universe then accelerates for a short time after which it enters a decelerated phase. Since the curvature is positive, and there is no asymptotic cosmological constant, the universe will eventually stop expanding and start to contract, entering an oscillating phase with repeated bounces. 
+
+Of course, this is not the desired fate for the dark bubble model in its stringy embedding. It is our aim to find a low-dimensional model capable of describing dark energy derived from string theory. Does previous computations indicate that the dark bubble model embedding should be ruled out? Absolutely not. All stringy computation so far have been performed assuming the brane to be BPS, although the ten-dimensional ambient space hosting it has broken supersymmetry. This will be taken into account in the incoming sections.
+
+
 \subsection{Higher curvature corrections to the rescue}
 Point to the fact that previous EOM has no CC. Discuss about how to obtain it and elaborate on all pieces in the game. End with the famous $1/N$ corrections that transform in CC. (First part of 5th paper)
 \subsection{Energy scales from Dark Bubble embedding: A new hope}\label{subsec: energy_scale}
