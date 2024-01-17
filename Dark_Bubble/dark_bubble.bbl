@@ -1,9 +1,40 @@
 
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
 
-\bibitem{Israel:1966rt}
-W.~Israel, \emph{{Singular hypersurfaces and thin shells in general
-  relativity}}, \href{https://doi.org/10.1007/BF02710419}{\emph{Nuovo Cim. B}
-  {\bfseries 44S10} (1966) 1}.
+\bibitem{Bachas:1999aa}
+C.P.~Bachas, P.~Bain and M.B.~Green, \emph{Curvature terms in d-brane actions
+  and their m-theory origin},
+  \href{https://doi.org/10.1088/1126-6708/1999/05/011}{\emph{Journal of High
+  Energy Physics} {\bfseries 1999} (1999) 011}.
+
+\bibitem{Garousi:1996aa}
+M.R.~Garousi and R.C.~Myers, \emph{Superstring scattering from d-branes},
+  \href{https://doi.org/10.1016/0550-3213(96)00316-1}{\emph{Nuclear Physics B}
+  {\bfseries 475} (1996) 193}.
+
+\bibitem{Green:1997aa}
+M.B.~Green, J.A.~Harvey and G.~Moore, \emph{I-brane inflow and anomalous
+  couplings on d-branes},
+  \href{https://doi.org/10.1088/0264-9381/14/1/008}{\emph{Classical and Quantum
+  Gravity} {\bfseries 14} (1997) 47}.
+
+\bibitem{Jalali:2015aa}
+A.~Jalali and M.R.~Garousi, \emph{{D-brane action at order
+  \ensuremath{\alpha}'$^2$}},
+  \href{https://doi.org/10.1103/PhysRevD.92.106004}{\emph{Phys. Rev. D}
+  {\bfseries 92} (2015) 106004}
+  [\href{https://arxiv.org/abs/1506.02130}{{\ttfamily 1506.02130}}].
+
+\bibitem{Danielsson:2024aa}
+U.~Danielsson and D.~Panizo, \emph{Experimental tests of dark bubble
+  cosmology}, \href{https://doi.org/10.1103/PhysRevD.109.026003}{\emph{Phys.
+  Rev. D} {\bfseries 109} (2024) 026003}.
+
+\bibitem{Jalali:2016aa}
+A.~Jalali and M.R.~Garousi, \emph{{Higher derivative corrections to the
+  Wess-Zumino action}},
+  \href{https://doi.org/10.1103/PhysRevD.94.086002}{\emph{Phys. Rev. D}
+  {\bfseries 94} (2016) 086002}
+  [\href{https://arxiv.org/abs/1606.02082}{{\ttfamily 1606.02082}}].
 
 \end{thebibliography}\endgroup

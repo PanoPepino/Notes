@@ -260,7 +260,7 @@ For starters, let us express Eq. (\ref{eq: FinalfriedmannfromJC}) in terms of th
 The first characteristic one should notice is that $\dot{a} = 0$ when $a = a_{H}$. As stated above, the brane nucleates at rest, which not only the junction condition, but the DBI action from string theory remarks in this construction. When both horizons coincide (i.e. $r_{h}= r_{H}$), one recovers the extremal description of the Reissner-Nordström black hole living in the $\text{AdS}_{5}$ bulk. Figure (\ref{fig: full_potential}) will allow us to further explore other critical points of this construction.
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=12cm]{Figures/db_pot.png}
+    \includegraphics[width=10cm]{Figures/db_pot.png}
     \caption{The potential controlling the dynamics of the embedded four dimensional universe.}
     \label{fig: full_potential}
 \end{figure}
@@ -273,12 +273,82 @@ There are three (four) special points to consider in figure (\ref{fig: full_pote
 \end{itemize}
 But, What different features are controlled by which parameters? By construction, the potential (\ref{eq: potential_extremal_subs}) goes to 1 when the scale factor $a\rightarrow \infty$. The AdS scale $k^{-1}$ is in charge of controlling the overall value of the potential (i.e. basically scaling the $y$-axis). The angular momentum of the brane $J_{C}$ will regulate the barrier of the potential.
 
-The potential described in Eq. (\ref{eq: potential_extremal_subs}) lacks a sustained cosmological constant and experiences only a fraction of an e-folding just after creation. The expansion rate vanishes at nucleation, the universe then accelerates for a short time after which it enters a decelerated phase. Since the curvature is positive, and there is no asymptotic cosmological constant, the universe will eventually stop expanding and start to contract, entering an oscillating phase with repeated bounces. 
+The potential described in Eq. (\ref{eq: potential_extremal_subs}) lacks a sustained cosmological constant and experiences only a fraction of an e-folding just after creation. The expansion rate vanishes at nucleation, the universe then accelerates for a short time after which it enters a decelerated phase. Since the curvature is positive, and there is no dark energy in the game, the universe will eventually stop expanding and start to contract, entering a bouncing phase. 
 
 Of course, this is not the desired fate for the dark bubble model in its stringy embedding. It is our aim to find a low-dimensional model capable of describing dark energy derived from string theory. Does previous computations indicate that the dark bubble model embedding should be ruled out? Absolutely not. All stringy computation so far have been performed assuming the brane to be BPS, although the ten-dimensional ambient space hosting it has broken supersymmetry. This will be taken into account in the incoming sections.
 
 
-\subsection{Higher curvature corrections to the rescue}
-Point to the fact that previous EOM has no CC. Discuss about how to obtain it and elaborate on all pieces in the game. End with the famous $1/N$ corrections that transform in CC. (First part of 5th paper)
+\subsection{Higher curvature corrections to $\Lambda_{4}$ rescue}
+
+If one scrutinise Eqs. (\ref{eq: initial_tension_transform}) and (\ref{eq: potential_extremal_subs}), it is easy to notice the absence of an induced dark energy density $\rho_{\Lambda}$, at least, at leading order in the brane action. At the beginning of this section, we argued that the angular momentum of the stack of branes\footnote{The high chemical potential $\mu$ and non-zero temperature $T$ in dual field theory.} breaks supersymmetry. We also discussed the implications that the WGC would have in non-supersymmetric backgrounds in section [ref SWAMP]. Broken supersymmetry results in a non-saturated inequality (i.e. $Q_{D_{p}} < T_{D_{p}}$) for extended objects in string theory. This would require the presence of corrections to the $D_{p}$-brane action, going beyond the rough sketch that the leading order provides, specially in the description of the brane's tension, making it sub-critical. In the dual field theory description of this embedding, the nucleation of a $D_3$-brane can be understood as if some of the $\mathcal{N}= 4$ SYM scalar fields obtained a non-vanishing expectation value. This results in a Higgsing of the gauge group as $SU(N) \rightarrow SU(N-1) \times U(1)$. Coming back to the gravity side, this process can be described as corrections of the order $1/N$, where $N$ is the number of $D_{3}$-branes in the stack.\footnote{One could argue that expected corrections should be of order $1/N^{2}$, because all fields would belong to the adjoint representation. However, the relevant description of the group is \textbf{after} nucleation, hence the fundamental representation of $SU(N-1)$, with expected correction translation to $1/N$.}
+
+If this is the case, What candidates to correct the action do we have? There are two types of corrections (up to a power of the string coupling $g_{s}$) that can roughly contribute at the same order of magnitude $\tfrac{1}{N}$.
+
+\begin{itemize}
+    \item \textbf{"Stringy" corrections}: These corrections at $\mathcal{O}(\alpha'^{2})$ can be obtained for both relevant pieces of the $D_{p}$-brane action. On the one hand, curvature corrections to the DBI action were found in \cite{Bachas:1999aa}. On simple grounds, each term in the effective action is required to be consistent to those terms of order $\mathcal{O}(\alpha'^{2})$ of the corresponding disk-level scattering amplitude \cite{Garousi:1996aa}. On the other hand, the WZ curvature corrections can be found by imposing that the chiral anomaly on the world volume of intersecting D-branes cancels with the anomalous variation of the WZ action \cite{Green:1997aa}. These extra terms would schematically  a correction to the tension $\delta \sigma$ of the form:
+        \begin{equation}\label{eq: higher_cur_1}
+            \delta \sigma \sim T_{D_3}\,\frac{\alpha'^{2}}{L^4}\sim T_{D_3}\,\frac{1}{g_s N} \sim \frac{1}{g_s L\,G_5\,N^2} \sim \frac{1}{g_s L^4},
+        \end{equation}
+    where we have used same set of relations as in Eq. (\ref{eq: initial_tension_transform}). Observe that, since the length scale $\ell_{s}^{2} = \alpha'$ is a classical scale set by the tension of the string, these contributions can be interpreted as a tree level effect.
+    
+    \item \textbf{Quantum loop corrections}: Quantum loop corrections can be written as:
+        \begin{equation}
+            \frac{1}{N} \sim \frac{\ell_{10}^4}{L^4} ,
+        \end{equation}
+    with $\ell_{10}$ as the ten dimensional Planck length. The Planck length is obtained from the classical Newton's constant by introducing Planck's constant, showing that this correction comes from quantum loops. A renormalized one-loop calculation for a massive field of mass $m$, leads to a contribution to the vacuum energy of order $m^4$. Hence, we see that the loops above would be generated by fields with $m\sim 1/L$, which are present in the theory. \footnote{Note that this also is the mass-scale of the neutrino.}
+\end{itemize}
+So we have two possible candidates. It is not hard to see that the most prominet correction is that of higher curvature corrections (\ref{eq: higher_cur_1}), as want to obtain results for vacua that are weakly coupled (i.e. $g_{s} \ll 1$). Let us then dissect each contribution piece to the $D_{p}$-brane action.
+
+\subsection*{Corrections to the DBI term}
+
+As discussed before, string theory corrections to the DBI-action at order $\alpha '^2$ due to curvature were found in \cite{Bachas:1999aa}:
+\begin{equation}\label{eq: correction_DBI}
+\begin{aligned}
+     S_{\rm DBI}^{\alpha'^{2}} =  &-T_{D_{3}} \frac{\pi^2 \alpha '^2}{48} \int d^4 x\,  e^{-\Phi} \sqrt{-g} \big [ \, (R_T)_{abcd} (R_T)^{abcd}-\\
+     &-2(R_T)_{ab} (R_T)^{ab}-(R_N)_{abij} (R_N)^{abij}+2(\bar{R})_{ij} (\bar{R})^{ij}\, \big].
+\end{aligned}
+\end{equation}
+Observe that $(R_T)_{abcd}=R^{(4)}_{abcd}$ is the induced curvature on the brane. $(R_N)_{abij}$ is the curvature of the normal bundle. Both are related to the bulk and extrinsic curvatures through the Gauss-Codazzi equation as described in [Appendix JC]. However, there is one term that cannot be found in the appendix. This is $(\bar{R})_{ij}$, which can be defined as:
+\begin{equation}\label{eq: Rij}
+ \bar{R}^{ij}= h^{ab} R^{(4+d) \: ij}_{ab}+ h^{ab} h^{cd} \left(K^i _{ac} K^j _{bd} - \chi K^i _{ab} K^j _{cd}\right).
+\end{equation}
+Contrary to other corrections to the action, Eq. (\ref{eq: Rij}) has no clear geometrical interpretation. Let us focus our attention on its two terms containing extrinsic curvature pieces. There is an important story here.
+
+The first one, $K^i _{ac} K^{ac \, |j}$, was derived for the first time in \cite{Bachas:1999aa}. The second term, $K^{a\: i} _{a} K^{b\,|j}_b$, carries an undetermined coefficient $\chi$, which could not be determined through the scattering amplitudes in \cite{Bachas:1999aa}. How do we then fix its value? In fact, this term seems to be the responsible one to contribute in a non-trivial way to correct the DBI piece of the dark bubble's action (\ref{eq: D3_action}). Long story short: T and S-dualities of string theory can be used in order to fix $\chi = 1$, as was done in \cite{Jalali:2015aa}. One has to be careful with terms that may be mixed by the action of S-duality, but luckily, none result mixed in the computation.\footnote{We refer the reader to \cite{Danielsson:2024aa}, in order to discover the subtle details of such derivation.}. Hence the result $\chi = 1$ from \cite{Jalali:2015aa} can be trusted.
+
+Let us now use this non-trivial correction to shift the tension of the brane in the DBI piece (\ref{eq: correction_DBI}). As the cosmological constant we would like to induce will only be relevant at late-time descriptions of the expanding cosmology, it will be enough to study a pure $\text{AdS}_5$-background. Any matter component induced by the Reissner-Nordström piece of the metric (\ref{eq: 10Dmetric}) can be ignored. Furthermore, as the cosmological constant is small compared to any other scales in the model, we can ignore the expansion of the dark bubble itself when calculating its value.\footnote{Correction coming from induced curvature itself will be sub-sub-leading and irrelevant for the computations to be shown.} \textcolor{red}{WHY?}. In this spirit, let us assume that the brane sits at a fixed position along the $\text{AdS}_{5}$-throat, (i.e. $r=r_0$) and on the $S^5$. \textcolor{red}{WHY 2?} With $AdS_5 \times S^5$ as a direct product, and the brane positioned within the $\text{AdS}_5$, all contributions to the extrinsic curvature $K_{ab}^{|i}$ with $i\neq r$ vanish. In this sense, we have recover the co-dimension 1 shell extensively discussed in [APPENDIX]. With such single extra dimension, one can start to simplify terms.  By definition, $(R_N)_{ab}^{\quad rr}=0$, as it is anti-symmetric. $R_T$ will also vanish, as the brane is flat in the late-time cosmology approximation that has been taken. Hence, the only surviving term in (\ref{eq: correction_DBI}) is $ \bar{R}^{ij}$. Trusting $\chi=1$ in Eq. (\ref{eq: Rij}), as derived in \cite{Jalali:2015aa}, it yields:
+\begin{equation}
+    \bar{R}^{rr} = -16 k^2 g^{rr} .
+\end{equation}
+Substituting this result back into Eq. (\ref{eq: correction_DBI}), and simplifying factors, it is easy to see:
+\begin{equation}\label{eq: tension_shift}
+    T_{D_{3}} \rightarrow T_{D_{3}} \left(1-\frac{512}{48} \pi^2 \alpha '^2 \, k^4 \right).
+\end{equation}
+As expected, there has been a shift in the tension, making it \textit{smaller} than the original leading contribution. This is in line with WGC implications, as discussed above. Let us now return our attention to the Wess-Zumino piece of the action.
+
+\subsection*{Corrections to the WZ term}
+
+To discuss the possible correction contributions to the Wess-Zumino piece of the $D_{3}$-action (\ref{eq: D3_action}), let us first examine its most general expression. It describes the coupling of the brane to Ramond-Ramond fields of various dimensions (represented by $C$). It is given by:
+\begin{equation}
+    S_{\rm WZ}= T_{D_p} \int \dpar^{p+1} x \, C \wedge\sqrt{\frac{{\cal A}(4\pi^2 \alpha  '^{2} R_T)}{{\cal A}(4\pi^2 \alpha'^{2} R_N)}}.
+\end{equation}
+Here $\mathcal{A}$ represents the amplitude computation that contains tangential or normal terms. In our specific case, since $R_T$ and $R_N$ vanish, there are no relevant corrections from this expression. But, there is a potential contribution related to the aforamentioned, as it was shown in \cite{Jalali:2016aa}. This is:
+\begin{equation} \label{eq: WZ corr}
+    S_{WZ} \supset -\frac{\pi^2 \alpha'^{2}}{12} \int d^4 x e^{-\Phi} \sqrt{-g}\epsilon^{a_0 a_1 a_2 a_3}
+    \tfrac{1}{(p+1)!}\partial _r {\cal F}^{(5)}_{r a_0 a_1 a_2 a_3} \bar{R}^{rr},
+\end{equation}
+where ${\cal F}^{(5)}$ is the flux sourced by the presence of the $D_{3}$-brane along the non-compact directions and $\epsilon$ the Levi-Civita symbol. This is the only relevant term of all derived ones in \cite{Jalali:2016aa} for the studied case. Observe the presence of $\bar{R}^{rr}$, which contains the trace of the extrinsic curvature discussed above. Unfortunately, one cannot argue in the same manner as before to completely trust results derived in \cite{Jalali:2016aa}.
+
+
+However, one can argue the following: Eq. (\ref{eq: WZ corr}) is equipped with a term of the form
+\begin{equation}
+    \partial _r {\cal F}^{(5)}_{r a_0 a_1 a_2 a_3}.
+\end{equation}
+In the analysis of \cite{Jalali:2016aa}, assuming the trace of the extrinsic curvature to vanish, there is no difference between $\partial$ and the full covariant derivative $\nabla =\partial +...$. One could therefore argue that the correct expression should be (\ref{eq: WZ corr}) with a {\it covariant} derivative. Then the correction to the WZ will simply vanish as a result of the equations of motion for ${\cal F}$!
+
+Surprisingly, previous argument leaves the correction to be just the simple term derived in Eq. (\ref{eq: tension_shift}). What consequences can this have to dark bubble embedding? Let us explore them.
+\textcolor{red}{I need a stronger argument/explanation here.}
+
+
 \subsection{Energy scales from Dark Bubble embedding: A new hope}\label{subsec: energy_scale}
 Compare to observed CC and obtain $N$ to fix all scales. Discuss and defend the size of extra dimensions and the stringy scales.

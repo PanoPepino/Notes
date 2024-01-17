@@ -17,6 +17,7 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage{cancel} % To cross and cancel values
 \usepackage{bigints} % In case you need bigger integrants
+\usepackage{xcolor}
 \usepackage[skip=10pt plus1pt, indent=0pt]{parskip}
 \newcommand{\ket}[1]{\vert #1 \rangle}
 \newcommand{\bra}[1]{\langle #1 \vert}
@@ -84,9 +85,15 @@
        % \caption{caption}
       %\end{figure}
 
-\subsection*{Random Section}
+\subsection*{Pouring equation to write in the future}
 
-\cite{Danielsson:2018ztv}
+\textcolor{red}{Do not forget to add the D dimensional case to refer to it when corrections to the action are used}
+
+$(R_T)_{abcd}=R^{(4)}_{abcd}$ is the induced curvature on the brane and is related to the bulk curvature $R^{(4+d)}_{\mu \nu \rho \sigma}$ and the extrinsic curvature $K^i _{ab}$, with $i=\left\{1 ... d \right\}$ through the Gauss-Codazzi (GC) equations:
+\begin{equation}
+R^{(4+d)}_{\mu \nu \rho \sigma} e^\mu_a e^\nu_b e^\rho_c e^\sigma_d = (R_T)_{abcd} + \delta_{ij}\left(K^i _{ad} K^j _{bc} - K^i _{ac} K^j _{bd}\right),
+\end{equation}
+where $e^\mu_a$ projects the Riemann tensor of the bulk onto the brane.
 
 
 
