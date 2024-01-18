@@ -322,7 +322,7 @@ Let us now use this non-trivial correction to shift the tension of the brane in 
 \end{equation}
 Substituting this result back into Eq. (\ref{eq: correction_DBI}), and simplifying factors, it is easy to see:
 \begin{equation}\label{eq: tension_shift}
-    T_{D_{3}} \rightarrow T_{D_{3}} \left(1-\frac{512}{48} \pi^2 \alpha '^2 \, k^4 \right).
+    T_{D_{3}} \rightarrow T_{D_{3}} \left(1-\frac{32}{3} \pi^2 \alpha '^2 \, k^4 \right).
 \end{equation}
 As expected, there has been a shift in the tension, making it \textit{smaller} than the original leading contribution. This is in line with WGC implications, as discussed above. Let us now return our attention to the Wess-Zumino piece of the action.
 
@@ -346,9 +346,116 @@ However, one can argue the following: Eq. (\ref{eq: WZ corr}) is equipped with a
 \end{equation}
 In the analysis of \cite{Jalali:2016aa}, assuming the trace of the extrinsic curvature to vanish, there is no difference between $\partial$ and the full covariant derivative $\nabla =\partial +...$. One could therefore argue that the correct expression should be (\ref{eq: WZ corr}) with a {\it covariant} derivative. Then the correction to the WZ will simply vanish as a result of the equations of motion for ${\cal F}$!
 
-Surprisingly, previous argument leaves the correction to be just the simple term derived in Eq. (\ref{eq: tension_shift}). What consequences can this have to dark bubble embedding? Let us explore them.
+Surprisingly, previous argument leaves the correction to be just the simple term derived in Eq. (\ref{eq: tension_shift}). What consequences can this have to the dark bubble embedding? Let us explore them.
 \textcolor{red}{I need a stronger argument/explanation here.}
 
 
-\subsection{Energy scales from Dark Bubble embedding: A new hope}\label{subsec: energy_scale}
-Compare to observed CC and obtain $N$ to fix all scales. Discuss and defend the size of extra dimensions and the stringy scales.
+\subsection{Energy scales from Dark Bubble embedding: N, a parameter to rule them all}\label{subsec: energy_scale}
+
+The purpose of this section is double-fold:
+\begin{enumerate}
+    \item To explicitely compute the value of the induced dark energy on the expanding cosmology, as described in Eq. (\ref{eq: tension_shift}).
+    \item To elaborate on the hierarchy energy implications that the dark bubble embedding provides.
+\end{enumerate}
+As discussed in section [Landscape], regular compactifications already impose severe restrictions on the size of compact dimensions, such that gravitational effects in these do not affect the four-dimensional physics. But the dark bubble scenario presented above is not a regular compactification model. Could it be that its energy hierarchy contain surprises? Let us explore this in detail.
+
+Although we may have enjoyed our short stay in the four-dimensional world, in order to provide an explicit value for the induced dark energy, we have to climb up back to the ten-dimensional ambient space described at the beginning of this chapter \ref{sec: db_from_st}.
+
+This ten-dimensional rotating background\footnote{From now on and until we specify the contrary, we are working in natural units $\hbar =c=1$. We will later restore them to talk about the energy scales.}, sourced by the presence of the famous $D_{3}$-brane stack, is equipped with a ten-dimensional Planck length $\ell_{10}$ described as:
+\begin{equation}\label{eq: l10_and_ls}
+    \ell_{10}^8  = 2^{6} \pi^{7} g_s^2 \alpha'^{4},
+\end{equation}
+where again, $g_{s}$ is the string coupling and $\alpha'$ is the Regge slope parameter. Although fixing this parameter will be key to understand the novelty provided by the dark bubble embedding, it will be more convinient to refer to its associated value, the length scale of the string\footnote{This section will be an interesting dance between lengths, masses and energies. It could be convinient to have in mind the definition of Newton's constant (eq[ FIRST CHAPTER COSMOLOGY])} (i.e. how long a string is), given by:
+\begin{equation}
+    \ell_{s} = \sqrt{\alpha'}
+\end{equation}
+Let us step down to five dimensions: Here our rotating black hole is no longer moving along some of the compact dimensions of $S_{5}$. It is static, as a Reissner-Nordström black hole and the secret information about its hidden angular momentum is encoded in its charge Q. Following the discussion in (LANDSCAPE SECTION), the five dimensional Planck length is given by
+\begin{equation}\label{eq: comp_10_5}
+    \ell_5^3 = \frac{\ell_{10}^{8}}{\text{Vol}(S^{5})} = 2^{6} \pi^{4} g_{s}^{2} \frac{\alpha'^{4}}{L^{5}} \,.
+\end{equation}
+This can be rewritten in terms of how many branes are located in the $D_{3}$-stack. The AdS/CFT correspondence \cite{Maldacena:1998aa} states that the length scale $L$ of a stack of $N$ classical $D_3$ branes in type IIB supergravity is: 
+\begin{equation}\label{eq: AdS_correspondence}
+    L^4 = 4 \pi g_s N \alpha'^{2} \,,
+\end{equation}
+So  Eq. (\ref{eq: comp_10_5}) becomes:
+\begin{equation}\label{eq: G5_and_L}
+    L^3 = \frac{N^{2} \ell_{5}^{3}}{4 \pi^{2}} \, .
+\end{equation}
+If you have a basic understanding of the correspondence discussed in \cite{Maldacena:1998aa}, you may worry that this model is not equipped with a low coupling nor a high number of branes $N$. We will later see that if every brane worth a single $\$$, we would be disgustinly rich. For the moment, let us perform a leap of faith and assume that $g_{s} N \gg 1$. This implies the subsequent hierarchy of scales:
+\begin{equation}\label{eq: first_hierarchy}
+    \underbrace{\left(N/2 \pi \right)^{2/3} \ell_5}_{L} \gg\underbrace{\pi^{3/8} \left(N/2\pi\right)^{5/12} \ell_{5}}_{\ell_{10}}\gg \ell_{5},
+\end{equation}
+Down to this point, there is nothing new. A regular compactification of a ten-dimensional space down to a five-dimensional one. All the energy scales are the expected ones. But we now have a toll in front of us: Junction conditions. As discussed in sec \ref{sec: simple_example}, the presence of the brane mediating the decay between the vacua imposes a jump in the extrinsic curvature. This translates into a induced energy-momentum tensor $T_{ab}$, such that the whole system remains a solution to the Einstein equation. In this section we obtained an extremely relevant expression (\ref{eq: identifications_dark_energy}) that is going to be used in our next task: To identify the four-dimensional Planck length in this construction.
+
+Making use of Eq. (\ref{eq: relation_L_to_N}) to rewrite Eq. (\ref{eq: identifications_dark_energy}), it yields:
+\begin{equation} \label{eq: G4G5}
+\kappa_4=2\frac{k_- k_+}{k_- - k_+} \kappa_5 =\frac{3 k^2}{-\Delta N k}N \kappa_5 =3\frac{N}{L} \kappa_5 \, , 
+\end{equation}
+where we have written $k_{-} \simeq k_{+}$ (recall the relevant regime described in Eq. (\ref{eq: approximations_bh})) and $\Delta N = -1$. \textit{En gång till},\footnote{\textit{One more time}, in Swedish.} we can play the game and rewrite the AdS-length (\ref{eq: G5_and_L}) in terms of $\ell_{4} = \sqrt{\kappa_{4}}$ as:
+\begin{equation}\label{eq: Ldpendingl4}
+    L = \frac{N^{1/2}}{2\sqrt{3} \pi} \ell_4,
+\end{equation}
+which allow us to massage the hierarchy (\ref{eq: first_hierarchy}) in terms of $\ell_4$ instead:
+\begin{equation}\label{eq: second_hierarchy}
+    \underbrace{\frac{N^{1/2}}{2 \sqrt{3}\, \pi} \,\ell_4}_{L} \:\gg\: \underbrace{\frac{N^{1/4}}{2^{3/4} \sqrt{3} \,\pi^{3/8}} \, \ell_{4}} _{\ell_{10}} \:\gg\: \ell_4 \:\gg\: \underbrace{\frac{N^{-1/6}}{\sqrt{3} (2\pi)^{1/3}} \, \ell_{4}}_{\ell_{5}}. 
+\end{equation}
+And it is at this point when surprises appear. It is of crucial importance to notice how unusual the hierarchy $\ell_{5} \ll \ell_{4}$ is. As already discussed in sec [LANDSCAPE] $L \gg \ell_{5}$ immediately leads to $\ell_{5} \gg \ell_{4}$. In this way, gravity is stronger in the compact dimensions and hence the upper bound on the volume of those closed directions to avoid conflict with observations. But this is not the case for our bubbly construction. This can be already inferred from Eq. (\ref{eq: G4G5}). The presence of the large factor $N$ is the responsible term of this inversion in the hierarchy. With a weaker gravity in the extra dimensions, there is no strict upper bound to be imposed. In this way, the dark bubble scenario acquires its own energy hierarchy not by the usual scale separation as in regular compactifications, but via charge-to-tension ratio (i.e. the sub-extremality of the bubble).
+
+Let us now find the explicit value for the dark energy density and the energy scale associated to this embedding. From Eqs. (\ref{eq: tension_shift}) and (\ref{eq: identifications_dark_energy}), we see that:
+\begin{equation}\label{eq: rhotoL}
+    \rho_{\Lambda} = \frac{32}{3} \frac{\pi^{2} \alpha'^{2}}{L^{4}} \, T_{D_3}  \quad \rightarrow \quad \rho_{\Lambda} = \frac{4}{3\pi g_{s}\, L^{4}}  ,
+\end{equation}
+where Eq. (\ref{eq: AdS_correspondence}) has been used. Rewriting, for one final time expression (\ref{eq: Ldpendingl4}), by using equations ([COSMO CHAPTER]), (\ref{eq: G5_and_L}) and (\ref{eq: G4G5}) we find:
+\begin{equation}\label{eq: LtoN}
+    L^2=\frac{2}{3\pi} N G_4.
+\end{equation}
+Finally, Eq. (\ref{eq: LtoN}) can be used in Eq. (\ref{eq: rhotoL}) to write:
+\begin{equation}\label{eq: number_N}
+    N = \frac{\sqrt{3 \pi}}{ G_4 \sqrt{g_{s} \rho_\Lambda}}.
+\end{equation}
+The total number of branes $N$ sitting in the stack sourcing the ten-dimensional geometry (\ref{eq: 10Dmetric}) can then be determined by the observed dark energy density in the low-dimensional geometry, its Newton's constant and the string coupling $g_{s}$. But, What is the string coupling? In order to find its low-energy value, let us take a result from chapter {sec: decoration}, Eq. ([Eq to mass of ending string]):
+\begin{equation}
+    M_{\text{particle}} = T L,
+\end{equation}
+which corresponds to the mass of a four-dimensional particle, represented by the end point of a fundamental string with charge $e$ and tension $T = 1/2\pi \alpha'$, attached to the $D_{3}$-brane \cite{Banerjee:2019aa}, which will induce a four-dimensional Reisser-Nordström geometry with line invariant:
+\begin{equation}
+    \dpar_{\rm RN_{4D}}^{2} = - g(r)_{\rm RN} \dpar t^{2} + g(r)_{\rm RN}^{-1} \dpar r^{2} + r^{2} \dpar \Omega_{2}^{2}, 
+\end{equation}
+with
+\begin{equation}
+    g(r)_{\rm RN} = 1 - \frac{2 c M_{\rm RN} }{8 \pi \hbar r } \ell_{4}^{2}  + \underbrace{\frac{e^{2}}{4\pi\epsilon_{0} c \hbar}}_{\alpha_{\rm EM}} \frac{\ell_{4}^{2}}{8 \pi r^{2}},
+\end{equation}
+with $\alpha_{\rm EM} \simeq \tfrac{1}{137}$, is the fine structure constant. As the string is fundamental (i.e. a BPS object saturating the WGC, $q = m$), the induced geometry will be that of an entremal Reisser-Nordström geometry. With this in mind, one can obtain the following relation between the string coupling $g_{s}$ and the fine-structure constant $\alpha_{\rm EM}$:
+\begin{equation}\label{eq: gs_to_alpha}
+    M_{\text{particle}} = M_{{\rm RN}} \quad \rightarrow \quad  g_{s} = \frac{2}{3} \alpha_{\rm EM}.
+\end{equation}
+Electromagnetism is the only long range force, except for gravity, and it is therefore natural that the low energy value of the string coupling is set by it.
+
+With relation (\ref{eq: gs_to_alpha}), we have all relevant ingredients to obtain the explicity energy hierarchy of the dark bubble. Introducing this result in expression (\ref{eq: number_N}), together with $\rho_\Lambda \simeq 6.8 \times 10^{-27} {\rm kg/m^3}$ \cite{Aghanim:2020aa}, we obtain (\text{NOW} re-inserting $\hbar$ and $c$):
+\begin{equation}
+    N = 1.2 \times 10^{63},
+\end{equation}
+which fixes the hierarchy of scales (\ref{eq: second_hierarchy}) of the dark bubble construction as described in table (\ref{Table: 1}). All previously discussed scales are unambiguously fixed. Throughout the calculations, we have used the reduced Planck scale for convenience. In the table we have chosen to instead use $G_d=\tilde{\ell}_d^{d-2}$.
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{c|c|c}
+	\textbf{Scale} & \textbf{Length (m)} & \textbf{Energy} \\
+	\hline
+    \hline
+	$L$ &  $5.1 \times 10^{-5}$ &  $3.8 \, {\rm meV}$ \\
+    $\sqrt{\alpha'}$ & $1.8 \times 10^{-20}$ & $11.2\, {\rm TeV}$  \\
+    $\tilde{\ell}_{10}$ & $1.4 \times 10^{-20}$ &  $13.7 \, {\rm TeV}$ \\
+    $\tilde{\ell}_{5}$ & $3.9 \times 10^{-45}$ & $5.1 \times 10^{28} \,{\rm TeV}$
+	\end{tabular}
+	\caption{New hierarchy of scales associated to the dark bubble embedding into string theory.}
+	\label{Table: 1}
+\end{table}
+
+\textcolor{red}{Think of a more relevant and heavier discussion about the results.}
+
+%The dark bubble model was introduced as a way to naturally incorporate a positive cosmological constant. It is remarkable that a detailed implementation of the model leads to precise predictions of novel phenomena in microscopic physics. The presence of the large extra dimensions implies a modification of gravity at scales of order a few $10^{-5}$m. Similar proposals have been made previously in the literature \cite{Montero:2022prj}, but our result is through calculations based on first principles. Furthermore, the way the extra dimensions relate to the 4D world is completely new. Moreover, the model predicts new high energy physics at energy scales of tens of TeV in the form of stringy excitations of known particles such as the photon.
+
+
+
+
+
