@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  22 JUN 2023 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  19 JAN 2024 10:43
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **land_swamp
@@ -609,7 +609,7 @@ Package rerunfilecheck Info: File `land_swamp.out' has not changed.
 Here is how much of TeX's memory you used:
  13724 strings out of 478268
  215420 string characters out of 5846347
- 522350 words of memory out of 5000000
+ 522349 words of memory out of 5000000
  31699 multiletter control sequences out of 15000+600000
  538387 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

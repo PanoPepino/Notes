@@ -1,1 +1,61 @@
 \section{Quantum bubbles: Higher dimensions to solve boundary choices}\label{sec: quantum_bubbles}
+We have extensively talked on the technicalities on how to induce dark energy on the bubble wall in chapter \ref{sec: simple_example} and how that simple model can be easily embeded in string theory through chapter \ref{sec: db_from_st}. Before we venture ourselves inside the higher-dimensional IKEA\texttrademark \, to buy elements to decorte our induced expanding four-dimensional cosmology (chapter \ref{sec: decoration}), let us first reflect on the bubble nucleation and its implications on the low-dimensional cosmology. This chapter will closely follow derivations discussed in \cite{Danielsson:2021aa}.
+
+As we previously reviewed in chapter [ref QCosmo], there is still an open discussion on the right choice of boundary conditions for the wave-function describing our universe. One out-of-the-box perspective to address this issue can be to analyse this problem from a higher-dimensional picture. In other words, we ask ultraviolet completeable models of cosmology within string theory what the right choice of boundary conditions in low-dimensional quantum cosmology is. Given the previously presented dark bubble scenario, capable of reproducing an expanding four-dimensional cosmology, one question to raise could be: Can a quantised description of the dark bubble provide insight on the four-dimensional quantum cosmology realm? Let us elaborate on this.
+
+We will now study the quantum nucleation of such a bubble by closely following the treatment of \cite{Ansoldi:1997hz} for bubble nucleation in five dimensions.\footnote{Observe that we will not include in our description the compact directions of $S^{5}$. \textcolor{red}{WHY?}} The five-dimensional action describing the dynamics of the bubble is schematically given by:
+\begin{equation}\label{eq: qb_total_action}
+    S_{\text{bubble}} = S_{\text{bulk}} + S_{\text{GHY}} + S_{\text{brane}}.
+\end{equation}
+Let us discuss each contribution individually:
+\begin{itemize}
+    \item The bulk contribution, described as
+    \begin{equation}\label{eq: qb_bulk_action}
+        S_{\text{bulk}} = \frac{1}{2\kappa_5} \int \dpar^5 x \sqrt{|g|} \left( R^{(5)} - 2 \Lambda^{(5)} \right),
+    \end{equation}
+    has no other role than describing the five-dimensional ambient space where the bubble will live. $\Lambda^{(5)}$ is its five-dimensional cosmological constant, related to the AdS-curvature by Eq. (\ref{eq: simple_lambda}).
+    \item We also have to describe the contribution of the extrinsic curvature $K$ of the bubble into the five-dimensional space. This is given the Gibbons-Hawking-York term, which looks like:
+    \begin{equation}\label{eq: qb_extrinsic_action}
+        S_{\text{GHY}} = \frac{1}{\kappa_5} \int \dpar^4 y \sqrt{|h|} K\,.
+    \end{equation}
+    \item And finally, it is important to take into account the content of the brane. This will be given by its energy-momentum:
+    \begin{equation}\label{eq: qb_EM_action}
+        S_{\text{brane}}=-\sigma \int \dpar^4 y \sqrt{|h_{ab}|},
+    \end{equation}
+    with $\sigma$ standing for our already well-known brane's tension and $h_{ab}$ the induced metric on the brane.
+\end{itemize}
+The five-dimensional geometry we want to consider 
+
+
+\textcolor{red}{THINK AND CHANGE STRUCTURE. BETTER TO REFER TO ROB'S NOTES. DERIVATION CAN MAKE MORE SENSE. ALSO, YOU CAN GET RID OF THE MASS OF THE BLACK HOLE DUE TO NO RELEVANCE IN EOM.}
+
+
+\begin{equation}
+S=\frac{1}{2\kappa_5} \int \dpar^5 x \sqrt{|g|} \left( R^{(5)} - 2 \Lambda^{(5)} \right) -\sigma \int \dpar^4 y \sqrt{|h_{ab}|}  +\frac{1}{\kappa_5} \oint \dpar^4 y \sqrt{|h|} K\,. \label{5Daction}
+\end{equation}
+The second term describes the brane-shell with tension $\sigma$ and induced metric $\eta$ with brane-coordinates $\zeta$.  The 5D metric is given by
+\begin{equation}
+\dpar s_{\pm}^2 = -A_{\pm}(r)\dpar t_{\pm}^2+\frac{\dpar r^2}{A_{\pm}(r)} + r^2\dpar\Omega_{3}^2, \label{eq: metric int/ext}
+\end{equation}
+where $A_{\pm}(r) = 1 -\frac{\Lambda_{\pm}}{6}r^2$.
+
+The shell glues the two spacetimes together at a radial coordinate $r=a(\tau)$ and its metric coincides with (\ref{eq:FLRW}).
+From \eqref{eq: metric int/ext} and \eqref{eq:FLRW} one can then deduce that
+\begin{equation}
+\dot{t}_{\pm}=\frac{\dpar t_{\pm}}{\dpar \tau} = \frac{\beta_{\pm}}{A_{\pm}}\,,\qquad \beta_{\pm} = \sqrt{A_{\pm}N^2+\dot{a}^2}\,.
+\end{equation}
+
+
+The on-shell action receives three contributions: the bulk piece, the shell contribution and the boundary term.
+\begin{eqnarray}
+S_g & = & \frac{2\pi^2}{\kappa_5} \int d\tau \left[3 \beta a^2 + \frac{a^3}{\beta}\left(\ddot{a}+\frac{N^2}{2}\frac{dA}{da}-\frac{\dot{a}\dot{N}}{N}\right)\right]_+^- \,,\nonumber\\
+S_{\sigma} & = & -2\pi^2 \sigma \int d\tau a^3\, N,\\
+S_B & = & -\frac{2\pi^2}{\kappa_5} \int d\tau \left[3 a^2 \dot{a} \tanh ^{-1}\frac{\dot{a}}{\beta} + \frac{a^3}{\beta}\left(\ddot{a}-\frac{\dot{a}^2}{2a}\frac{dA}{da}-\frac{\dot{a}\dot{N}}{N}\right)\right]_+^-  \,.\nonumber
+\end{eqnarray}
+were we have defined $\left[ f \right]_+^- = f_- - f_+$. 
+Summing all terms, and ignoring terms that do not affect the dynamics of the shell, we find the mini-superspace Lagrangian to be
+\begin{equation}
+L=\frac{6\pi^2}{\kappa_5} \left[-a^2 \dot{a} \tanh^{-1} \frac{\dot{a}}{\beta} + a^2 \beta \right]_+^- -2\pi^2 a^3 \sigma N\,.
+\end{equation}
+Expanding to quadratic order in $\dot{a}$, using (\ref{5to4}), equation (\ref{action}) can be recovered. Using this we can go ahead and study nucleation, where $R$ will be the radius of the nucleated bubble. 
+

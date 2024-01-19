@@ -1,5 +1,5 @@
 
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
 \bibitem{Bachas:1999aa}
 C.P.~Bachas, P.~Bain and M.B.~Green, \emph{Curvature terms in d-brane actions
@@ -54,5 +54,31 @@ S.~Banerjee, U.~Danielsson, G.~Dibitetto, S.~Giri and M.~Schillo, \emph{{de
 N.~Aghanim, Y.~Akrami, M.~Ashdown, J.~Aumont, C.~Baccigalupi, M.~Ballardini
   et~al., \emph{Planck 2018 results-vi. cosmological parameters},
   {\emph{Astronomy \& Astrophysics} {\bfseries 641} (2020) A6}.
+
+\bibitem{Lee_2020}
+J.G.~Lee, E.G.~Adelberger, T.S.~Cook, S.M.~Fleischer and B.R.~Heckel, \emph{New
+  test of the gravitational $1/{r}^{2}$ law at separations down to $52\text{
+  }\text{ }\ensuremath{\mu}\mathrm{m}$},
+  \href{https://doi.org/10.1103/PhysRevLett.124.101101}{\emph{Phys. Rev. Lett.}
+  {\bfseries 124} (2020) 101101}.
+
+\bibitem{Montero:2022aa}
+M.~Montero, C.~Vafa and I.~Valenzuela, \emph{{The Dark Dimension and the
+  Swampland}},  \href{https://arxiv.org/abs/2205.12293}{{\ttfamily
+  2205.12293}}.
+
+\bibitem{Danielsson:2021aa}
+U.H.~Danielsson, D.~Panizo, R.~Tielemans and T.~Van~Riet,
+  \emph{{Higher-dimensional view on quantum cosmology}},
+  \href{https://doi.org/10.1103/PhysRevD.104.086015}{\emph{Phys. Rev. D}
+  {\bfseries 104} (2021) 086015}
+  [\href{https://arxiv.org/abs/2105.03253}{{\ttfamily 2105.03253}}].
+
+\bibitem{Ansoldi:1997hz}
+S.~Ansoldi, A.~Aurilia, R.~Balbinot and E.~Spallucci, \emph{{Classical and
+  quantum shell dynamics, and vacuum decay}},
+  \href{https://doi.org/10.1088/0264-9381/14/10/004}{\emph{Class. Quant. Grav.}
+  {\bfseries 14} (1997) 2727}
+  [\href{https://arxiv.org/abs/gr-qc/9706081}{{\ttfamily gr-qc/9706081}}].
 
 \end{thebibliography}\endgroup
